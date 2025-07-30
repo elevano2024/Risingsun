@@ -1,133 +1,120 @@
 import Layout from "@/components/common/MainLayout";
-import ListItem from "@/components/common/list-item/list-item";
 import "./index.scss";
 import ImageText from "@/components/common/image-text-combo/image-text-combo";
 
 const Component = () => {
   return (
-    <Layout header="Learning Beyond the Classroom: Field Trips at Rising Sun Montessori" subHeader="At Rising Sun Montessori, we believe that learning doesn’t stop at the classroom door. Our field trips provide students of all ages with hands-on experiences that deepen their understanding of the world, ignite their curiosity, and create lasting memories.">
+    <Layout header="Building Connections: Community Activities at Rising Sun Montessori" subHeader="At Rising Sun Montessori, we believe that a strong sense of community is the cornerstone of a thriving school environment. Our community activities bring together students, families, and staff to celebrate, collaborate, and connect. These events not only strengthen relationships but also provide meaningful opportunities for learning, service, and fun.">
       <div className="programs programdetail" style={{ paddingTop: "80px" }}>
         <div className="container">
-          <p>
-            Whether exploring nature, engaging with history, or participating in
-            community service, field trips are a vital part of our Montessori
-            education, helping children connect classroom lessons to real-life
-            applications.
-          </p>
           <div className="">
             <h1>
-              For Our Youngest Learners (Transitional Kindergarten/Kindergarten)
+              Why Community Matters
             </h1>
             <p style={{ marginBottom: "40px" }}>
-              Our youngest students venture into their local community,
-              discovering the world through age-appropriate, sensory-rich
-              experiences. Past trips include:
+              Community activities enrich our school culture by:
             </p>
             <ImageText
               img="/images/child.png"
               tags={[
-                "Visits to local farms to learn about animals and agriculture.",
-                "Walks to nearby parks for nature exploration and hands-on environmental studies.",
-                "Trips to children’s theaters or libraries to spark a love of storytelling and creativity.",
+                "Fostering Connection: Bringing families together to build friendships and support networks.",
+                "Inspiring Collaboration: Encouraging teamwork between students, parents, and educators.",
+                "Promoting Engagement: Inviting families to play an active role in their child’s education.",
               ]}
               variant="right"
             />
           </div>
 
           <div className="">
-            <h1>For Lower Elementary (Grades 1–3)</h1>
+            <h1>Signature Community Activities</h1>
             <p style={{ marginBottom: "40px" }}>
-              At this stage, students are eager to explore their expanding
-              world. Field trips align with their studies, enhancing both
-              academic and social development. Highlights include:
+              We offer a variety of events and initiatives throughout the year, designed to engage families and celebrate our shared journey.
             </p>
             <ImageText
               img="/images/child.png"
+              title="Family Events"
               tags={[
-                "Museum visits to explore art, history, and science exhibits.",
-                "Aquarium trips to study marine life and ecosystems.",
-                "Historical sites where they can immerse themselves in the stories of the past.",
+                "Back-to-School Night: Meet teachers, tour classrooms, and learn about the exciting year ahead.",
+                "Back-to-School Night: Meet teachers, tour classrooms, and learn about the exciting year ahead.",
+                "Family Fun Nights: Bond over activities like game nights, movie nights, or seasonal celebrations."
               ]}
               variant="left"
             />
           </div>
 
           <div className="">
-            <h1>For Upper Elementary (Grades 4–6)</h1>
-            <p style={{ marginBottom: "40px" }}>
-              Upper Elementary students engage in more complex studies, and
-              field trips provide opportunities for hands-on, interdisciplinary
-              learning. Examples include:
-            </p>
             <ImageText
               img="/images/child.png"
+              title="Service Projects"
               tags={[
-                "Outdoor education programs focusing on ecology, geology, and teamwork.",
-                "Visits to planetariums and science centers to expand their understanding of astronomy and physics.",
-                "Cultural excursions to art galleries, music performances, or ethnic festivals to deepen their appreciation for diversity.",
+                "School-Wide Volunteer Days: Join forces to beautify the campus, plant gardens, or organize donation drives.",
+                "Community Outreach: Participate in service-learning projects, like food drives, clothing donations, or environmental clean-ups.",
               ]}
               variant="right"
             />
           </div>
 
           <div className="">
-            <h1>For Middle School (Grades 7–8)</h1>
-            <p style={{ marginBottom: "40px" }}>
-              As adolescents, our middle schoolers crave independence and
-              opportunities for critical thinking. Field trips challenge them to
-              apply their knowledge in real-world settings. Memorable trips
-              include
-            </p>
             <ImageText
               img="/images/child.png"
+              title="Student Showcases"
               tags={[
-                "Overnight retreats for team-building and leadership development.",
-                "Service-learning trips to participate in community service and environmental stewardship.",
-                "Career exploration visits to businesses, colleges, and innovation hubs.",
-                "Historical reenactments and government facilities to experience civics in action.",
+                "Art Shows: Celebrate creativity by displaying student artwork for families and friends to enjoy.",
+                "Science and Culture Fairs: Engage with student projects that highlight their academic achievements and interests.",
               ]}
               variant="left"
+            />
+          </div>
+
+          <div className="">
+            <ImageText
+              img="/images/child.png"
+              title="Parent Engagement Opportunities"
+              tags={[
+                "Parent Education Nights: Learn more about Montessori philosophy, child development, or parenting strategies.",
+                "Volunteer Programs: Get involved in the classroom, on field trips, or during special events.",
+                "Parent-Teacher Committees: Collaborate with other parents to support school initiatives and activities."
+              ]}
+              variant="right"
             />
           </div>
         </div>
         <div className="home-section-2">
           <div className="container">
-            <h1>The Benefits of Field Trips</h1>
+            <h1>Annual Highlights</h1>
             <p>
-              Field trips are more than just fun—they are transformative
-              experiences that
+              Some of our most beloved traditions include:
             </p>
             <p className="item">
-              Foster <b>hands-on learning</b>, making abstract concepts concrete
-              and engaging.
+              <b>Harvest Festival</b>
+              <br />
+              A fun-filled day with games, crafts, and seasonal activities for the whole family.
             </p>
             <p className="item">
-              Develop <b>social skills</b> through group collaboration and
-              shared experiences.
+              <b>Spring Events</b>
+              <br />
+              An exciting time to celebrate and raise funds for school programs.
             </p>
             <p className="item">
-              Encourage <b>critical thinking</b> by asking questions, solving
-              problems, and making connections.
-            </p>
-            <p className="item">
-              Inspire a love for <b>lifelong learning</b> by showing students
-              the world’s richness and diversity.
+              <b>Field Day</b>
+              <br />
+              A day of outdoor games and activities that encourage teamwork and friendly competition.
             </p>
           </div>
         </div>
         <div style={{ paddingTop: "120px" }}>
           <div className="container">
-            <h1>Unforgettable Learning Adventures</h1>
+            <h1>The Montessori Spirit of Community</h1>
             <p>
-              At Rising Sun Montessori, we carefully plan field trips to enrich our curriculum and meet the developmental needs of each age group. These experiences allow students to see themselves as active participants in their community and the larger world.
+              Our community activities are designed to reflect the Montessori values of collaboration, respect, and lifelong learning. Whether through service projects, cultural celebrations, or family events, these opportunities help students grow as compassionate, engaged citizens who understand the importance of giving back and working together.
             </p>
             <br />
             <p>
-              Join us in creating a lifetime of memories and discovery for your child!
+              We invite you to be an active part of our vibrant community at Rising Sun Montessori. Together, we create a nurturing environment where every child—and family—can thrive.
             </p>
             <br />
             <p>
-              For more details about our field trips and how they support our Montessori approach, contact us or visit our website.
+              For more details about upcoming events or ways to get involved, visit our website or contact us today!
             </p>
           </div>
         </div>
