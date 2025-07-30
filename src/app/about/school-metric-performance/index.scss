@@ -1,0 +1,82 @@
+.schoolMetricPerformance {
+  background: #e8ffeb;
+  background: linear-gradient(
+    180deg,
+    rgba(232, 255, 235, 1) 17%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding-top: 86px;
+  padding-bottom: 46px;
+  .metricsListContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    row-gap: 50px;
+    .metric-container {
+      min-width: 100%;
+      max-width: 100%;
+      .metric-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: translateY(-5px);
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      .metric_logo {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+        background: white;
+        border: 1px solid #d7e9da;
+        .metric_image {
+          width: 100%;
+          max-width: calc(100% - 40px);
+          max-height: 100%;
+          object-fit: contain;
+        }
+        .metric_title {
+          color: #f4ad26;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 24px;
+          cursor: pointer;
+        }
+      }
+      .metric_title {
+        margin-bottom: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #0a160c;
+        text-align: center;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .metricsListContainer {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 30px;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .metricsListContainer {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+    }
+  }
+}

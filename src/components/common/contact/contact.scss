@@ -1,0 +1,134 @@
+.contact-page {
+    background: url('/images/contactBG.png') no-repeat center center;
+    height: 700px;
+
+    .contact-container {
+        h1 {
+            width: 100%;
+            max-width: 750px;
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 56px;
+            letter-spacing: 1%;
+            color: #0A160C;
+            margin-bottom: 40px;
+        }
+
+        .contact-contact {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .giveCall {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 30px;
+                letter-spacing: 0%;
+                color: #687A6B;
+            }
+
+            .contact-phone {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+
+                .contact-numbers {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+
+                    .contact-number {
+                        font-weight: 700;
+                        font-size: 28px;
+                        line-height: 30px;
+                        letter-spacing: 0%;
+                        color: #71B15E;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+
+                hr {
+                    width: 2px;
+                    border: 0;
+                    background: #687A6B;
+                    height: 28px;
+                }
+            }
+        }
+
+        .contact-data {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: #687A6B;
+            margin-bottom: 24px;
+        }
+
+        .contact-address {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 0%;
+            color: #0A160C;
+            margin-bottom: 24px;
+        }
+
+        .contact-buttons {
+            margin-bottom: 180px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            .direction-button {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                border: 1px solid #F3B828;
+                padding: 0 15px;
+                height: 54px;
+                border-radius: 16px;
+                background: #FFFBF3;
+                color: #222222;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 1%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .fill-form-button {
+                display: flex;
+                align-items: center;
+                border: 1px solid #F3B828;
+                padding: 0 50px;
+                height: 54px;
+                border-radius: 16px;
+                background: #F3B828;
+                color: #222222;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 1%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.footer_container {
+  height: 50vw;
+  background: url(/images/Footer_banner.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  &__content {
+    position: relative;
+    height: 100%;
+    &__data {
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      right: 0;
+      bottom: 16vw;
+      &__text {
+        color: #0a160c;
+        font-size: 26px;
+        letter-spacing: 1%;
+        font-weight: bold;
+        margin-top: 32px;
+      }
+      &__subText {
+        color: #687a6b;
+        font-size: 16px;
+        margin-top: 16px;
+      }
+    }
+  }
+}

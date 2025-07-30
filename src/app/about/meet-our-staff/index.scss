@@ -1,0 +1,47 @@
+.meet-our-staff {
+  background: #e8ffeb;
+  background: linear-gradient(
+    180deg,
+    rgba(232, 255, 235, 1) 17%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding-top: 86px;
+  padding-bottom: 46px;
+  .staff-list-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 50px;
+    .staff-container {
+      min-width: 100%;
+      max-width: 100%;
+      &:focus {
+        outline: none;
+      }
+      .staff_photo {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: 16px;
+        margin-bottom: 24px;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+      .staff_name {
+        margin-bottom: 4px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #0a160c;
+        text-align: center;
+      }
+      .staff_position {
+        font-size: 16px;
+        line-height: 26px;
+        color: #687a6b;
+        text-align: center;
+      }
+    }
+  }
+}

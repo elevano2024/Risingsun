@@ -1,0 +1,211 @@
+.header_main {
+  background: linear-gradient(180deg, #17431e 0%, #22712f 60%, #2b943c 100%);
+  position: relative;
+  z-index: 1;
+
+  &__subWrapper {
+    position: absolute;
+    bottom: 16px;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: 0 10%;
+    z-index: -1;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__headMenu {
+    border-bottom: 1px solid #466d4d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88px;
+    z-index: 4;
+
+    &__links {
+      display: flex;
+      align-items: center;
+      z-index: 4;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: medium;
+        display: flex;
+        align-items: center;
+        height: 86px;
+        padding: 0 10px;
+        z-index: 4;
+
+        img {
+          margin-left: 4px;
+        }
+
+        &:hover {
+          background: #1e5628;
+        }
+
+        &.active {
+          outline: none;
+          background: #1e5628;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &__link__contact {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: bold;
+        color: #222 !important;
+        padding: 8px 24px;
+        border-radius: 16px;
+        border: 1px solid #f3b828;
+        background: #fffbf3;
+        height: 44px !important;
+        margin-left: 36px;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 76px;
+    padding-bottom: 76px;
+
+    &__title {
+      font-size: 33px;
+      line-height: 43px;
+      letter-spacing: 1%;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0%;
+      color: #b7d8bc;
+    }
+
+    &__carousel {
+      display: flex;
+      gap: 50px;
+      align-items: flex-start;
+      justify-content: center;
+      padding-bottom: 120px;
+      z-index: -1;
+
+      &__content {
+        .title {
+          display: flex;
+          gap: 8px;
+          color: #fff;
+          font-size: 24px;
+          font-weight: 500;
+          padding-bottom: 12px;
+          border-bottom: 2px solid #bbcdbe;
+          display: inline-flex;
+          margin-bottom: 32px;
+        }
+
+        .subtitle {
+          font-size: 28px;
+          color: #fff;
+          margin-bottom: 32px;
+        }
+
+        button {
+          background: #f3b828;
+          color: #222;
+          border: none;
+          border-radius: 16px;
+          padding: 12px 24px;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background 0.3s ease;
+          z-index: 999;
+
+          &:hover {
+            background: #f0b41e;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_main__headMenu__links__dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1E5628;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0 !important;
+  width: auto;
+  min-width: 200px;
+  top: 88px;
+  display: flex;
+  border-radius: 0 0 16px 16px;
+  flex-direction: column;
+
+  a {
+    font-size: 14px;
+    padding: 0 !important;
+    height: unset;
+    padding: 10px 20px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    img {
+      transform: rotate(-90deg);
+    }
+
+    &:hover {
+      background: #17431e;
+    }
+  }
+}
+
+.header_main__headMenu__links__dropdown__subMenu {
+  position: absolute;
+  display: flex;
+  background-color: #1E5628;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 !important;
+  left: 100%;
+  top: 0;
+  border-radius: 0 0 16px 16px;
+  padding-bottom: 8px !important;
+
+  .sub-menu {
+    width: 100%;
+  }
+
+  &__item {
+    padding: 10px 20px !important;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+
+    &:hover {
+      background: #17431e;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.programs {
+    background: linear-gradient(180deg, #E8FFEB 17.24%, #FFFFFF 100%);
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        gap: 110px;
+    }
+
+    .programdetail {
+        h1 {
+            margin-bottom: 40px;
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 56px;
+            letter-spacing: 1%;
+            color: #0A160C;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: #687A6B;
+
+        }
+    }
+}

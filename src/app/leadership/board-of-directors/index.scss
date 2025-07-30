@@ -1,0 +1,45 @@
+.EPA {
+  padding-top: 40px;
+
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  .dirContainer {
+    border: 1px solid #c6d2c7;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    .dirHeader {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      .dirImg {
+        width: 134px;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .dirName {
+        color: #0a160c;
+        font-size: 40px;
+        font-weight: 500;
+      }
+    }
+    .dirDescription p {
+      color: #687a6b;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.agendas {
+  padding-top: 80px;
+
+  .previousAgenda {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    h1 {
+      color: #0a160c;
+      font-size: 44px;
+      font-weight: 600;
+    }
+    h2 {
+      color: #0a160c;
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+    .agendaItems {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 80px;
+      row-gap: 0;
+    }
+  }
+}
