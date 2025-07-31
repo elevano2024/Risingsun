@@ -3,7 +3,7 @@ export const staffList = [
     name: "Karl Zierhut",
     position: "Head of School",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Karl-Zierhut.png",
+      "/wp-content/uploads/2025/02/Karl-Zierhut.png",
     details: [
       "This year will mark Mr. Karl’s 31st year in education, and 12th year as the Rising Sun Head of School. Mr. Karl is proud to be a founding member of the Rising Sun Montessori School leadership team. He began his work at RSMS prior to the school’s opening in 2014.  Over the past 11 years, he has overseen the growth and development of the Montessori school program from 73 students in grades 1-6 in the fall of 2014 to over 175 students in grades TK-8th grade this fall.",
       "Mr. Karl’s role as Head of School is to ensure that the vision and mission of the foundin board members is fulfilled by offering an authentic, free Montessori education to students in the greater Sacramento region. Rising Sun is one of the most diverse schools in Northern California and we are proud to say that we offer students an environment of learning, socialization, and growth that mirrors the world that they will inherit.",
@@ -16,7 +16,7 @@ export const staffList = [
     name: "Susie Carrillo",
     position: "Lead Teacher TK/K",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Susie-Carrillo.png",
+      "/wp-content/uploads/2025/02/Susie-Carrillo.png",
     details: [
       "Ms. Susie is beginning her 6th year at RSMS, as a Primary teacher (Guide). She has a Master of Arts in Education and the Montessori certificate for Primary. She has seven years’ experience teaching in a Montessori classroom and 12 years of teaching in a public-school setting. Before that, while her own children were growing up, she was an instructional aide for 14 years in a rural school working in all grades from K to 8th and Special Ed.",
       "Susie has a strong interest in the arts and has engaged in many different art forms from clay, weaving, all things fiber, and many more artistic endeavors. Her dream for this year is to bring as many art experiences as possible to the Sunflower students. She believes art, music, and the Montessori Method give children the chance to express themselves in a way that supports self-esteem and sense of autonomy; something that is so important for a growing child.",
@@ -28,7 +28,7 @@ export const staffList = [
     name: "Supreet Kullar",
     position: "Lead Teacher 1st-3rd",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Supreet-Kullar.png",
+      "/wp-content/uploads/2025/02/Supreet-Kullar.png",
     details: [
       "Ms. Supreet was born and raised in Canada. Upon earning her Honors Bachelor of Arts at the University of Toronto and teaching credential at Niagara University, she travelled around the world and taught English in Thailand for a semester before returning to Toronto to work in Special Education.",
       "Along this journey, she met her (now) husband at a wedding in California and made the move to the Bay Area in 2019. There she worked at a charter Montessori school in lower elementary for 2 years. She has her California Teaching credential for multiple subjects and Montessori Lower Elementary I (6-9) credential. After tying the knot in July 2021, she and her husband purchased a home in Folsom and made the move with their goldendoodle, Dex.",
@@ -39,7 +39,7 @@ export const staffList = [
     name: "Stacey Gregersen",
     position: "Assistant Teacher & Science Expert",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Stacey-Gregersen.png",
+      "/wp-content/uploads/2025/02/Stacey-Gregersen.png",
     details: [
       "Ms. Stacey earned a bachelor of Science degree in Biochemistry from Cal Poly, San Luis Obispo. After a career in the wine industry, she moved to El Dorado Hills with her husband and raised her 2 boys. As the boys were growing up, she was involved with their school and various sports teams. She was a “professor” for Mad Science and a children’s Director for Lakehills Church.   When Rising Sun Montessori opened in 2014, she was in charge of the extended day program and eventually started subbing in the classroom. When the opportunity for a Teaching assistant job was offered, she jumped at the chance to be part of this wonderful school. Ms. Stacey leads the middle school science program at RSMS.",
       "She enjoys gardening, home improvement projects, and spending time with her family.",
@@ -49,7 +49,7 @@ export const staffList = [
     name: "Margarita Thomas",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2022/02/Margarita-Thomas.jpg",
+      "/wp-content/uploads/2022/02/Margarita-Thomas.jpg",
     details: [
       "Ms. Maggie attended  Fresno Pacific University, where she received her Bachelor’s degree in Early Childhood Education.  Maggie has had the opportunity to work with children as a teacher assistant, preschool teacher, and an early Head Start teacher.",
       "Ms. Maggie is a “military wife” and has been married to her husband for over 10 years.  About 7 years ago, they decided to put down roots in Pollock Pines.  They have two energetic kids, Ella and Alexander.  They love spending time together as a family, enjoying the outdoors.",
@@ -60,7 +60,7 @@ export const staffList = [
     name: "Sumita Ghorpade",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2022/02/Sumita-Ghorpade.jpg",
+      "/wp-content/uploads/2022/02/Sumita-Ghorpade.jpg",
     details: [
       "Sumita earned a Master of Science degree in Mathematics from India.  She has completed early childhood Montessori education from the Bay Area.  Sumita has been working with Rising Sun Montessori school since August 2018.  She loves working in the positive and enthusiastic environment of RSMS.  Sumita has over 5 years of experience in teaching.",
       "Sumita fell in love with the Montessori style of teaching when her son started his preschool education over 10 years ago.  She is a very passionate early childhood teacher and loves to work with children and see them grow.",
@@ -71,7 +71,7 @@ export const staffList = [
     name: "Jenn Short",
     position: "Registrar",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Jenn-Short-1.png",
+      "/wp-content/uploads/2025/02/Jenn-Short-1.png",
     details: [
       "Ms. Jenn grew up in Massachusetts where she earned her Bachelor’s degree in Early Childhood Education at the University of Massachusetts in Amherst.  Shortly after graduating, she moved to San Diego, CA, where she met her husband. After a couple years, they moved north to his home town in the bay area.  Two dogs, 2 kids and 8 years later, they relocated to El Dorado Hills with their twin daughters, Samantha and Casey. They love spending time with family and friends, traveling, and getting out to enjoy all our beautiful area has to offer.",
       "Ms. Jenn has enjoyed teaching K-5th grade in elementary schools for eight years; as a substitute teacher, reading and math tutor, and Montessori Teacher Assistant.  After two rewarding years as an Assistant Teacher here at RSMS, she made the switch to Administrative Assistant supporting not only students, but our entire RSMS community.",
@@ -81,7 +81,7 @@ export const staffList = [
     name: "Robin Zierhut",
     position: "Curriculum Coordinator",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2022/04/Robin-Zierhut.jpg",
+      "/wp-content/uploads/2022/04/Robin-Zierhut.jpg",
     details: [
       "Ms. Robin has Montessori teaching certifications in Early Childhood (3-6) and Elementary (6-12) and a Bachelor’s Degree in Early Education Administration.  Robin also has a Master’s Degree in Applied Behavior Analysis and is a Board Certified Behavior Analyst. She has been teaching children and designing curriculum for over twenty years.  At a private Montessori School in Folsom, where she was a teacher and the director, Ms. Robin not only taught all grades from PreK-5, she also conducted professional development training with the teaching staff, sharing her knowledge of Montessori best practices to ensure a school-wide authentic model.",
       "She has vast experience serving children with diverse needs and helping families gain access to therapy services that enable their children to be contributing members of their community.",
@@ -92,13 +92,13 @@ export const staffList = [
     name: "Amanda Pena",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Amanda-Pena.png",
+      "/wp-content/uploads/2025/02/Amanda-Pena.png",
   },
   {
     name: "Mary Stout",
     position: "Lead Teacher K-1 Immersion",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Mary-Stout.png",
+      "/wp-content/uploads/2025/02/Mary-Stout.png",
     details: [
       "Mrs. Mary is beginning her second year with us here at Rising Sun Montessori. Mrs. Mary graduated from California State University Sacramento with a Bachelor’s degree in Psychology.  She has a California Multi Subject Teaching Credential from Chapman University, with authorization to teach second language learners. She also has her certificate in Early Child Development. Mrs. Mary will finish her Montessori Teaching Certificate for lower elementary (6-9 year olds) this school year.  She has been teaching for over ten years.  The lower grade levels are still her favorite age group to inspire. Mrs. Mary has a genuine caring for her students that shows in her teaching environment every day.",
       "Mrs. Mary has been married for 21 years and has two children, Bud and Samantha.  Mrs. Mary was born in the Bay Area and now lives in Placerville with her family.",
@@ -109,7 +109,7 @@ export const staffList = [
     name: "Elissa Moore",
     position: "Lead Teacher 1st – 3rd",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Elissa-Moore-1.png",
+      "/wp-content/uploads/2025/02/Elissa-Moore-1.png",
     details: [
       "Ms. Elissa comes to Rising Sun with 8 years of Montessori teaching experience. She will be the lead teacher in the Andromeda classroom.",
       "received her K-8 multiple subject teaching credential from Fresno State. Ms. Elissa received her Early Elementary Montessori Credential from The Montessori Training Center.",
@@ -122,7 +122,7 @@ export const staffList = [
     name: "Nick Smith",
     position: "Front Office & Food Service Program Director",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Nick-Smith.png",
+      "/wp-content/uploads/2025/02/Nick-Smith.png",
     details: [
       "This will be Mr. Nick’s 2nd year at Rising Sun Montessori as our Office Administrator and Food Service Director. He was originally from San Jose, CA and moved to this area back in 1990. After high school he joined the Army and was stationed in Germany. He has worked as a retail manager for multiple companies in multiple states. He had moved to Florida to be with his now wife. They both moved back to the area in 2021. They got married last September and are now expecting their first child this November.",
       "Mr. Nick enjoys snowboarding, music, skateboarding, camping, and visiting new places.",
@@ -132,84 +132,84 @@ export const staffList = [
     name: "Heather Barnby",
     position: "Lead Teacher 4th-6th",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Heather-Barmby.png",
+      "/wp-content/uploads/2025/02/Heather-Barmby.png",
   },
   {
     name: "Melissa Peebler",
     position: "Human Resources",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Melissa-Peebler.png",
+      "/wp-content/uploads/2025/02/Melissa-Peebler.png",
   },
   {
     name: "Hoda Khaniki",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Hoda-Khaniki.png",
+      "/wp-content/uploads/2025/02/Hoda-Khaniki.png",
   },
   {
     name: "Ash Mortensen",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Ashlynn-Mortensen.png",
+      "/wp-content/uploads/2025/02/Ashlynn-Mortensen.png",
   },
   {
     name: "Kelsey Zeigler",
     position: "Lead Teacher 4th-6th",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Kelsey-Zeigler.png",
+      "/wp-content/uploads/2025/02/Kelsey-Zeigler.png",
   },
   {
     name: "Sarah Shumate",
     position: "Lead Teacher TK/K",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Sarah-Shumate.png",
+      "/wp-content/uploads/2025/02/Sarah-Shumate.png",
   },
   {
     name: "Sarah Shelton",
     position: "Substitute Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Sarah-Shelton.png",
+      "/wp-content/uploads/2025/02/Sarah-Shelton.png",
   },
   {
     name: "Kimberly Heise",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Kimberly-Heise.png",
+      "/wp-content/uploads/2025/02/Kimberly-Heise.png",
   },
   {
     name: "Ashlynn Dotson",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Ashlynn-Dotson.png",
+      "/wp-content/uploads/2025/02/Ashlynn-Dotson.png",
   },
   {
     name: "Pappa Rajam Swaminathan",
     position: "Assistant Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Pappa-Rajam-Swaminathan.png",
+      "/wp-content/uploads/2025/02/Pappa-Rajam-Swaminathan.png",
   },
   {
     name: "Stephanie Cooksun",
     position: "Substitute Teacher",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Stephanie-Cooksun.png",
+      "/wp-content/uploads/2025/02/Stephanie-Cooksun.png",
   },
   {
     name: "Justine Jorgensen",
     position: "Program Specialist",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Justine-Jorgensen.png",
+      "/wp-content/uploads/2025/02/Justine-Jorgensen.png",
   },
   {
     name: "Teresa Quintana",
     position: "Speech Therapist",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Teresa-Quintana.png",
+      "/wp-content/uploads/2025/02/Teresa-Quintana.png",
   },
   {
     name: "Rachel Newman",
     position: "Support Staff",
     photo:
-      "https://risingsunmontessori.org/wp-content/uploads/2025/02/Rachel-Newman.png",
+      "/wp-content/uploads/2025/02/Rachel-Newman.png",
   },
 ];

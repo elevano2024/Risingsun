@@ -4,7 +4,7 @@ import ListItem from "@/components/common/list-item/list-item";
 const links = [
   {
     title: "Family Handbook 2024 – 2025",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/11/2024-25-Family-Handbook-approved-11.5.24.pdf",
+    link: "/wp-content/uploads/2024/11/2024-25-Family-Handbook-approved-11.5.24.pdf",
   },
 ];
 
