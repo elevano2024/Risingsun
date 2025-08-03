@@ -63,7 +63,7 @@ const menuData = [
       { name: "Community Activities", link: "/program/community-activities" },
     ],
   },
-  { name: "Enrollment & School Tours", link: "/gallery" },
+  { name: "Enrollment & School Tours", link: "/enrollment-school-tours" },
   { name: "Gallery", link: "/gallery" },
   {
     name: "School Info",

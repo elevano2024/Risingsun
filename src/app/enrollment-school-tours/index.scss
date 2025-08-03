@@ -1,0 +1,145 @@
+.rsms {
+  background: linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%);
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .rsms-header {
+    padding: 80px 0;
+    background-color: #faffe3;
+    h3 {
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 47px;
+      letter-spacing: 0%;
+      color: #0a160c;
+
+      b {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 47px;
+        letter-spacing: 0%;
+      }
+    }
+    h5 {
+      font-weight: 400;
+      font-style: Italic;
+      font-size: 24px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      padding-top: 40px;
+      color: #0a160c;
+      padding-bottom: 80px;
+    }
+  }
+
+  .cardYellow {
+    background: #fdf2c8;
+    padding: 40px;
+    border-radius: 16px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h4 {
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 1%;
+      color: #0a160c;
+      b {
+        font-weight: 700;
+        line-height: 48px;
+      }
+    }
+    span {
+      display: flex;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 1%;
+      color: #f3b828;
+      cursor: pointer;
+    }
+  }
+  .detailsContact {
+    padding-top: 80px;
+    p {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0%;
+      color: #687a6b;
+      padding-bottom: 24px;
+    }
+    .contact-phone {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .contact-numbers {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+          width: 32px;
+          height: 32px;
+        }
+
+        .contact-number {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 30px;
+          letter-spacing: 0%;
+          color: #71b15e;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      hr {
+        width: 2px;
+        border: 0;
+        background: #687a6b;
+        height: 28px;
+      }
+    }
+  }
+
+  &.programdetail {
+    h1 {
+      margin-bottom: 40px;
+      font-weight: 500;
+      font-size: 44px;
+      line-height: 56px;
+      letter-spacing: 1%;
+      color: #0a160c;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 26px;
+      letter-spacing: 0%;
+      color: #687a6b;
+
+      b {
+        color: #0a160c;
+        line-height: 42px;
+      }
+    }
+  }
+
+  .grid3x {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+  }
+}
