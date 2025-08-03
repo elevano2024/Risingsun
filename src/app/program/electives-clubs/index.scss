@@ -1,4 +1,4 @@
-.programs {
+.elective {
   background: linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%);
 
   & > div {
@@ -23,15 +23,39 @@
       line-height: 26px;
       letter-spacing: 0%;
       color: #687a6b;
+
+      b {
+        color: #0a160c;
+        line-height: 42px;
+      }
     }
+  }
+
+  .grid3x {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+  }
+
+  .grid2x {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 40px;
   }
 
   .home-section-2 {
     background: url("/images/homebg2.svg");
+    background-repeat: no-repeat;
     z-index: 4;
     margin-top: 120px;
     padding-top: 227px;
-    padding-bottom: 100px;
+
+    .bgtest {
+      background: #17421e;
+      padding-bottom: 100px;
+    }
 
     h1 {
       color: #f8f8f8;
@@ -62,6 +86,7 @@
       b {
         font-weight: 500;
         line-height: 46px;
+        color: #f8f8f8;
       }
     }
   }
