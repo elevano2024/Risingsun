@@ -28,7 +28,7 @@ const EducationProtectionAccount = () => {
           <ListItem
             variant="nobborder"
             title="2024 – 2025 EPA Resolution & Summary"
-            link="https://risingsunmontessori.org/wp-content/uploads/2024/09/RSMS-2024-25-EPA-Resolution-and-Summary-Updated.pdf"
+            link="/wp-content/uploads/2024/09/RSMS-2024-25-EPA-Resolution-and-Summary-Updated.pdf"
           />
         </div>
       </div>

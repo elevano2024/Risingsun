@@ -10,7 +10,7 @@ const Component = () => {
       <div className="container" style={{ paddingTop: "80px" }}>
         <ListItem
           title="Extended Learning Opportunities Program Plan Guide"
-          link="https://risingsunmontessori.org/wp-content/uploads/2024/04/RSMS-ELOP-Plan-Guide-1.pdf"
+          link="/wp-content/uploads/2024/04/RSMS-ELOP-Plan-Guide-1.pdf"
           variant="nobborder"
         />
       </div>

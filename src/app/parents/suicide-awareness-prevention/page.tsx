@@ -7,7 +7,7 @@ const Component = () => {
       <div className="container" style={{ paddingTop: "80px" }}>
         <ListItem
           title="Toolkits and Resources"
-          link="https://risingsunmontessori.org/wp-content/uploads/2024/09/Suicide-Awareness.pdf"
+          link="/wp-content/uploads/2024/09/Suicide-Awareness.pdf"
           variant="nobborder"
         />
       </div>

@@ -8,7 +8,7 @@ const EducationProtectionAccount = () => {
         <ListItem
           variant="nobborder"
           title="2025-26 Board of Directors Meeting Schedule"
-          link="https://risingsunmontessori.org/wp-content/uploads/2025/06/RISING-SUN-MONTESSORI-SCHOOL-BOARD-OF-DIRECTORS-CALENDAR-2025-26.pdf"
+          link="/wp-content/uploads/2025/06/RISING-SUN-MONTESSORI-SCHOOL-BOARD-OF-DIRECTORS-CALENDAR-2025-26.pdf"
         />
       </div>
     </Layout>

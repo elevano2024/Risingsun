@@ -3,11 +3,11 @@ import "./index.scss";
 import ContactPage from "@/components/common/contact/ContactPage";
 
 const gallery = [
-  "https://risingsunmontessori.org/wp-content/uploads/2022/05/DSC_7067-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/05/DSC_7015-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/04/DSC_4543-2-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/04/RSMSDSC_4447-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/04/RSMSDSC_4431-scaled.jpg",
+  "/wp-content/uploads/2022/05/DSC_7067-scaled.jpg",
+  "/wp-content/uploads/2022/05/DSC_7015-scaled.jpg",
+  "/wp-content/uploads/2022/04/DSC_4543-2-scaled.jpg",
+  "/wp-content/uploads/2022/04/RSMSDSC_4447-scaled.jpg",
+  "/wp-content/uploads/2022/04/RSMSDSC_4431-scaled.jpg",
 ];
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
       <div className="home-section-1">
         <div className="home-section-1-content-1 container">
           <div className="linksection">
-            <img src="https://risingsunmontessori.org/wp-content/uploads/2022/05/wasc-logo-1-1.png" />{" "}
+            <img src="/wp-content/uploads/2022/05/wasc-logo-1-1.png" />{" "}
             <div className="linksection-text">
               <h2>Fully Accredited by the</h2>
               <p>
