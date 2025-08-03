@@ -2,7 +2,7 @@ import Layout from "@/components/common/MainLayout";
 import "./index.scss";
 import ImageText from "@/components/common/image-text-combo/image-text-combo";
 import DetailCard from "@/components/common/detailCard/detailCard";
-import { title } from "process";
+
 const data = [
   {
     title: "Language Arts",
