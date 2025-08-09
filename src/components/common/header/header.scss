@@ -5,7 +5,7 @@
 
   &__subWrapper {
     position: absolute;
-    bottom: 16px;
+    bottom: 1rem;
     width: 80%;
     left: 0;
     right: 0;
@@ -19,11 +19,11 @@
   }
 
   &__headMenu {
-    border-bottom: 1px solid #466d4d;
+    border-bottom: 0.0625rem solid #466d4d;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 88px;
+    height: 5.5rem;
     z-index: 4;
 
     &__links {
@@ -34,16 +34,16 @@
       a {
         color: #fff;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: medium;
         display: flex;
         align-items: center;
-        height: 86px;
-        padding: 0 10px;
+        height: 5.375rem;
+        padding: 0 0.625rem;
         z-index: 4;
 
         img {
-          margin-left: 4px;
+          margin-left: 0.25rem;
         }
 
         &:hover {
@@ -61,74 +61,74 @@
       }
 
       &__link__contact {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 1rem;
+        line-height: 1.625rem;
         font-weight: bold;
         color: #222 !important;
-        padding: 8px 24px;
-        border-radius: 16px;
-        border: 1px solid #f3b828;
+        padding: 0.5rem 1.5rem;
+        border-radius: 1rem;
+        border: 0.0625rem solid #f3b828;
         background: #fffbf3;
-        height: 44px !important;
-        margin-left: 36px;
+        height: 2.75rem !important;
+        margin-left: 2.25rem;
       }
     }
   }
 
   &__content {
-    padding-top: 76px;
-    padding-bottom: 76px;
+    padding-top: 4.75rem;
+    padding-bottom: 4.75rem;
 
     &__title {
-      font-size: 33px;
-      line-height: 43px;
+      font-size: 2.0625rem;
+      line-height: 2.6875rem;
       letter-spacing: 1%;
       color: #fff;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
 
     &__subtitle {
-      font-size: 20px;
-      line-height: 26px;
+      font-sdize: 1.25rem;
+      line-height: 1.625rem;
       letter-spacing: 0%;
       color: #b7d8bc;
     }
 
     &__carousel {
       display: flex;
-      gap: 50px;
+      gap: 3.125rem;
       align-items: flex-start;
       justify-content: center;
-      padding-bottom: 120px;
+      padding-bottom: 7.5rem;
       z-index: -1;
 
       &__content {
         .title {
           display: flex;
-          gap: 8px;
+          gap: 0.5rem;
           color: #fff;
-          font-size: 24px;
+          font-size: 1.5rem;
           font-weight: 500;
-          padding-bottom: 12px;
-          border-bottom: 2px solid #bbcdbe;
+          padding-bottom: 0.75rem;
+          border-bottom: 0.125rem solid #bbcdbe;
           display: inline-flex;
-          margin-bottom: 32px;
+          margin-bottom: 2rem;
         }
 
         .subtitle {
-          font-size: 28px;
+          font-size: 1.75rem;
           color: #fff;
-          margin-bottom: 32px;
+          margin-bottom: 2rem;
         }
 
         button {
           background: #f3b828;
           color: #222;
           border: none;
-          border-radius: 16px;
-          padding: 12px 24px;
-          font-size: 16px;
+          border-radius: 1rem;
+          padding: 0.75rem 1.5rem;
+          font-size: 1rem;
           font-weight: bold;
           cursor: pointer;
           transition: background 0.3s ease;
@@ -151,20 +151,20 @@
   display: none;
   position: absolute;
   background-color: #1E5628;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px 0 !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.625rem 0 !important;
   width: auto;
-  min-width: 200px;
-  top: 88px;
+  min-width: 12.5rem;
+  top: 5.5rem;
   display: flex;
-  border-radius: 0 0 16px 16px;
+  border-radius: 0 0 1rem 1rem;
   flex-direction: column;
 
   a {
-    font-size: 14px;
+    font-size: 0.875rem;
     padding: 0 !important;
     height: unset;
-    padding: 10px 20px !important;
+    padding: 0.625rem 1.25rem !important;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -191,21 +191,41 @@
   padding: 0 !important;
   left: 100%;
   top: 0;
-  border-radius: 0 0 16px 16px;
-  padding-bottom: 8px !important;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 0.5rem !important;
 
   .sub-menu {
     width: 100%;
   }
 
   &__item {
-    padding: 10px 20px !important;
+    padding: 0.625rem 1.25rem !important;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-decoration: none;
 
     &:hover {
       background: #17431e;
+    }
+  }
+}
+
+@media (max-width: 62rem) {
+  .header_main {
+    padding-bottom: 3.125rem;
+
+    &__headMenu {
+      &__links {
+        display: none;
+      }
+    }
+
+    &__content {
+
+      &__carousel {
+        align-items: center;
+        flex-direction: column;
+      }
     }
   }
 }

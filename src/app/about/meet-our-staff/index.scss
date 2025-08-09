@@ -1,44 +1,49 @@
 .meet-our-staff {
   background: #e8ffeb;
-  background: linear-gradient(
-    180deg,
-    rgba(232, 255, 235, 1) 17%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  padding-top: 86px;
-  padding-bottom: 46px;
+  background: linear-gradient(180deg,
+      rgba(232, 255, 235, 1) 17%,
+      rgba(255, 255, 255, 1) 100%);
+  padding-top: 5.375rem;
+  padding-bottom: 2.875rem;
+
   .staff-list-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
-    row-gap: 50px;
+    column-gap: 5rem;
+    row-gap: 3.125rem;
+
     .staff-container {
       min-width: 100%;
       max-width: 100%;
+
       &:focus {
         outline: none;
       }
+
       .staff_photo {
         width: 100%;
         aspect-ratio: 1 / 1;
         overflow: hidden;
-        border-radius: 16px;
-        margin-bottom: 24px;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
       }
+
       img {
         width: 100%;
         object-fit: cover;
       }
+
       .staff_name {
-        margin-bottom: 4px;
-        font-size: 22px;
+        margin-bottom: 0.25rem;
+        font-size: 1.375rem;
         font-weight: bold;
         color: #0a160c;
         text-align: center;
       }
+
       .staff_position {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 1rem;
+        line-height: 1.625rem;
         color: #687a6b;
         text-align: center;
       }

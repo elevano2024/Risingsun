@@ -4,23 +4,23 @@
     &>div {
         display: flex;
         flex-direction: column;
-        gap: 80px;
+        gap: 5rem;
     }
 
     &.programdetail {
         h1 {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
             font-weight: 500;
-            font-size: 44px;
-            line-height: 56px;
+            font-size: 2.75rem;
+            line-height: 3.5rem;
             letter-spacing: 1%;
             color: #0A160C;
         }
 
         p {
             font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.25rem;
+            line-height: 1.625rem;
             letter-spacing: 0%;
             color: #687A6B;
 
@@ -30,34 +30,34 @@
     .home-section-2 {
         background: url("/images/homebg2.svg");
         z-index: 4;
-        margin-top: 120px;
-        padding-top: 227px;
-        padding-bottom: 100px;
+        margin-top: 7.5rem;
+        padding-top: 14.1875rem;
+        padding-bottom: 6.25rem;
 
         h1 {
             color: #f8f8f8;
-            font-size: 44px;
-            line-height: 56px;
+            font-size: 2.75rem;
+            line-height: 3.5rem;
             font-weight: 600;
-            margin-bottom: 32px;
+            margin-bottom: 2rem;
         }
 
         p {
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.25rem;
+            line-height: 1.625rem;
             color: #c7d9ca;
-            padding-bottom: 80px;
+            padding-bottom: 5rem;
             width: 100%;
-            max-width: 785px;
+            max-width: 49.0625rem;
         }
 
         p.item {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 1.5rem;
             line-height: 100%;
             letter-spacing: 1%;
             color: #F8F8F8;
-            margin-bottom: 52px;
+            margin-bottom: 3.25rem;
             padding-bottom: 0;
 
             b {

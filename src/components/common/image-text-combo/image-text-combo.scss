@@ -1,8 +1,8 @@
 .list-item.left,
 .list-item.right {
   display: flex;
-  gap: 16px;
-  font-size: 20px;
+  gap: 1rem;
+  font-size: 1.25rem;
   color: #0a160c;
   font-weight: 600;
   justify-content: space-between;
@@ -20,36 +20,36 @@
 
     .list-item__title {
       font-weight: 500;
-      font-size: 32px;
+      font-size: 2rem;
       line-height: 100%;
       letter-spacing: 1%;
       color: #0a160c;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
 
     .list-item__data {
       font-weight: 400;
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       letter-spacing: 0%;
       color: #687a6b;
-      margin-bottom: 32px;
+      margin-bottom: 2rem;
     }
 
     .list-item__tag {
       display: flex;
       align-items: flex-start;
-      gap: 16px;
+      gap: 1rem;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 100%;
       letter-spacing: 1%;
       color: #0a160c;
 
       &.tags {
-        padding-bottom: 24px;
-        margin-bottom: 24px;
-        border-bottom: 1px solid #d9d9d9;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 0.0625rem solid #d9d9d9;
       }
     }
   }
@@ -61,7 +61,7 @@
 
 .list-item.main {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   flex-direction: column;
   // justify-content: space-between;
   align-items: center;
@@ -80,30 +80,30 @@
 
     .list-item__title {
       font-weight: 500;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 100%;
       letter-spacing: 1%;
       color: #0a160c;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
       text-align: center;
     }
 
     .list-item__data {
       font-weight: 400;
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       letter-spacing: 0%;
       color: #687a6b;
-      margin-bottom: 32px;
+      margin-bottom: 2rem;
       text-align: center;
     }
 
     .list-item__tag {
       display: flex;
       align-items: flex-start;
-      gap: 16px;
+      gap: 1rem;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 100%;
       letter-spacing: 1%;
       color: #0a160c;

@@ -1,27 +1,30 @@
 .lowerElementry {
   background: linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%);
 
-  & > div {
+  &>div {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 5rem;
   }
+
   .grid3x {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 24px;
-    row-gap: 40px;
+    column-gap: 1.5rem;
+    row-gap: 2.5rem;
+
     .list-item__title {
       font-weight: 500 !important;
-      font-size: 32px !important;
+      font-size: 2rem !important;
       line-height: 100% !important;
       letter-spacing: 1% !important;
       color: #f8f8f8 !important;
     }
+
     .list-item__data {
       font-weight: 400 !important;
-      font-size: 20px !important;
-      line-height: 26px !important;
+      font-size: 1.25rem !important;
+      line-height: 1.625rem !important;
       letter-spacing: 0% !important;
       color: #c7d9ca !important;
       padding-bottom: 0 !important;
@@ -31,18 +34,18 @@
 
   &.programdetail {
     h1 {
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
       font-weight: 500;
-      font-size: 44px;
-      line-height: 56px;
+      font-size: 2.75rem;
+      line-height: 3.5rem;
       letter-spacing: 1%;
       color: #0a160c;
     }
 
     p {
       font-weight: 400;
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       letter-spacing: 0%;
       color: #687a6b;
     }
@@ -52,43 +55,43 @@
     background: url("/images/homebg2.svg");
     background-repeat: no-repeat;
     z-index: 4;
-    margin-top: 120px;
-    padding-top: 227px;
+    margin-top: 7.5rem;
+    padding-top: 14.1875rem;
 
     .bgtest {
       background: #17421e;
-      padding-bottom: 100px;
+      padding-bottom: 6.25rem;
     }
 
     h1 {
       color: #f8f8f8;
-      font-size: 44px;
-      line-height: 56px;
+      font-size: 2.75rem;
+      line-height: 3.5rem;
       font-weight: 600;
-      margin-bottom: 32px;
+      margin-bottom: 2rem;
     }
 
     p {
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       color: #c7d9ca;
-      padding-bottom: 80px;
+      padding-bottom: 5rem;
       width: 100%;
-      max-width: 785px;
+      max-width: 49.0625rem;
     }
 
     p.item {
       font-weight: 400;
-      font-size: 24px;
+      font-size: 1.5rem;
       line-height: 100%;
       letter-spacing: 1%;
       color: #f8f8f8;
-      margin-bottom: 52px;
+      margin-bottom: 3.25rem;
       padding-bottom: 0;
 
       b {
         font-weight: 500;
-        line-height: 46px;
+        line-height: 2.875rem;
       }
     }
   }

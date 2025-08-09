@@ -1,62 +1,69 @@
 .schoolMetricPerformance {
   background: #e8ffeb;
-  background: linear-gradient(
-    180deg,
-    rgba(232, 255, 235, 1) 17%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  padding-top: 86px;
-  padding-bottom: 46px;
+  background: linear-gradient(180deg,
+      rgba(232, 255, 235, 1) 17%,
+      rgba(255, 255, 255, 1) 100%);
+  padding-top: 5.375rem;
+  padding-bottom: 2.875rem;
+
   .metricsListContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 80px;
-    row-gap: 50px;
+    column-gap: 5rem;
+    row-gap: 3.125rem;
+
     .metric-container {
       min-width: 100%;
       max-width: 100%;
+
       .metric-link {
         text-decoration: none;
         color: inherit;
         display: block;
         transition: transform 0.3s ease;
+
         &:hover {
-          transform: translateY(-5px);
+          transform: translateY(-0.3125rem);
         }
+
         &:focus {
           outline: none;
         }
       }
+
       .metric_logo {
         width: 100%;
         aspect-ratio: 1 / 1;
         overflow: hidden;
-        border-radius: 16px;
-        margin-bottom: 24px;
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 16px;
+        gap: 1rem;
         background: white;
         border: 1px solid #d7e9da;
+
         .metric_image {
           width: 100%;
-          max-width: calc(100% - 40px);
+          max-width: calc(100% - 2.5rem);
           max-height: 100%;
           object-fit: contain;
         }
+
         .metric_title {
           color: #f4ad26;
           font-weight: bold;
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 1.125rem;
+          line-height: 1.5rem;
           cursor: pointer;
         }
       }
+
       .metric_title {
-        margin-bottom: 4px;
-        font-size: 18px;
+        margin-bottom: 0.25rem;
+        font-size: 1.125rem;
         font-weight: bold;
         color: #0a160c;
         text-align: center;
@@ -69,14 +76,14 @@
     .metricsListContainer {
       grid-template-columns: 1fr;
       column-gap: 0;
-      row-gap: 30px;
+      row-gap: 1.875rem;
     }
   }
 
   @media (max-width: 1024px) and (min-width: 769px) {
     .metricsListContainer {
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 40px;
+      column-gap: 2.5rem;
     }
   }
 }

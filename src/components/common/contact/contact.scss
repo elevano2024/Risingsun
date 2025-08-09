@@ -1,29 +1,29 @@
 .contact-page {
     background: url('/images/contactBG.png') no-repeat center center;
-    height: 700px;
+    height: 43.75rem;
 
     .contact-container {
         h1 {
             width: 100%;
-            max-width: 750px;
+            max-width: 46.875rem;
             font-weight: 500;
-            font-size: 44px;
-            line-height: 56px;
+            font-size: 2.75rem;
+            line-height: 3.5rem;
             letter-spacing: 1%;
             color: #0A160C;
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
         }
 
         .contact-contact {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 1.5rem;
 
             .giveCall {
                 font-weight: 500;
-                font-size: 24px;
-                line-height: 30px;
+                font-size: 1.5rem;
+                line-height: 1.875rem;
                 letter-spacing: 0%;
                 color: #687A6B;
             }
@@ -31,22 +31,22 @@
             .contact-phone {
                 display: flex;
                 align-items: center;
-                gap: 40px;
+                gap: 2.5rem;
 
                 .contact-numbers {
                     display: flex;
                     align-items: center;
-                    gap: 8px;
+                    gap: 0.5rem;
 
                     img {
-                        width: 32px;
-                        height: 32px;
+                        width: 2rem;
+                        height: 2rem;
                     }
 
                     .contact-number {
                         font-weight: 700;
-                        font-size: 28px;
-                        line-height: 30px;
+                        font-size: 1.75rem;
+                        line-height: 1.875rem;
                         letter-spacing: 0%;
                         color: #71B15E;
 
@@ -57,52 +57,52 @@
                 }
 
                 hr {
-                    width: 2px;
+                    width: 0.125rem;
                     border: 0;
                     background: #687A6B;
-                    height: 28px;
+                    height: 1.75rem;
                 }
             }
         }
 
         .contact-data {
             font-weight: 500;
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 1.5rem;
+            line-height: 1.875rem;
             letter-spacing: 0%;
             color: #687A6B;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         .contact-address {
             font-weight: 500;
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 1.5rem;
+            line-height: 1.875rem;
             letter-spacing: 0%;
             color: #0A160C;
-            margin-bottom: 24px;
+            margin-bottom: 1.5rem;
         }
 
         .contact-buttons {
-            margin-bottom: 180px;
+            margin-bottom: 11.25rem;
             display: flex;
             align-items: center;
-            gap: 24px;
+            gap: 1.5rem;
 
             .direction-button {
                 display: flex;
                 align-items: center;
-                gap: 2px;
-                border: 1px solid #F3B828;
-                padding: 0 15px;
-                height: 54px;
-                border-radius: 16px;
+                gap: 0.125rem;
+                border: 0.0625rem solid #F3B828;
+                padding: 0 0.9375rem;
+                height: 3.375rem;
+                border-radius: 1rem;
                 background: #FFFBF3;
                 color: #222222;
                 font-weight: 700;
                 font-style: Bold;
-                font-size: 16px;
-                line-height: 26px;
+                font-size: 1rem;
+                line-height: 1.625rem;
                 letter-spacing: 1%;
 
                 &:focus {
@@ -113,16 +113,16 @@
             .fill-form-button {
                 display: flex;
                 align-items: center;
-                border: 1px solid #F3B828;
-                padding: 0 50px;
-                height: 54px;
-                border-radius: 16px;
+                border: 0.0625rem solid #F3B828;
+                padding: 0 3.125rem;
+                height: 3.375rem;
+                border-radius: 1rem;
                 background: #F3B828;
                 color: #222222;
                 font-weight: 700;
                 font-style: Bold;
-                font-size: 16px;
-                line-height: 26px;
+                font-size: 1rem;
+                line-height: 1.625rem;
                 letter-spacing: 1%;
 
                 &:focus {

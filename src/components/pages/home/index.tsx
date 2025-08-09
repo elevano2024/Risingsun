@@ -64,41 +64,44 @@ const Home = () => {
         </div>
       </div>
       <div className="home-section-2">
-        <div className="container">
-          <h1> Enrollment & School Tours </h1>
-          <p>
-            Blending timeless principles with modern skills to prepare students
-            for life, not just school. At Rising Sun Montessori, we go beyond
-            traditional academics to nurture curious, independent
-          </p>
-          <div className="clouds">
-            <div className="cloudItem">
-              <span className="cloudItem1">
-                Now Accepting Applications for the
-              </span>
-              <span className="cloudItem2">2025-26 school year!</span>
-              <span className="cloudItem3">
-                Apply Now
-                <img src="/images/yellowchevrom.svg" alt="Chevron" />
-              </span>
-            </div>
-            <div className="cloudItem">
-              <span className="cloudItem1">Montessori Experience Form</span>
-              <span className="cloudItem2">Verification</span>
-              <span className="cloudItem3">
-                View Form
-                <img src="/images/yellowchevrom.svg" alt="Chevron" />
-              </span>
-            </div>
-            <div className="cloudItem">
-              <span className="cloudItem1">
-                School Tours by appointment only on
-              </span>
-              <span className="cloudItem2">Wednesday Morning</span>
-              <span className="cloudItem3">
-                Book Appointment
-                <img src="/images/yellowchevrom.svg" alt="Chevron" />
-              </span>
+        <div className="bgtest">
+
+          <div className="container">
+            <h1> Enrollment & School Tours </h1>
+            <p>
+              Blending timeless principles with modern skills to prepare students
+              for life, not just school. At Rising Sun Montessori, we go beyond
+              traditional academics to nurture curious, independent
+            </p>
+            <div className="clouds">
+              <div className="cloudItem">
+                <span className="cloudItem1">
+                  Now Accepting Applications for the
+                </span>
+                <span className="cloudItem2">2025-26 school year!</span>
+                <span className="cloudItem3">
+                  Apply Now
+                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                </span>
+              </div>
+              <div className="cloudItem">
+                <span className="cloudItem1">Montessori Experience Form</span>
+                <span className="cloudItem2">Verification</span>
+                <span className="cloudItem3">
+                  View Form
+                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                </span>
+              </div>
+              <div className="cloudItem">
+                <span className="cloudItem1">
+                  School Tours by appointment only on
+                </span>
+                <span className="cloudItem2">Wednesday Morning</span>
+                <span className="cloudItem3">
+                  Book Appointment
+                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                </span>
+              </div>
             </div>
           </div>
         </div>
