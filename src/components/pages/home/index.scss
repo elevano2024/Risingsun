@@ -92,6 +92,20 @@
           line-height: 1.625rem;
           color: #687a6b;
         }
+
+        @media (max-width: 62rem) {
+          flex-direction: column;
+          align-items: center;
+
+          >div {
+            width: 100%;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+
       }
     }
   }
@@ -266,6 +280,12 @@
     line-height: 1.5rem;
     letter-spacing: 1%;
     color: #222222;
+
+  }
+
+  @media (max-width: 62rem) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
 
   }
 

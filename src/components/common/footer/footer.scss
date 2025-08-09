@@ -32,3 +32,24 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer_container {
+    height: 60vw;
+    background-position: center;
+  }
+
+  .footer_container__content {
+    &__data {
+      bottom: 10vw;
+
+      &__text {
+        font-size: 1.375rem;
+      }
+
+      &__subText {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

@@ -33,6 +33,11 @@
                 align-items: center;
                 gap: 2.5rem;
 
+                @media (max-width: 42rem) {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
                 .contact-numbers {
                     display: flex;
                     align-items: center;
@@ -127,6 +132,22 @@
 
                 &:focus {
                     outline: none;
+                }
+            }
+        }
+
+        @media (max-width: 62rem) {
+            .contact-container {
+                padding: 1.5rem;
+
+                .contact-contact {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .contact-phone {
+                    flex-direction: column !important;
+                    align-items: center;
                 }
             }
         }
