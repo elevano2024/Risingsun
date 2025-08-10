@@ -25,6 +25,10 @@
       grid-template-columns: repeat(2, 1fr);
       column-gap: 5rem;
       row-gap: 0;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 }

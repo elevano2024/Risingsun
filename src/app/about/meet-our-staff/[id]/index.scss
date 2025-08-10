@@ -51,4 +51,20 @@
     font-weight: book;
     margin-bottom: 2rem;
   }
+
+  @media (max-width: 37.5rem) {
+    .staff-details-head {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .staff-name {
+        font-size: 1.75rem;
+      }
+
+      .staff-position {
+        font-size: 1rem;
+      }
+    }
+
+  }
 }

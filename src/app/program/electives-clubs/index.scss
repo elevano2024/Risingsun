@@ -36,6 +36,14 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
     row-gap: 2.5rem;
+
+    @media (max-width: 908px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 710px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .grid2x {
@@ -43,6 +51,10 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
     row-gap: 2.5rem;
+
+    @media (max-width: 710px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .home-section-2 {

@@ -12,6 +12,19 @@
     column-gap: 5rem;
     row-gap: 3.125rem;
 
+    // rem
+    @media (max-width: 75rem) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 62rem) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 37.5rem) {
+      grid-template-columns: 1fr;
+    }
+
     .staff-container {
       min-width: 100%;
       max-width: 100%;

@@ -6,6 +6,18 @@
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 
+  @media (max-width: 75rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 50rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 37.5rem) {
+    grid-template-columns: 1fr;
+  }
+
   .gallery-image-container {
     min-width: 100%;
     max-width: 100%;

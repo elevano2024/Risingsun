@@ -137,19 +137,34 @@
         }
 
         @media (max-width: 62rem) {
-            .contact-container {
-                padding: 1.5rem;
 
-                .contact-contact {
-                    flex-direction: column;
-                    align-items: center;
-                }
+            .contact-contact {
+                flex-direction: column;
+                align-items: flex-start;
 
                 .contact-phone {
                     flex-direction: column !important;
-                    align-items: center;
+                    align-items: flex-start;
+
+                    .contact-numbers {
+
+                        .contact-number {
+                            font-size: 1.5rem;
+                            line-height: 1.875rem;
+                        }
+                    }
+
+                    hr {
+                        display: none;
+                    }
                 }
             }
+
         }
+    }
+
+    @media (max-width: 62rem) {
+        height: 60rem;
+        background-size: cover;
     }
 }

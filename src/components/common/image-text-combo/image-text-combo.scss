@@ -110,3 +110,31 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+
+  .list-item.left,
+  .list-item.right {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 786px) {
+
+  .list-item.left,
+  .list-item.right {
+    flex-direction: column;
+    align-items: center;
+
+    .list-item__image {
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    .list-item__content {
+      min-width: 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

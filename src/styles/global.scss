@@ -67,6 +67,10 @@
   font-family: "Gotham Rounded", sans-serif;
 }
 
+html {
+  font-size: calc(12px + 0.5vw);
+}
+
 .container {
   width: 100%;
   padding-right: 0.9375rem;

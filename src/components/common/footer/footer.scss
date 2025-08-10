@@ -35,13 +35,13 @@
 
 @media (max-width: 768px) {
   .footer_container {
-    height: 60vw;
-    background-position: center;
+    height: 80vw;
   }
 
   .footer_container__content {
     &__data {
-      bottom: 10vw;
+      bottom: 20vw;
+      left: 1.3rem;
 
       &__text {
         font-size: 1.375rem;
