@@ -47,7 +47,6 @@ const menuData = [
     link: "/program",
     subMenu: [
       { name: "Programs", link: "/program" },
-      { name: "Why Montessori?", link: "/program/why-montessori" },
       {
         name: "Transitional Kindergarten / Kindergarten",
         link: "/program/tk-kindergarten",
