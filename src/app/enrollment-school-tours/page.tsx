@@ -26,10 +26,14 @@ const Component = () => {
                   <br />
                   <b>2025-26 school year!</b>
                 </h4>
-                <span>
+                <a
+                  href="https://www.transparentclassroom.com/s/5246/online_applications/new?locale=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Apply Now{" "}
                   <img src="/images/yellowchevrom.svg" alt="Chevron" />
-                </span>
+                </a>
               </div>
               <div className="cardYellow">
                 <h4>
@@ -37,10 +41,14 @@ const Component = () => {
                   <br />
                   <b>Verification</b>
                 </h4>
-                <span>
+                <a
+                  href="/wp-content/uploads/2025/02/verification-of-montessori-exp.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Form
                   <img src="/images/yellowchevrom.svg" alt="Chevron" />
-                </span>
+                </a>
               </div>
               <div className="cardYellow">
                 <h4>
@@ -48,10 +56,14 @@ const Component = () => {
                   <br />
                   <b>Wednesday Morning</b>
                 </h4>
-                <span>
+                <a
+                  href="mailto:jshort@risingsunmontessori.org?subject=School%20Tour%20Request"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Book Appointment
                   <img src="/images/yellowchevrom.svg" alt="Chevron" />
-                </span>
+                </a>
               </div>
             </div>
             <div className="detailsContact">

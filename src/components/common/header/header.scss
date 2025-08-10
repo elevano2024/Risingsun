@@ -48,6 +48,7 @@
 
         &:hover {
           background: #1e5628;
+          color: #fffbf3 !important;
         }
 
         &.active {
@@ -125,7 +126,7 @@
         display: block;
 
         &:nth-child(1).active {
-          transform: rotate(-45deg) translate(-0.25rem, 0.25rem);
+          transform: rotate(-45deg) translate(-0.4rem, 0.4rem);
         }
 
         &:nth-child(2).active {

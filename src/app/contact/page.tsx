@@ -1,7 +1,6 @@
+import ContactPage from "@/components/common/contact/ContactPage";
 import Layout from "@/components/common/MainLayout";
 import "./index.scss";
-import ListItem from "@/components/common/list-item/list-item";
-import ContactPage from "@/components/common/contact/ContactPage";
 
 const EducationProtectionAccount = () => {
   return (

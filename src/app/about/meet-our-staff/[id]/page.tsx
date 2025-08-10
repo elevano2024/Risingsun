@@ -1,11 +1,16 @@
 import Layout from "@/components/common/MainLayout";
-import "./index.scss";
 import { staffList } from "../staffData";
+import "./index.scss";
 
-const StaffDetails = ({ params }: { params: { id: string } }) => {
+const StaffDetails = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) => {
+  const { id } = await params;
   const staff = staffList.find(
     (staff) =>
-      staff.name.toLowerCase().replace(/\s+/g, "-") === params.id.toLowerCase()
+      staff.name.toLowerCase().replace(/\s+/g, "-") === id.toLowerCase()
   );
 
   const staff_name = staff?.name;

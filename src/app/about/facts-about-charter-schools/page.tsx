@@ -5,7 +5,10 @@ const FactsAboutSchool = () => {
   return (
     <Layout header="Facts About Charter Schools">
       <div className="container EPA">
-        <img src="/wp-content/uploads/2022/04/What_Is_A_Public_Charter_School_Page_1.jpg" />
+        <img
+          src="/wp-content/uploads/2022/04/What_Is_A_Public_Charter_School_Page_1.jpg"
+          alt="What is a Public Charter School infographic"
+        />
       </div>
     </Layout>
   );

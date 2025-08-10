@@ -99,28 +99,43 @@ const Home = () => {
                   Now Accepting Applications for the
                 </span>
                 <span className="cloudItem2">2025-26 school year!</span>
-                <span className="cloudItem3">
+                <a
+                  href="https://www.transparentclassroom.com/s/5246/online_applications/new?locale=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cloudItem3"
+                >
                   Apply Now
                   <img src="/images/yellowchevrom.svg" alt="Chevron" />
-                </span>
+                </a>
               </div>
               <div className="cloudItem">
                 <span className="cloudItem1">Montessori Experience Form</span>
                 <span className="cloudItem2">Verification</span>
-                <span className="cloudItem3">
+                <a
+                  className="cloudItem3"
+                  href="/wp-content/uploads/2025/02/verification-of-montessori-exp.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Form
                   <img src="/images/yellowchevrom.svg" alt="Chevron" />
-                </span>
+                </a>
               </div>
               <div className="cloudItem">
                 <span className="cloudItem1">
                   School Tours by appointment only on
                 </span>
                 <span className="cloudItem2">Wednesday Morning</span>
-                <span className="cloudItem3">
+                <a
+                  href="mailto:jshort@risingsunmontessori.org?subject=School%20Tour%20Request"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cloudItem3"
+                >
                   Book Appointment
                   <img src="/images/yellowchevrom.svg" alt="Chevron" />
-                </span>
+                </a>
               </div>
             </div>
           </div>

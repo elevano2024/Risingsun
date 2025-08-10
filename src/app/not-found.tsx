@@ -13,7 +13,7 @@ export default function NotFound() {
           <h1>Oops! This page seems to have wandered off...</h1>
           <p>
             Just like our curious Montessori students, this page has gone
-            exploring! Let's help you find your way back to the learning
+            exploring! Let&apos;s help you find your way back to the learning
             adventure.
           </p>
         </div>

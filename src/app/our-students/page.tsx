@@ -1,6 +1,5 @@
 import Layout from "@/components/common/MainLayout";
 import "./index.scss";
-import ListItem from "@/components/common/list-item/list-item";
 
 const EducationProtectionAccount = () => {
   return (

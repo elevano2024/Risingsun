@@ -1,6 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+
+import { AnimatePresence, motion } from "framer-motion";
+import type React from "react";
+import { useEffect, useState } from "react";
 import "./Carousel.scss";
 
 const Carousel = ({
@@ -12,24 +14,13 @@ const Carousel = ({
 }) => {
   const [index, setIndex] = useState<number>(0);
 
-  const updateCarousel = () => {
-    const nextIndex = (index + 1) % carouselImages.length;
-    setIndex((prevIndex: number) => {
-      if (prevIndex === nextIndex) {
-        return (prevIndex + 1) % carouselImages.length;
-      }
-      return nextIndex;
-    });
-    setTimeout(() => {
-      updateCarousel();
-    }, 5000);
-  };
-
   useEffect(() => {
-    if (carouselImages.length > 0) {
-      updateCarousel();
-    }
-  }, []);
+    if (carouselImages.length === 0) return;
+    const intervalId = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [carouselImages.length]);
 
   useEffect(() => {
     setCurrentIndex(index);
@@ -43,7 +34,7 @@ const Carousel = ({
       <div className="carousel__image-wrapper">
         <AnimatePresence mode="wait">
           <motion.img
-            key={carouselImages[index]}
+            key={carouselImages[index]?.image ?? index}
             src={carouselImages[index].image}
             alt={`carousel-slide-${index}`}
             className="carousel__image"
@@ -66,9 +57,9 @@ const Carousel = ({
       </div>
       {/* Dots */}
       <div className="carousel__dots">
-        {carouselImages.map((_: any, i: number) => (
+        {carouselImages.map((item: any, i: number) => (
           <div
-            key={i}
+            key={item.title ?? i}
             className={`carousel__dot ${i === index ? "active" : ""}`}
             onClick={() => setIndex(i)}
           ></div>

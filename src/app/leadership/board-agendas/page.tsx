@@ -1,13 +1,11 @@
 "use client";
-import Layout from "@/components/common/MainLayout";
-import "./index.scss";
 import ListItem from "@/components/common/list-item/list-item";
-import { Document, Page } from "react-pdf";
-
-import { pdfjs } from "react-pdf";
+import Layout from "@/components/common/MainLayout";
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
+import "./index.scss";
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+const PdfPreview = dynamic(() => import("./PdfPreview"), { ssr: false });
 
 const previousAgenda = [
   {
@@ -151,21 +149,20 @@ const EducationProtectionAccount = () => {
   const [epaWidth, setEpaWidth] = useState(0);
 
   useEffect(() => {
-    setEpaWidth(document.getElementsByClassName("EPA")[0].clientWidth);
-  }, [document.getElementsByClassName("EPA")]);
+    const el = document.getElementsByClassName("EPA")[0] as
+      | HTMLElement
+      | undefined;
+    if (el) setEpaWidth(el.clientWidth);
+  }, []);
 
   return (
     <Layout header="Board Agendas">
       <div className="container agendas">
         <div className="EPA">
-          <Document file="/webAssets/BOD-Agenda-6.18.2025-1.pdf">
-            <Page
-              pageNumber={1}
-              width={epaWidth}
-              renderTextLayer={false}
-              renderAnnotationLayer={false}
-            />
-          </Document>
+          <PdfPreview
+            file="/webAssets/BOD-Agenda-6.18.2025-1.pdf"
+            width={epaWidth}
+          />
         </div>
 
         <div className="previousAgenda">

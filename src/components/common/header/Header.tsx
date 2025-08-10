@@ -1,8 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Carousel from "../carosel/Carousel";
 import "./header.scss";
-import React, { useEffect, useState } from "react";
 
 // Define the structure of each menu item
 const menuData = [
@@ -173,7 +173,11 @@ const Header = ({
     // Close mobile menu when clicking outside
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Element;
-      if (mobileMenuOpen && !target.closest('.header_main__headMenu__mobileMenu') && !target.closest('.header_main__headMenu__hamburger')) {
+      if (
+        mobileMenuOpen &&
+        !target.closest(".header_main__headMenu__mobileMenu") &&
+        !target.closest(".header_main__headMenu__hamburger")
+      ) {
         setMobileMenuOpen(false);
         setOpenMenu(null);
       }
@@ -287,6 +291,7 @@ const Header = ({
           className="header_main__headMenu__hamburger"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle mobile menu"
+          type="button"
         >
           <span className={mobileMenuOpen ? "active" : ""}></span>
           <span className={mobileMenuOpen ? "active" : ""}></span>
@@ -294,9 +299,16 @@ const Header = ({
         </button>
 
         {/* Mobile Menu */}
-        <div className={`header_main__headMenu__mobileMenu ${mobileMenuOpen ? "open" : ""}`}>
+        <div
+          className={`header_main__headMenu__mobileMenu ${
+            mobileMenuOpen ? "open" : ""
+          }`}
+        >
           {menuData.map((menu) => (
-            <div key={menu.name} className="header_main__headMenu__mobileMenu__item">
+            <div
+              key={menu.name}
+              className="header_main__headMenu__mobileMenu__item"
+            >
               <a
                 href={menu.link}
                 onClick={(e) => {
@@ -369,9 +381,12 @@ const Header = ({
                 {carouselData[currentIndex]?.subTitle}
               </div>
               <button
-                onClick={() =>
-                  (window.location.href = carouselData[currentIndex]?.link)
-                }
+                type="button"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = carouselData[currentIndex]?.link;
+                  }
+                }}
               >
                 {" "}
                 Read More
