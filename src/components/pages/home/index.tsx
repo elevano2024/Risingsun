@@ -1,6 +1,6 @@
+import ContactPage from "@/components/common/contact/ContactPage";
 import ListItem from "@/components/common/list-item/list-item";
 import "./index.scss";
-import ContactPage from "@/components/common/contact/ContactPage";
 
 const gallery = [
   "/wp-content/uploads/2022/05/DSC_7067-scaled.jpg",
@@ -10,13 +10,24 @@ const gallery = [
   "/wp-content/uploads/2022/04/RSMSDSC_4431-scaled.jpg",
 ];
 
+const galleryAlt = [
+  "Rising Sun Montessori campus courtyard",
+  "Students participating in outdoor activity",
+  "Hands-on learning in a Montessori classroom",
+  "Students collaborating during class time",
+  "Montessori materials arranged on classroom shelves",
+];
+
 const Home = () => {
   return (
     <div className="home">
       <div className="home-section-1">
         <div className="home-section-1-content-1 container">
           <div className="linksection">
-            <img src="/wp-content/uploads/2022/05/wasc-logo-1-1.png" />{" "}
+            <img
+              src="/wp-content/uploads/2022/05/wasc-logo-1-1.png"
+              alt="WASC accreditation logo"
+            />{" "}
             <div className="linksection-text">
               <h2>Fully Accredited by the</h2>
               <p>
@@ -26,7 +37,11 @@ const Home = () => {
             </div>
           </div>
           <div className="linksection-link">
-            <a href="https://directory.acswasc.org/" target="_blank">
+            <a
+              href="https://directory.acswasc.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Metrics & Performance &gt;
             </a>
           </div>
@@ -38,11 +53,17 @@ const Home = () => {
             <div>
               <ListItem
                 title="Transitional Kindergarten / Kindergarten"
-                link="/transitional-kindergarten"
+                link="/program/tk-kindergarten"
               />
-              <ListItem title="Lower Elementary" link="/lower-elementary" />
-              <ListItem title="Upper Elementary" link="/upper-elementary" />
-              <ListItem title="Middle School" link="/middle-school" />
+              <ListItem
+                title="Lower Elementary"
+                link="/program/lower-elementary"
+              />
+              <ListItem
+                title="Upper Elementary"
+                link="/program/upper-elementary"
+              />
+              <ListItem title="Middle School" link="/program/middle-school" />
             </div>
             <div>
               <p>
@@ -65,13 +86,12 @@ const Home = () => {
       </div>
       <div className="home-section-2">
         <div className="bgtest">
-
           <div className="container">
             <h1> Enrollment & School Tours </h1>
             <p>
-              Blending timeless principles with modern skills to prepare students
-              for life, not just school. At Rising Sun Montessori, we go beyond
-              traditional academics to nurture curious, independent
+              Blending timeless principles with modern skills to prepare
+              students for life, not just school. At Rising Sun Montessori, we
+              go beyond traditional academics to nurture curious, independent
             </p>
             <div className="clouds">
               <div className="cloudItem">
@@ -147,23 +167,23 @@ const Home = () => {
       <div className="gallery-section container">
         <div className="image-container" style={{ paddingTop: "80px" }}>
           <div className="image-item">
-            <img src={gallery[0]} alt="Image 1" className="image-item" />
+            <img src={gallery[0]} alt={galleryAlt[0]} className="image-item" />
           </div>
           <div className="image-item">
-            <img src={gallery[1]} alt="Image 2" className="image-item" />
+            <img src={gallery[1]} alt={galleryAlt[1]} className="image-item" />
           </div>
         </div>
         <div className="image-container" style={{ paddingTop: "40px" }}>
           <div className="image-item">
-            <img src={gallery[2]} alt="Image 3" className="image-item" />
+            <img src={gallery[2]} alt={galleryAlt[2]} className="image-item" />
           </div>
           <div className="image-item">
-            <img src={gallery[3]} alt="Image 4" className="image-item" />
+            <img src={gallery[3]} alt={galleryAlt[3]} className="image-item" />
           </div>
         </div>
         <div className="image-container">
           <div className="image-item">
-            <img src={gallery[4]} alt="Image 5" className="image-item" />
+            <img src={gallery[4]} alt={galleryAlt[4]} className="image-item" />
           </div>
           <a className="visitgallery" href="/gallery">
             View All Photos
