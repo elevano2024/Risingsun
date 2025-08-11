@@ -1,0 +1,30 @@
+.detailCard1 {
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+
+  img {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+
+  .detailCardContent {
+    h3 {
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 100%;
+      letter-spacing: 1%;
+      margin-bottom: 0.5rem;
+      color: #0a160c;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      letter-spacing: 0%;
+      color: #687a6b;
+    }
+  }
+}

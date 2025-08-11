@@ -1,7 +1,6 @@
-import Layout from "@/components/common/MainLayout";
-import ListItem from "@/components/common/list-item/list-item";
-import "./index.scss";
 import ImageText from "@/components/common/image-text-combo/image-text-combo";
+import Layout from "@/components/common/MainLayout";
+import "./index.scss";
 
 const items = [
   {

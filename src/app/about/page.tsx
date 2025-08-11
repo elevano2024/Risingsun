@@ -62,7 +62,7 @@ const Component = () => {
         <div className="about-list">
           <ListItem
             title="Title IX 2019"
-            link="https://risingsunmontessori.org/wp-content/uploads/2022/04/Title-IX-2019.pdf"
+            link="/wp-content/uploads/2022/04/Title-IX-2019.pdf"
           />
         </div>
       </div>

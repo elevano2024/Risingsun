@@ -1,8 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Carousel from "../carosel/Carousel";
 import "./header.scss";
-import React, { useEffect, useState } from "react";
 
 // Define the structure of each menu item
 const menuData = [
@@ -47,7 +47,6 @@ const menuData = [
     link: "/program",
     subMenu: [
       { name: "Programs", link: "/program" },
-      { name: "Why Montessori?", link: "/program/why-montessori" },
       {
         name: "Transitional Kindergarten / Kindergarten",
         link: "/program/tk-kindergarten",
@@ -63,7 +62,7 @@ const menuData = [
       { name: "Community Activities", link: "/program/community-activities" },
     ],
   },
-  { name: "Enrollment & School Tours", link: "/gallery" },
+  { name: "Enrollment & School Tours", link: "/enrollment-school-tours" },
   { name: "Gallery", link: "/gallery" },
   {
     name: "School Info",
@@ -141,6 +140,7 @@ const Header = ({
   const [openMenu, setOpenMenu] = useState<string | null>(null); // Track the open menu
   const [openSubMenu, setOpenSubMenu] = useState<string | null>(null); // Track the open submenu
   const [currentIndex, setCurrentIndex] = useState<number>(0); // Track the current index for the carousel
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false); // Track mobile menu state
 
   const toggleMenu = (menuName: string) => {
     setOpenMenu(openMenu === menuName ? null : menuName); // Toggle the submenu
@@ -162,17 +162,38 @@ const Header = ({
           { name: "More", link: "/more", subMenu: menuData.slice(5) },
         ]);
       }
+
+      // Close mobile menu when resizing to desktop
+      if (window.innerWidth > 992) {
+        setMobileMenuOpen(false);
+        setOpenMenu(null);
+      }
+    };
+
+    // Close mobile menu when clicking outside
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (
+        mobileMenuOpen &&
+        !target.closest(".header_main__headMenu__mobileMenu") &&
+        !target.closest(".header_main__headMenu__hamburger")
+      ) {
+        setMobileMenuOpen(false);
+        setOpenMenu(null);
+      }
     };
 
     // Attach the resize event listener
     window.addEventListener("resize", handleResize);
+    document.addEventListener("click", handleClickOutside);
 
     handleResize();
     // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
+      document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [mobileMenuOpen]);
 
   return (
     <header className="header_main">
@@ -264,6 +285,70 @@ const Header = ({
             </div>
           ))}
         </div>
+
+        {/* Hamburger Menu Button */}
+        <button
+          className="header_main__headMenu__hamburger"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle mobile menu"
+          type="button"
+        >
+          <span className={mobileMenuOpen ? "active" : ""}></span>
+          <span className={mobileMenuOpen ? "active" : ""}></span>
+          <span className={mobileMenuOpen ? "active" : ""}></span>
+        </button>
+
+        {/* Mobile Menu */}
+        <div
+          className={`header_main__headMenu__mobileMenu ${
+            mobileMenuOpen ? "open" : ""
+          }`}
+        >
+          {menuData.map((menu) => (
+            <div
+              key={menu.name}
+              className="header_main__headMenu__mobileMenu__item"
+            >
+              <a
+                href={menu.link}
+                onClick={(e) => {
+                  if (menu.subMenu) {
+                    e.preventDefault();
+                    toggleMenu(menu.name);
+                  } else {
+                    setMobileMenuOpen(false);
+                  }
+                }}
+                className={`${openMenu === menu.name ? "active" : ""}`}
+              >
+                {menu.name}
+                {menu.subMenu && (
+                  <img src="/images/chevron-down.svg" alt="Toggle Submenu" />
+                )}
+              </a>
+              {menu.subMenu && openMenu === menu.name && (
+                <div className="header_main__headMenu__mobileMenu__submenu">
+                  {menu.subMenu.map((subItem) => (
+                    <a
+                      key={subItem.name}
+                      href={subItem.link}
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {subItem.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+          <a
+            className="header_main__headMenu__mobileMenu__contact"
+            href="/contact"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Contact Us
+          </a>
+        </div>
         <div className="header_main__headMenu__links">
           <a
             className="header_main__headMenu__links__link__contact"
@@ -296,9 +381,12 @@ const Header = ({
                 {carouselData[currentIndex]?.subTitle}
               </div>
               <button
-                onClick={() =>
-                  (window.location.href = carouselData[currentIndex]?.link)
-                }
+                type="button"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = carouselData[currentIndex]?.link;
+                  }
+                }}
               >
                 {" "}
                 Read More

@@ -1,25 +1,28 @@
 .EPA {
-  padding-top: 40px;
+  padding-top: 2.5rem;
 
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
   flex-direction: column;
+
   .dirContainer {
     border: 1px solid #c6d2c7;
-    border-radius: 16px;
-    padding: 32px;
+    border-radius: 1rem;
+    padding: 2rem;
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
     flex-direction: column;
+
     .dirHeader {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 2rem;
+
       .dirImg {
-        width: 134px;
+        width: 8.375rem;
         aspect-ratio: 1 / 1;
         overflow: hidden;
-        border-radius: 16px;
+        border-radius: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -29,17 +32,19 @@
           object-fit: cover;
         }
       }
+
       .dirName {
         color: #0a160c;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 500;
       }
     }
+
     .dirDescription p {
       color: #687a6b;
-      font-size: 20px;
-      line-height: 26px;
-      margin-bottom: 24px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
+      margin-bottom: 1.5rem;
     }
   }
 }

@@ -10,13 +10,18 @@ const ListItem = ({
   variant?: string;
 }) => {
   return (
-    <div className={`list-item ${variant}`}>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`list-item ${variant}`}
+    >
+      <span className="list-item__left">
         <img src="/images/yellowdot.svg" alt="arrow icon" />
         {title}
-      </a>
+      </span>
       <img src="/images/arrow-up-right.svg" alt="arrow icon" />
-    </div>
+    </a>
   );
 };
 

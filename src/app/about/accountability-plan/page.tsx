@@ -8,19 +8,19 @@ const AccountabilityPlan = () => {
       <div className="container EPA">
         <ListItem
           title="2024-2025 Local Control & Accountability Plan"
-          link="https://risingsunmontessori.org/wp-content/uploads/2024/06/2024-25-Local-Control-and-Accountability-Plan-LCAP.pdf"
+          link="/wp-content/uploads/2024/06/2024-25-Local-Control-and-Accountability-Plan-LCAP.pdf"
         />
         <ListItem
           title="DRAFT 2024-27 Local Control and Accountability Plan (LCAP)"
-          link="https://risingsunmontessori.org/wp-content/uploads/2024/06/DRAFT-2024-27-Local-Control-and-Accountability-Plan-LCAP.pdf"
+          link="/wp-content/uploads/2024/06/DRAFT-2024-27-Local-Control-and-Accountability-Plan-LCAP.pdf"
         />
         <ListItem
           title="DRAFT 2023-24 (LCAP) Annual Update"
-          link="https://risingsunmontessori.org/wp-content/uploads/2024/06/DRAFT-2023-24-LCAP-Annual-Update.pdf"
+          link="/wp-content/uploads/2024/06/DRAFT-2023-24-LCAP-Annual-Update.pdf"
         />
         <ListItem
           title="DRAFT LCFF Budget Overview for Parents Template – 2024-25"
-          link="https://risingsunmontessori.org/wp-content/uploads/2024/06/DRAFT-LCFF-Budget-Overview-for-Parents-Template-2024-25.pdf"
+          link="/wp-content/uploads/2024/06/DRAFT-LCFF-Budget-Overview-for-Parents-Template-2024-25.pdf"
         />
       </div>
     </Layout>

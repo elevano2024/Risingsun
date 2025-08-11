@@ -7,40 +7,40 @@
   .home-section-1 {
     background: url("/images/homebg1.svg");
     z-index: 4;
-    padding-top: 180px;
-    margin-top: -180px;
+    padding-top: 11.25rem;
+    margin-top: -11.25rem;
 
     .home-section-1-content-1 {
-      padding-bottom: 126px;
+      padding-bottom: 7.875rem;
       display: flex;
-      gap: 26px;
+      gap: 1.625rem;
       align-items: flex-start;
 
       .linksection {
         display: flex;
-        gap: 26px;
+        gap: 1.625rem;
         align-items: center;
 
         h2 {
           color: #687a6b;
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: medium;
         }
 
         p {
-          font-size: 20px;
+          font-size: 1.25rem;
           color: #0a160c;
           font-weight: bold;
         }
 
         img {
-          height: 86px;
+          height: 5.375rem;
           width: auto;
         }
       }
 
       .linksection-link {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: bold;
         color: #f4ad26;
         white-space: nowrap;
@@ -50,32 +50,62 @@
           outline: none;
         }
       }
+
+      @media (max-width: 62rem) {
+        flex-direction: column;
+        align-items: center;
+
+        .linksection {
+          margin-bottom: 1.5rem;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .linksection-link {
+          font-size: 1rem;
+        }
+
+      }
     }
 
     .home-section-1-content-2 {
-      padding-bottom: 300px;
+      padding-bottom: 18.75rem;
 
       h1 {
         color: #0a160c;
-        font-size: 44px;
-        line-height: 56px;
+        font-size: 2.75rem;
+        line-height: 3.5rem;
         font-weight: 600;
       }
 
       .home-section-1-content-2-listitems {
-        margin-top: 80px;
+        margin-top: 5rem;
         display: flex;
-        gap: 100px;
+        gap: 6.25rem;
 
         >div {
-          width: calc(50% - 50px);
+          width: calc(50% - 3.125rem);
         }
 
         p {
-          font-size: 20px;
-          line-height: 26px;
+          font-size: 1.25rem;
+          line-height: 1.625rem;
           color: #687a6b;
         }
+
+        @media (max-width: 62rem) {
+          flex-direction: column;
+          align-items: center;
+
+          >div {
+            width: 100%;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+
       }
     }
   }
@@ -83,57 +113,59 @@
   .home-section-2 {
     background: url("/images/homebg2.svg");
     z-index: 4;
-    margin-top: -180px;
-    padding-top: 180px;
-    padding-bottom: 170px;
+    background-size: cover;
+    margin-top: -11.25rem;
+    padding-top: 11.25rem;
+    padding-bottom: 10.625rem;
 
     h1 {
       color: #f8f8f8;
-      font-size: 44px;
-      line-height: 56px;
+      font-size: 2.75rem;
+      line-height: 3.5rem;
       font-weight: 600;
-      margin-bottom: 32px;
+      margin-bottom: 2rem;
     }
 
     p {
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       color: #c7d9ca;
-      padding-bottom: 80px;
+      padding-bottom: 5rem;
       width: 100%;
-      max-width: 785px;
+      max-width: 49.0625rem;
     }
 
     .clouds {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      gap: 1.5rem;
 
       .cloudItem {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 16px;
+        gap: 1rem;
         background: url("/images/cloud_home.svg") no-repeat center;
-        height: 287px;
-        width: 364px;
+        background-size: contain;
+        height: 17.9375rem;
+        width: calc(100% - 1.5rem);
 
         .cloudItem1 {
           font-weight: 500;
           font-style: Medium;
-          font-size: 20px;
+          font-size: 1.25rem;
           line-height: 100%;
           letter-spacing: 1%;
           color: #36562C;
-          max-width: 265px;
+          max-width: 16.5625rem;
           text-align: center;
         }
 
         .cloudItem2 {
           font-weight: 700;
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 1.5rem;
+          line-height: 2rem;
           letter-spacing: 1%;
           text-align: center;
           color: #36562C;
@@ -141,10 +173,10 @@
         }
 
         .cloudItem3 {
-          padding-top: 8px;
+          padding-top: 0.5rem;
           font-weight: 700;
-          font-size: 18px;
-          line-height: 24px;
+          font-size: 1.125rem;
+          line-height: 1.5rem;
           letter-spacing: 1%;
           color: #F4AD26;
           display: flex;
@@ -153,23 +185,42 @@
         }
       }
     }
+
+    .bgtest {
+      background: #17421e;
+      padding-bottom: 6.25rem;
+    }
+
+    @media(max-width: 62rem) {
+      .clouds {
+        grid-template-columns: repeat(1, 1fr);
+
+        .cloudItem {
+          margin: 0 auto;
+        }
+      }
+
+      .bgtest {
+        padding-bottom: 0rem;
+      }
+    }
   }
 
   .home-section-5 {
-    padding-top: 124px;
-    padding-bottom: 24px;
+    padding-top: 7.75rem;
+    padding-bottom: 1.5rem;
 
     h1 {
       color: #0a160c;
-      font-size: 44px;
-      line-height: 56px;
+      font-size: 2.75rem;
+      line-height: 3.5rem;
       font-weight: 600;
-      margin-bottom: 40px;
+      margin-bottom: 2.5rem;
     }
 
     p {
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       color: #687A6B;
       ;
       width: 100%;
@@ -177,10 +228,10 @@
 
 
     .yellowLink {
-      padding-top: 8px;
+      padding-top: 0.5rem;
       font-weight: 700;
-      font-size: 18px;
-      line-height: 24px;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
       letter-spacing: 1%;
       color: #F4AD26;
       display: flex;
@@ -191,23 +242,23 @@
 }
 
 .gallery-section {
-  padding-bottom: 66px;
+  padding-bottom: 4.125rem;
   // grid of 3 columns
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 24px;
+  column-gap: 1.5rem;
 
   .image-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
   }
 
   .image-item {
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    border-radius: 24px;
+    border-radius: 1.5rem;
 
     img {
       width: 100%;
@@ -220,16 +271,22 @@
     width: 100%;
     aspect-ratio: 1/1;
     overflow: hidden;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background-color: #F4AD26;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     letter-spacing: 1%;
     color: #222222;
+
+  }
+
+  @media (max-width: 62rem) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
 
   }
 

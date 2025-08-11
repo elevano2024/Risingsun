@@ -4,23 +4,23 @@
     &>div {
         display: flex;
         flex-direction: column;
-        gap: 110px;
+        gap: 6.875rem;
     }
 
     .programdetail {
         h1 {
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
             font-weight: 500;
-            font-size: 44px;
-            line-height: 56px;
+            font-size: 2.75rem;
+            line-height: 3.5rem;
             letter-spacing: 1%;
             color: #0A160C;
         }
 
         p {
             font-weight: 400;
-            font-size: 20px;
-            line-height: 26px;
+            font-size: 1.25rem;
+            line-height: 1.625rem;
             letter-spacing: 0%;
             color: #687A6B;
 

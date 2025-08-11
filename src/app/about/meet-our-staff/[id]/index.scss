@@ -1,48 +1,70 @@
 .staff-details {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
+
   .staff-details-head {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
+
     .staff-name {
       font-weight: 500;
-      font-size: 40px;
+      font-size: 2.5rem;
       line-height: 100%;
       letter-spacing: 1%;
       color: #0a160c;
-      margin-bottom: 8px;
+      margin-bottom: 0.5rem;
     }
+
     .staff-position {
       font-weight: 400;
       font-style: Book;
-      font-size: 20px;
-      line-height: 26px;
+      font-size: 1.25rem;
+      line-height: 1.625rem;
       letter-spacing: 0%;
       color: #687a6b;
       margin-bottom: 0;
     }
   }
+
   .staff-image-container {
-    // max-width: 134px;
-    // max-height: 134px;
-    width: 134px;
+    // max-width: 8.375rem;
+    // max-height: 8.375rem;
+    width: 8.375rem;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   img {
     width: 100%;
     object-fit: cover;
   }
+
   p {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #687a6b;
     font-weight: book;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 37.5rem) {
+    .staff-details-head {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .staff-name {
+        font-size: 1.75rem;
+      }
+
+      .staff-position {
+        font-size: 1rem;
+      }
+    }
+
   }
 }

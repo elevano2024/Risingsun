@@ -4,7 +4,7 @@ import ListItem from "@/components/common/list-item/list-item";
 const links = [
   {
     title: "RSMS Daily Schedule",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2023/02/Daily-Schedule.pdf",
+    link: "/wp-content/uploads/2023/02/Daily-Schedule.pdf",
   },
 ];
 

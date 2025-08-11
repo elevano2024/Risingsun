@@ -6,47 +6,47 @@ const links = [
   {
     title:
       "El Dorado County Charter SELPA Governance Council Public Hearing May 2025",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2025/05/Charter-Notice-of-CEO-Public-Hearing-2025-26-1.pdf",
+    link: "/wp-content/uploads/2025/05/Charter-Notice-of-CEO-Public-Hearing-2025-26-1.pdf",
   },
   {
     title: "Section 504 Procedures",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/10/Section-504-Procedures.pdf",
+    link: "/wp-content/uploads/2024/10/Section-504-Procedures.pdf",
   },
   {
     title: "Dangers of Synthetic Drugs",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/10/Dangers-of-Synthetic-Drugs.pdf",
+    link: "/wp-content/uploads/2024/10/Dangers-of-Synthetic-Drugs.pdf",
   },
   {
     title: "CDE Charter Complaint Form",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/10/RSMS-Charter-School-Complaint-Form-CDE.pdf",
+    link: "/wp-content/uploads/2024/10/RSMS-Charter-School-Complaint-Form-CDE.pdf",
   },
   {
     title: "Annual Notification on Safe Storage of Firearms",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/10/Annual-Notification-on-Safe-Storage-of-Firearms.pdf",
+    link: "/wp-content/uploads/2024/10/Annual-Notification-on-Safe-Storage-of-Firearms.pdf",
   },
   {
     title: "Student Mental Health Services",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/09/Student-Mental-Health-Annual-Notification.pdf",
+    link: "/wp-content/uploads/2024/09/Student-Mental-Health-Annual-Notification.pdf",
   },
   {
     title: "Prop 28 Certification – Arts Education",
-    link: "https://risingsunmontessori.org/arts-education/",
+    link: "/arts-education/",
   },
   {
     title: "El Dorado Charter SELPA Governance Council Public Hearing May 2024",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/05/Charter-Notice-of-CEO-Public-Hearing-2024-25.pdf",
+    link: "/wp-content/uploads/2024/05/Charter-Notice-of-CEO-Public-Hearing-2024-25.pdf",
   },
   {
     title: "Charter Notice of CEO Public Hearing 2021-22",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2022/04/Charter-Notice-of-CEO-Public-Hearing-2021-22.pdf",
+    link: "/wp-content/uploads/2022/04/Charter-Notice-of-CEO-Public-Hearing-2021-22.pdf",
   },
   {
     title: "Comprehensive School Safety Plan",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2022/04/doc03115620210210131324.pdf",
+    link: "/wp-content/uploads/2022/04/doc03115620210210131324.pdf",
   },
   {
     title: "2020 Learning Continuity and Attendance Plan",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2022/04/2020_Learning_Continuity_and_Attendance_Plan_Rising_Sun_Montessori_School_20201001-Adopted.pdf",
+    link: "/wp-content/uploads/2022/04/2020_Learning_Continuity_and_Attendance_Plan_Rising_Sun_Montessori_School_20201001-Adopted.pdf",
   },
   {
     title: "SELPA Governance, Budget and SELPA Plan",
@@ -54,7 +54,7 @@ const links = [
   },
   {
     title: "Title IX",
-    link: "https://risingsunmontessori.org/wp-content/uploads/2024/10/Title-IX-2024.pdf",
+    link: "/wp-content/uploads/2024/10/Title-IX-2024.pdf",
   },
 ];
 

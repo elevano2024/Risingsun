@@ -1,70 +1,74 @@
 {
-    "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-    "vcs": {
-        "enabled": true,
-        "clientKind": "git",
-        "useIgnoreFile": true
-    },
-    "files": {
-        "ignoreUnknown": false
-    },
-    "formatter": {
-        "enabled": true,
-        "formatWithErrors": false,
-        "indentStyle": "space",
-        "indentWidth": 2,
-        "lineEnding": "lf",
-        "lineWidth": 80,
-        "attributePosition": "auto"
-    },
-    "linter": {
-        "enabled": true,
-        "rules": {
-            "recommended": true,
-            "a11y": {
-                "recommended": true
-            },
-            "complexity": {
-                "recommended": true
-            },
-            "correctness": {
-                "recommended": true
-            },
-            "performance": {
-                "recommended": true
-            },
-            "security": {
-                "recommended": true
-            },
-            "style": {
-                "recommended": true
-            },
-            "suspicious": {
-                "recommended": true
-            }
-        }
-    },
-    "javascript": {
-        "formatter": {
-            "jsxQuoteStyle": "double",
-            "quoteProperties": "asNeeded",
-            "trailingCommas": "es5",
-            "semicolons": "always",
-            "arrowParentheses": "always",
-            "bracketSpacing": true,
-            "bracketSameLine": false,
-            "quoteStyle": "double",
-            "attributePosition": "auto"
-        }
-    },
-    "json": {
-        "formatter": {
-            "enabled": true
-        }
-    },
-    "css": {
-        "formatter": {
-            "enabled": true
-        }
+  "$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto"
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "recommended": true,
+        "noStaticElementInteractions": "off",
+        "useKeyWithClickEvents": "off"
+      },
+      "complexity": {
+        "recommended": true
+      },
+      "correctness": {
+        "recommended": true,
+        "useExhaustiveDependencies": "off"
+      },
+      "performance": {
+        "recommended": true,
+        "noImgElement": "off"
+      },
+      "security": {
+        "recommended": true
+      },
+      "style": {
+        "recommended": true
+      },
+      "suspicious": {
+        "recommended": true
+      }
     }
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    }
+  }
 }

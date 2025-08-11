@@ -133,7 +133,7 @@ const Component = () => {
         <div>
           <ListItem
             title="Parent Committee Guidelines"
-            link="https://risingsunmontessori.org/wp-content/uploads/2022/04/RSMS-PARENT-COMMITTEE-GUIDELINES.pdf"
+            link="/wp-content/uploads/2022/04/RSMS-PARENT-COMMITTEE-GUIDELINES.pdf"
           />
         </div>
       </div>

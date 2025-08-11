@@ -91,8 +91,8 @@ const jsonLd = {
   alternateName: 'RSMS',
   description: 'Rising Sun Montessori School offers authentic Montessori education in El Dorado Hills, California, serving students from Transitional Kindergarten through Middle School.',
   url: 'https://risingsunmontessori.org',
-  logo: 'https://risingsunmontessori.org/logo.svg',
-  image: 'https://risingsunmontessori.org/og-image.jpg',
+  logo: '/logo.svg',
+  image: '/og-image.jpg',
   telephone: ['+1-916-936-2333', '+1-530-350-9500'],
   email: 'info@risingsunmontessori.org',
   address: {

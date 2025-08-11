@@ -1,26 +1,30 @@
 .about-list {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
+
 .about {
-  padding-top: 80px;
+  padding-top: 5rem;
+
   p {
     color: #687a6b;
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 32px;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
   }
+
   h2 {
     color: #333;
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 2.75rem;
+    line-height: 3.5rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
+
   h3 {
     color: #333;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
   }
 }

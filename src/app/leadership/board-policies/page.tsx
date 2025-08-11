@@ -7,11 +7,11 @@ const EducationProtectionAccount = () => {
       <div className="container" style={{ paddingTop: "80px" }}>
         <ListItem
           title="Bullying Prevention – Policy"
-          link="https://risingsunmontessori.org/wp-content/uploads/2022/04/Bullying-Prevention-Policy.pdf"
+          link="/wp-content/uploads/2022/04/Bullying-Prevention-Policy.pdf"
         />
         <ListItem
           title="Conflict Resolution – Policy"
-          link="https://risingsunmontessori.org/wp-content/uploads/2022/04/Conflict-Resolution-Policy.pdf"
+          link="/wp-content/uploads/2022/04/Conflict-Resolution-Policy.pdf"
         />
       </div>
     </Layout>

@@ -1,13 +1,21 @@
+import ContactPage from "@/components/common/contact/ContactPage";
 import ListItem from "@/components/common/list-item/list-item";
 import "./index.scss";
-import ContactPage from "@/components/common/contact/ContactPage";
 
 const gallery = [
-  "https://risingsunmontessori.org/wp-content/uploads/2022/05/DSC_7067-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/05/DSC_7015-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/04/DSC_4543-2-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/04/RSMSDSC_4447-scaled.jpg",
-  "https://risingsunmontessori.org/wp-content/uploads/2022/04/RSMSDSC_4431-scaled.jpg",
+  "/wp-content/uploads/2022/05/DSC_7067-scaled.jpg",
+  "/wp-content/uploads/2022/05/DSC_7015-scaled.jpg",
+  "/wp-content/uploads/2022/04/DSC_4543-2-scaled.jpg",
+  "/wp-content/uploads/2022/04/RSMSDSC_4447-scaled.jpg",
+  "/wp-content/uploads/2022/04/RSMSDSC_4431-scaled.jpg",
+];
+
+const galleryAlt = [
+  "Rising Sun Montessori campus courtyard",
+  "Students participating in outdoor activity",
+  "Hands-on learning in a Montessori classroom",
+  "Students collaborating during class time",
+  "Montessori materials arranged on classroom shelves",
 ];
 
 const Home = () => {
@@ -16,7 +24,10 @@ const Home = () => {
       <div className="home-section-1">
         <div className="home-section-1-content-1 container">
           <div className="linksection">
-            <img src="https://risingsunmontessori.org/wp-content/uploads/2022/05/wasc-logo-1-1.png" />{" "}
+            <img
+              src="/wp-content/uploads/2022/05/wasc-logo-1-1.png"
+              alt="WASC accreditation logo"
+            />{" "}
             <div className="linksection-text">
               <h2>Fully Accredited by the</h2>
               <p>
@@ -26,7 +37,11 @@ const Home = () => {
             </div>
           </div>
           <div className="linksection-link">
-            <a href="https://directory.acswasc.org/" target="_blank">
+            <a
+              href="https://directory.acswasc.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Metrics & Performance &gt;
             </a>
           </div>
@@ -38,11 +53,17 @@ const Home = () => {
             <div>
               <ListItem
                 title="Transitional Kindergarten / Kindergarten"
-                link="/transitional-kindergarten"
+                link="/program/tk-kindergarten"
               />
-              <ListItem title="Lower Elementary" link="/lower-elementary" />
-              <ListItem title="Upper Elementary" link="/upper-elementary" />
-              <ListItem title="Middle School" link="/middle-school" />
+              <ListItem
+                title="Lower Elementary"
+                link="/program/lower-elementary"
+              />
+              <ListItem
+                title="Upper Elementary"
+                link="/program/upper-elementary"
+              />
+              <ListItem title="Middle School" link="/program/middle-school" />
             </div>
             <div>
               <p>
@@ -64,41 +85,58 @@ const Home = () => {
         </div>
       </div>
       <div className="home-section-2">
-        <div className="container">
-          <h1> Enrollment & School Tours </h1>
-          <p>
-            Blending timeless principles with modern skills to prepare students
-            for life, not just school. At Rising Sun Montessori, we go beyond
-            traditional academics to nurture curious, independent
-          </p>
-          <div className="clouds">
-            <div className="cloudItem">
-              <span className="cloudItem1">
-                Now Accepting Applications for the
-              </span>
-              <span className="cloudItem2">2025-26 school year!</span>
-              <span className="cloudItem3">
-                Apply Now
-                <img src="/images/yellowchevrom.svg" alt="Chevron" />
-              </span>
-            </div>
-            <div className="cloudItem">
-              <span className="cloudItem1">Montessori Experience Form</span>
-              <span className="cloudItem2">Verification</span>
-              <span className="cloudItem3">
-                View Form
-                <img src="/images/yellowchevrom.svg" alt="Chevron" />
-              </span>
-            </div>
-            <div className="cloudItem">
-              <span className="cloudItem1">
-                School Tours by appointment only on
-              </span>
-              <span className="cloudItem2">Wednesday Morning</span>
-              <span className="cloudItem3">
-                Book Appointment
-                <img src="/images/yellowchevrom.svg" alt="Chevron" />
-              </span>
+        <div className="bgtest">
+          <div className="container">
+            <h1> Enrollment & School Tours </h1>
+            <p>
+              Blending timeless principles with modern skills to prepare
+              students for life, not just school. At Rising Sun Montessori, we
+              go beyond traditional academics to nurture curious, independent
+            </p>
+            <div className="clouds">
+              <div className="cloudItem">
+                <span className="cloudItem1">
+                  Now Accepting Applications for the
+                </span>
+                <span className="cloudItem2">2025-26 school year!</span>
+                <a
+                  href="https://www.transparentclassroom.com/s/5246/online_applications/new?locale=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cloudItem3"
+                >
+                  Apply Now
+                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                </a>
+              </div>
+              <div className="cloudItem">
+                <span className="cloudItem1">Montessori Experience Form</span>
+                <span className="cloudItem2">Verification</span>
+                <a
+                  className="cloudItem3"
+                  href="/wp-content/uploads/2025/02/verification-of-montessori-exp.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Form
+                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                </a>
+              </div>
+              <div className="cloudItem">
+                <span className="cloudItem1">
+                  School Tours by appointment only on
+                </span>
+                <span className="cloudItem2">Wednesday Morning</span>
+                <a
+                  href="mailto:jshort@risingsunmontessori.org?subject=School%20Tour%20Request"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cloudItem3"
+                >
+                  Book Appointment
+                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -144,23 +182,23 @@ const Home = () => {
       <div className="gallery-section container">
         <div className="image-container" style={{ paddingTop: "80px" }}>
           <div className="image-item">
-            <img src={gallery[0]} alt="Image 1" className="image-item" />
+            <img src={gallery[0]} alt={galleryAlt[0]} className="image-item" />
           </div>
           <div className="image-item">
-            <img src={gallery[1]} alt="Image 2" className="image-item" />
+            <img src={gallery[1]} alt={galleryAlt[1]} className="image-item" />
           </div>
         </div>
         <div className="image-container" style={{ paddingTop: "40px" }}>
           <div className="image-item">
-            <img src={gallery[2]} alt="Image 3" className="image-item" />
+            <img src={gallery[2]} alt={galleryAlt[2]} className="image-item" />
           </div>
           <div className="image-item">
-            <img src={gallery[3]} alt="Image 4" className="image-item" />
+            <img src={gallery[3]} alt={galleryAlt[3]} className="image-item" />
           </div>
         </div>
         <div className="image-container">
           <div className="image-item">
-            <img src={gallery[4]} alt="Image 5" className="image-item" />
+            <img src={gallery[4]} alt={galleryAlt[4]} className="image-item" />
           </div>
           <a className="visitgallery" href="/gallery">
             View All Photos
