@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 
 type PdfPreviewProps = {
   file: string;
@@ -20,8 +22,8 @@ export default function PdfPreview({ file, width }: PdfPreviewProps) {
       <Page
         pageNumber={1}
         width={width}
-        renderTextLayer={false}
-        renderAnnotationLayer={false}
+        renderTextLayer={true}
+        renderAnnotationLayer={true}
       />
     </Document>
   );
