@@ -98,7 +98,7 @@ const Home = () => {
                 <span className="cloudItem1">
                   Now Accepting Applications for the
                 </span>
-                <span className="cloudItem2">2025-26 school year!</span>
+                <span className="cloudItem2">2026-27 school year!</span>
                 <a
                   href="https://www.transparentclassroom.com/s/5246/online_applications/new?locale=en"
                   target="_blank"

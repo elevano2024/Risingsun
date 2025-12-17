@@ -35,9 +35,8 @@ const Component = () => {
               RSMS is accepting applications for <b>grades TK-8.</b>
             </h3>
             <h3>
-              For the 2025/26 school year, <b>TK (transitional kindergarten)</b>{" "}
-              students must turn 4 by Sept. 1, 2025;{" "}
-              <b>kindergarten students</b> turn 5 by Sept. 1.
+              <b>TK (transitional kindergarten)</b> students must turn 4 by
+              Sept. 1st; <b>kindergarten students</b> must turn 5 by Sept. 1st.
             </h3>
             <h5>RSMS does not have a pre-school program.</h5>
           </div>
@@ -70,8 +69,12 @@ const Component = () => {
               </p>
 
               <br />
-              {data.map((item: any, index: number) => (
-                <DetailCard key={index} title={item.title} data={item.data} />
+              {data.map((item) => (
+                <DetailCard
+                  key={item.title}
+                  title={item.title}
+                  data={item.data}
+                />
               ))}
             </div>
           </div>
