@@ -160,7 +160,7 @@ const EducationProtectionAccount = () => {
       <div className="container agendas">
         <div className="EPA">
           <PdfPreview
-            file="/webAssets/BOD-Agenda-6.18.2025-1.pdf"
+            file="/webAssets/RSMS-Board-Agenda-12.9.2025.pdf"
             width={epaWidth}
           />
         </div>

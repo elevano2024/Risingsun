@@ -5,7 +5,7 @@ const Component = () => {
   return (
     <Layout
       header="Enrollment & School Tours"
-      subHeader="Now Accepting Applications for the 2025-26 school year!"
+      subHeader="Now Accepting Applications for the 2026-27 school year!"
     >
       <div className="rsms programdetail">
         <div className="rsms-header">
@@ -14,17 +14,20 @@ const Component = () => {
               RSMS is accepting applications for <b>grades TK-8.</b>
             </h3>
             <h3>
-              For the 2025/26 school year, <b>TK (transitional kindergarten)</b>{" "}
-              students must turn 4 by Sept. 1, 2025;{" "}
-              <b>kindergarten students</b> turn 5 by Sept. 1.
+              <b>TK (transitional kindergarten)</b> students must turn 4 by
+              Sept. 1st; <b>kindergarten students</b> must turn 5 by Sept. 1st.
             </h3>
+            <h4>
+              New student applications for the following school year will be
+              available by the second week in January each year.
+            </h4>
             <h5>RSMS does not have a pre-school program.</h5>
             <div className="grid3x">
               <div className="cardYellow">
                 <h4>
                   Now Accepting Applications for the
                   <br />
-                  <b>2025-26 school year!</b>
+                  <b>2026-27 school year!</b>
                 </h4>
                 <a
                   href="https://www.transparentclassroom.com/s/5246/online_applications/new?locale=en"
