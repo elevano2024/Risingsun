@@ -7,12 +7,12 @@ const EducationProtectionAccount = () => {
       <div className="container EPA">
         <div className="dirContainer">
           <div className="dirHeader">
-            <div className="dirImg">
+            {/* <div className="dirImg">
               <img
                 src="/images/placeholder-user.jpg"
                 alt="Board of Directors"
               />
-            </div>
+            </div> */}
             <div className="dirName">Greg Fuson</div>
           </div>
           <div className="dirDescription">
@@ -30,12 +30,12 @@ const EducationProtectionAccount = () => {
         </div>{" "}
         <div className="dirContainer">
           <div className="dirHeader">
-            <div className="dirImg">
+            {/* <div className="dirImg">
               <img
                 src="/images/placeholder-user.jpg"
                 alt="Board of Directors"
               />
-            </div>
+            </div> */}
             <div className="dirName">Ben Howard</div>
           </div>
           <div className="dirDescription">
@@ -69,12 +69,12 @@ const EducationProtectionAccount = () => {
         </div>{" "}
         <div className="dirContainer">
           <div className="dirHeader">
-            <div className="dirImg">
+            {/* <div className="dirImg">
               <img
                 src="/images/placeholder-user.jpg"
                 alt="Board of Directors"
               />
-            </div>
+            </div> */}
             <div className="dirName">Gabriel Rivera</div>
           </div>
           <div className="dirDescription">
@@ -98,12 +98,12 @@ const EducationProtectionAccount = () => {
         </div>{" "}
         <div className="dirContainer">
           <div className="dirHeader">
-            <div className="dirImg">
+            {/* <div className="dirImg">
               <img
                 src="/images/placeholder-user.jpg"
                 alt="Board of Directors"
               />
-            </div>
+            </div> */}
             <div className="dirName">Tiffany Waterhouse (Tidwell)</div>
           </div>
           <div className="dirDescription">
