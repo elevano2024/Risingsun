@@ -234,51 +234,49 @@ const Header = ({
               {menu.subMenu && openMenu === menu.name && (
                 <div className="dropdown-menu">
                   {menu.subMenu.map((subItem) => (
-                    <>
-                      <a
-                        key={subItem.name}
-                        href={subItem.link}
-                        onClick={(e) => {
-                          if ((subItem as any).subMenu) {
-                            e.preventDefault(); // Prevent page reload
-                            toggleSubMenu(subItem.name);
-                          }
-                        }}
-                      >
-                        {subItem.name}
-                        {(subItem as any).subMenu?.length && (
-                          <img
-                            src="/images/chevron-down.svg"
-                            alt="Toggle Submenu"
-                          />
+                    <a
+                      key={subItem.name}
+                      href={subItem.link}
+                      onClick={(e) => {
+                        if ((subItem as any).subMenu) {
+                          e.preventDefault(); // Prevent page reload
+                          toggleSubMenu(subItem.name);
+                        }
+                      }}
+                    >
+                      {subItem.name}
+                      {(subItem as any).subMenu?.length && (
+                        <img
+                          src="/images/chevron-down.svg"
+                          alt="Toggle Submenu"
+                        />
+                      )}
+                      {(subItem as any).subMenu?.length &&
+                        openSubMenu === subItem.name && (
+                          <div className="header_main__headMenu__links__dropdown__subMenu">
+                            {(subItem as any).subMenu &&
+                              openSubMenu === subItem.name && (
+                                <div className="sub-menu">
+                                  {(subItem as any).subMenu.map(
+                                    (subSubItem: any) => (
+                                      <a
+                                        key={subSubItem.name}
+                                        href={subSubItem.link}
+                                        onClick={(e) => {
+                                          e.preventDefault(); // Prevent page reload
+                                          window.location.href =
+                                            subSubItem.link;
+                                        }}
+                                      >
+                                        {subSubItem.name}
+                                      </a>
+                                    )
+                                  )}
+                                </div>
+                              )}
+                          </div>
                         )}
-                        {(subItem as any).subMenu?.length &&
-                          openSubMenu === subItem.name && (
-                            <div className="header_main__headMenu__links__dropdown__subMenu">
-                              {(subItem as any).subMenu &&
-                                openSubMenu === subItem.name && (
-                                  <div className="sub-menu">
-                                    {(subItem as any).subMenu.map(
-                                      (subSubItem: any) => (
-                                        <a
-                                          key={subSubItem.name}
-                                          href={subSubItem.link}
-                                          onClick={(e) => {
-                                            e.preventDefault(); // Prevent page reload
-                                            window.location.href =
-                                              subSubItem.link;
-                                          }}
-                                        >
-                                          {subSubItem.name}
-                                        </a>
-                                      )
-                                    )}
-                                  </div>
-                                )}
-                            </div>
-                          )}
-                      </a>
-                    </>
+                    </a>
                   ))}
                 </div>
               )}
