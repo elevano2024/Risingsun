@@ -9,7 +9,16 @@ const PdfPreview = dynamic(() => import("./PdfPreview"), { ssr: false });
 
 const previousAgenda = [
   {
-    year: "2024 – 2025",
+    year: "2025 - 2026",
+    agendas: [
+      {
+        name: "REGULAR AGENDA 1.15.26",
+        link: "/wp-content/uploads/2026/01/RSMS-board-agenda-Jan-15-2026.pdf",
+      },
+    ],
+  },
+  {
+    year: "2024 - 2025",
     agendas: [
       {
         name: "REGULAR AGENDA 6.18.25",
@@ -17,7 +26,7 @@ const previousAgenda = [
       },
       {
         name: "REGULAR AGENDA 6.3.25",
-        link: "/wp-content/uploads/2025/05/RSMS-board-agenda-June-3-2025.pdf",
+        link: "/wp-content/uploads/2025/06/RSMS-board-agenda-June-3-2025.pdf",
       },
       {
         name: "REGULAR AGENDA 5.6.25",
@@ -58,7 +67,7 @@ const previousAgenda = [
     ],
   },
   {
-    year: "2023 – 2024",
+    year: "2023 - 2024",
     agendas: [
       {
         name: "REGULAR AGENDA 6.25.24",
@@ -103,7 +112,7 @@ const previousAgenda = [
     ],
   },
   {
-    year: "2022 – 2023",
+    year: "2022 - 2023",
     agendas: [
       {
         name: "REGULAR AGENDA 6.27.23",
@@ -160,7 +169,7 @@ const EducationProtectionAccount = () => {
       <div className="container agendas">
         <div className="EPA">
           <PdfPreview
-            file="/webAssets/RSMS-Board-Agenda-12.9.2025.pdf"
+            file="/wp-content/uploads/2026/01/RSMS-board-agenda-Jan-15-2026.pdf"
             width={epaWidth}
           />
         </div>
