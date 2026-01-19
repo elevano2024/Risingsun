@@ -12,6 +12,10 @@ const previousAgenda = [
     year: "2025 - 2026",
     agendas: [
       {
+        name: "SPECIAL AGENDA 1.19.26",
+        link: "/wp-content/uploads/2026/01/RSMS-special-agenda-Jan-19-2026.pdf",
+      },
+      {
         name: "REGULAR AGENDA 1.15.26",
         link: "/wp-content/uploads/2026/01/RSMS-board-agenda-Jan-15-2026.pdf",
       },
@@ -169,7 +173,7 @@ const EducationProtectionAccount = () => {
       <div className="container agendas">
         <div className="EPA">
           <PdfPreview
-            file="/wp-content/uploads/2026/01/RSMS-board-agenda-Jan-15-2026.pdf"
+            file="/wp-content/uploads/2026/01/RSMS-special-agenda-Jan-19-2026.pdf"
             width={epaWidth}
           />
         </div>
