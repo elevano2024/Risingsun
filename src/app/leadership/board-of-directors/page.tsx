@@ -7,12 +7,6 @@ const EducationProtectionAccount = () => {
       <div className="container EPA">
         <div className="dirContainer">
           <div className="dirHeader">
-            {/* <div className="dirImg">
-              <img
-                src="/images/placeholder-user.jpg"
-                alt="Board of Directors"
-              />
-            </div> */}
             <div className="dirName">Greg Fuson</div>
           </div>
           <div className="dirDescription">
@@ -30,51 +24,31 @@ const EducationProtectionAccount = () => {
         </div>{" "}
         <div className="dirContainer">
           <div className="dirHeader">
-            {/* <div className="dirImg">
-              <img
-                src="/images/placeholder-user.jpg"
-                alt="Board of Directors"
-              />
-            </div> */}
-            <div className="dirName">Ben Howard</div>
+            <div className="dirName">Sylvia Loveless</div>
           </div>
           <div className="dirDescription">
             <p>
-              As a third generation Sacramento area resident who attended
-              elementary, middle, and high schools in Folsom, I value the
-              emphasis which residents of our region place on education. The
-              parental support and involvement found here is impressive and
-              leads to a better community. I am a parent of two children who are
-              educated in El Dorado Hills and I am reminded on a regular basis
-              of the commitment which parents make to improve their children’s
-              lives. I have been volunteering in area schools since 2018 and
-              enjoy learning from a student’s perspective. As a volunteer on the
-              board of Rising Sun Montessori School it’s my goal to help ensure
-              your children receive support with their education. My family
-              moved to El Dorado Hills in 2014 from Fair Oaks because we noticed
-              the difference in the quality of education and how students
-              benefit from more volunteers supporting the classroom. As a real
-              estate agent since 2016 I have been able to help others who see
-              value in education establish their families here. Improving our
-              community through residents who place their children’s needs above
-              their own is a rewarding occupation. Before real estate I also had
-              several decades in sales and support of appliances, audio, and
-              video in both residential and commercial applications. I have a
-              Bachelor’s of Science degree in Business Management and an
-              Associate of Arts degree. I graduated from Folsom High School in
-              1995. You may see me at kid’s soccer games and swim team meets and
-              I welcome you to contact me anytime.
+              Sylvia is the director of Montessori Training Center in
+              Carmichael. She has been in the Montessori field as: a Montessori
+              preschool teacher; the founder and director of a Montessori school
+              in Honolulu; a professor (in the Education dept., Montessori
+              track) at Chaminade University, Honolulu; a Montessori elementary
+              teacher (California); an instructor at, and finally the owner and
+              director of, Montessori Training Center.
+            </p>
+            <p>
+              With all this experience in the field, she has had opportunities
+              to observe in many Montessori schools, from the truly authentic to
+              the “Montesorta”. She appreciates Rising Sun’s adherence to the
+              highest standards in Montessori education. The faculty, from the
+              Head of School down, all demonstrate deep knowledge of Montessori
+              principles, which allow the students to thrive. Sylvia is honored
+              to serve as a member of the Board for this outstanding school.
             </p>
           </div>
         </div>{" "}
         <div className="dirContainer">
           <div className="dirHeader">
-            {/* <div className="dirImg">
-              <img
-                src="/images/placeholder-user.jpg"
-                alt="Board of Directors"
-              />
-            </div> */}
             <div className="dirName">Gabriel Rivera</div>
           </div>
           <div className="dirDescription">
@@ -98,12 +72,6 @@ const EducationProtectionAccount = () => {
         </div>{" "}
         <div className="dirContainer">
           <div className="dirHeader">
-            {/* <div className="dirImg">
-              <img
-                src="/images/placeholder-user.jpg"
-                alt="Board of Directors"
-              />
-            </div> */}
             <div className="dirName">Tiffany Waterhouse (Tidwell)</div>
           </div>
           <div className="dirDescription">

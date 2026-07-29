@@ -49,7 +49,7 @@ const list = [
 const list2 = [
   {
     title: "Title IX",
-    link: "/wp-content/uploads/2022/04/Title-IX-2019.pdf",
+    link: "/wp-content/uploads/2024/10/Title-IX-2024.pdf",
   },
 ];
 

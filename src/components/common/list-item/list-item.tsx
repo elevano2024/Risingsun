@@ -14,13 +14,23 @@ const ListItem = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`list-item ${variant}`}
+      className={`list-item ${variant ?? ""}`}
     >
       <span className="list-item__left">
-        <img src="/images/yellowdot.svg" alt="arrow icon" />
-        {title}
+        <img
+          className="list-item__dot"
+          src="/images/yellowdot.svg"
+          alt=""
+          aria-hidden="true"
+        />
+        <span className="list-item__title">{title}</span>
       </span>
-      <img src="/images/arrow-up-right.svg" alt="arrow icon" />
+      <img
+        className="list-item__arrow"
+        src="/images/arrow-up-right.svg"
+        alt=""
+        aria-hidden="true"
+      />
     </a>
   );
 };

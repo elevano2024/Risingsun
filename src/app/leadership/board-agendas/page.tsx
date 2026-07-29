@@ -12,6 +12,34 @@ const previousAgenda = [
     year: "2025 - 2026",
     agendas: [
       {
+        name: "SPECIAL AGENDA 6.26.26",
+        link: "/wp-content/uploads/2026/06/6_26_26-BOD-special-meeting-agenda.pdf",
+      },
+      {
+        name: "REGULAR AGENDA 6.23.26",
+        link: "/wp-content/uploads/2026/06/6_23_26-BOD-agenda.pdf",
+      },
+      {
+        name: "REGULAR AGENDA 6.2.26",
+        link: "/wp-content/uploads/2026/05/June-2-2026-Agenda.pdf",
+      },
+      {
+        name: "NOTICE OF CANCELLATION/POSTPONEMENT 5.12.26",
+        link: "/wp-content/uploads/2026/05/5_12_26-BOD-agenda-Notice-of-Cancellation-Postponement.pdf",
+      },
+      {
+        name: "REGULAR AGENDA 5.12.26",
+        link: "/wp-content/uploads/2026/05/5_12_26-BOD-agenda.pdf",
+      },
+      {
+        name: "REGULAR AGENDA 4.22.26",
+        link: "/wp-content/uploads/2026/04/rsms-board-agenda-4-22-26.pdf",
+      },
+      {
+        name: "REGULAR AGENDA 3.3.26",
+        link: "/wp-content/uploads/2026/03/RSMS-Board-Agenda-3.3.2026.pdf",
+      },
+      {
         name: "REGULAR AGENDA 1.15.26",
         link: "/wp-content/uploads/2026/01/RSMS-board-agenda-Jan-15-2026.pdf",
       },
