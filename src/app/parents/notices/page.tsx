@@ -4,6 +4,14 @@ import "./index.scss";
 
 const links = [
   {
+    title: "Immigration Enforcement Actions at California Schools",
+    link: "/wp-content/uploads/2025/10/Immigration-Enforcement-Actions-at-California-Schools.pdf",
+  },
+  {
+    title: "Sample Williams Complaint Classroom Notice",
+    link: "/wp-content/uploads/2025/08/Sample-Williams-Complaint-Classroom-Notice.pdf",
+  },
+  {
     title:
       "El Dorado County Charter SELPA Governance Council Public Hearing May 2025",
     link: "/wp-content/uploads/2025/05/Charter-Notice-of-CEO-Public-Hearing-2025-26-1.pdf",
@@ -60,10 +68,7 @@ const links = [
 
 const Component = () => {
   return (
-    <Layout
-      header="Homelessness Services (McKinney-Vento Act)"
-      subHeader="The McKinney-Vento Homeless Assistance Act is a federal law that protects the educational rights of children and youth experiencing homelessness."
-    >
+    <Layout header="Notices">
       <div className="container" style={{ paddingTop: "80px" }}>
         {links.map((_) => {
           return <ListItem key={_.title} title={_.title} link={_.link} />;

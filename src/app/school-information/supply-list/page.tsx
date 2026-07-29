@@ -4,19 +4,19 @@ import ListItem from "@/components/common/list-item/list-item";
 const links = [
   {
     title: "Back to School Supply List TK/Kindergarten",
-    link: "/wp-content/uploads/2024/07/TK-K-Back-to-School-Supply-List.docx-1.pdf",
+    link: "/wp-content/uploads/2026/07/Back-to-School-Supply-List-TK.K.docx.pdf",
   },
   {
-    title: "Back to School Supply List 1st – 3rd & Magellan",
-    link: "/wp-content/uploads/2024/07/1st-3rd-and-Magellan-Advanced-K-Back-to-School-Supply-List.docx.pdf",
+    title: "Back to School Supply List 1st – 3rd",
+    link: "/wp-content/uploads/2026/07/Back-to-School-Supply-List-1st.-2nd.-3rd.docx.pdf",
   },
   {
-    title: "Back to School Supply List Phoenix",
-    link: "/wp-content/uploads/2024/07/Phoenix-Back-to-School-Supply-List.docx-1.pdf",
+    title: "Back to School Supply List 4th – 5th",
+    link: "/wp-content/uploads/2026/07/Back-to-School-Supply-List-4th-5th.docx.pdf",
   },
   {
     title: "Back to School Supply List Taurus",
-    link: "/wp-content/uploads/2024/08/Back-to-School-Supply-List-for-Taurus.docx.pdf",
+    link: "/wp-content/uploads/2026/07/Back-to-School-Supply-List-for-Taurus.docx.pdf",
   },
 ];
 

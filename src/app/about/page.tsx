@@ -54,15 +54,17 @@ const Component = () => {
         </p>
 
         <p>
-          The Vision of RSMS is to implement an effective educational program
-          that will sustain the Charter School’s mission for continued
-          generations of RSMS students and families. To achieve this we envision
-          a school that has:
+          Rising Sun Montessori School is committed to strengthening the
+          critical thinking and problem-solving skills of all students and
+          encouraging an atmosphere of inquisitiveness and interaction,
+          collaboration, entrepreneurship, communication and global
+          awareness—all essential for the globally competitive, 21st-century
+          student.
         </p>
         <div className="about-list">
           <ListItem
-            title="Title IX 2019"
-            link="/wp-content/uploads/2022/04/Title-IX-2019.pdf"
+            title="Title IX Information"
+            link="/wp-content/uploads/2024/10/Title-IX-2024.pdf"
           />
         </div>
       </div>

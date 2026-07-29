@@ -33,7 +33,7 @@ const menuData = [
         link: "/about/rsms-charter-petition",
       },
       {
-        name: "Charter SELAP Local Plan",
+        name: "Charter SELPA Local Plan",
         link: "/about/charter-selap-local-plan",
       },
       {

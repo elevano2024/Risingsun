@@ -12,7 +12,7 @@ const metrics = [
     imageLink:
       "/wp-content/uploads/2022/04/CA-School-Dashboard-Logo-1.png",
     title: "CA-School-Dashboard-Logo-1",
-    link: "https://www.caschooldashboard.org/reports/09618380129965/2019",
+    link: "https://www.caschooldashboard.org/reports/09618380129965/2024",
   },
   {
     imageLink:
@@ -30,7 +30,7 @@ const metrics = [
     imageLink:
       "/wp-content/uploads/2024/01/image-1000x190-1.png",
     title: "ca dept of education",
-    link: "https://sarconline.org/public/summary/09618380129965/2022%E2%80%932023",
+    link: "https://sarconline.org/public/print/09618380129965/2023-2024",
   },
 ];
 
