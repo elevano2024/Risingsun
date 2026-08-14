@@ -1,0 +1,30 @@
+/* Visually hide PDF extracted text (screen-reader only) */
+.rsms-pdf-preview {
+  position: relative;
+}
+.rsms-pdf-a11y {
+  position: absolute !important;
+  width: 0.0625rem !important;
+  height: 0.0625rem !important;
+  padding: 0 !important;
+  margin: -0.0625rem !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+/* Agendas EPA wraps the PDF — do not inherit global .EPA padding-top */
+.agendas > .EPA,
+.agendas .EPA {
+  padding-top: 0 !important;
+}
+.agendas .rsms-pdf-preview canvas,
+.agendas .rsms-pdf-preview iframe {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  border: 0 !important;
+}
+.agendas .rsms-pdf-preview iframe {
+  min-height: 50rem;
+}

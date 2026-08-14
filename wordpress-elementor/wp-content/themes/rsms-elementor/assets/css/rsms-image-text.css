@@ -1,0 +1,140 @@
+.list-item.left,
+.list-item.right {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+  color: #0a160c;
+  font-weight: 600;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* Reset shared .list-item link styles (Next only loads those on link pages) */
+  padding: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.list-item.left .list-item__image,
+.list-item.right .list-item__image {
+  min-width: 42%;
+  max-width: 42%;
+}
+.list-item.left .list-item__content,
+.list-item.right .list-item__content {
+  min-width: 48%;
+  max-width: 48%;
+}
+.list-item.left .list-item__content .list-item__title,
+.list-item.right .list-item__content .list-item__title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #0a160c;
+  margin-bottom: 1rem;
+}
+.list-item.left .list-item__content .list-item__data,
+.list-item.right .list-item__content .list-item__data {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0%;
+  color: #687a6b;
+  margin-bottom: 2rem;
+}
+.list-item.left .list-item__content .list-item__tag,
+.list-item.right .list-item__content .list-item__tag {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #0a160c;
+}
+.list-item.left .list-item__content .list-item__tag.tags,
+.list-item.right .list-item__content .list-item__tag.tags {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.0625rem solid #d9d9d9;
+}
+
+.list-item.right {
+  flex-direction: row-reverse;
+}
+
+.list-item.main {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  /* Match Next: do not use space-between — keeps titles top-aligned when card heights stretch. */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.list-item.main .list-item__image {
+  min-width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-item.main .list-item__content {
+  min-width: 100%;
+  max-width: 100%;
+}
+.list-item.main .list-item__content .list-item__title {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #0a160c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.list-item.main .list-item__content .list-item__data {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0%;
+  color: #687a6b;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.list-item.main .list-item__content .list-item__tag {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #0a160c;
+}
+
+@media (max-width: 960px) {
+  .list-item.left,
+  .list-item.right {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 786px) {
+  .list-item.left,
+  .list-item.right {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-item.left .list-item__image,
+  .list-item.right .list-item__image {
+    min-width: 100%;
+    max-width: 100%;
+  }
+  .list-item.left .list-item__content,
+  .list-item.right .list-item__content {
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,1131 @@
+/* Bridge: Elementor native widgets → RSMS page styles
+ * General rules for all native-converted pages + About page-id-13 overrides.
+ */
+
+/* ------------------------------------------------------------------ */
+/* Editable page heroes (moved out of theme header.php)                */
+/* Continuous gradient with nav (background-position shift) + banner.  */
+/* ------------------------------------------------------------------ */
+
+.elementor-section.elementor-top-section:has(.rsms-el-hero-title),
+.elementor-section.elementor-top-section.rsms-el-hero {
+	position: relative;
+	background-image: linear-gradient(180deg, #17431e 0%, #22712f 60%, #2b943c 100%) !important;
+	background-size: 100% 22.25rem !important;
+	background-repeat: no-repeat !important;
+	/* Shift up by nav height (5.5rem) so gradient continues from header */
+	background-position: 0 -5.5rem !important;
+	background-color: #2b943c !important;
+	padding-top: 4.75rem !important;
+	padding-bottom: 4.75rem !important;
+	margin: 0 !important;
+	overflow: visible;
+}
+
+/* Converted interior heroes retain the source `container` class on the
+ * section itself.  A container must constrain the copy inside the band, never
+ * the green band: otherwise wide viewports expose a white strip at the right. */
+.elementor-section.elementor-top-section.rsms-el-hero.container,
+.elementor-section.elementor-top-section.container:has(.rsms-el-hero-title) {
+	width: 100% !important;
+	max-width: none !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+/* Decorative banner icons — same placement as Next .header_main__subWrapper */
+.elementor-section.elementor-top-section:has(.rsms-el-hero-title)::after,
+.elementor-section.elementor-top-section.rsms-el-hero::after {
+	content: '';
+	position: absolute;
+	left: 10%;
+	bottom: 1rem;
+	width: 80%;
+	/* header-banner.svg is 1485 × 215.  Preserve that same intrinsic ratio as
+	 * the Next.js <img>; the old fixed height cropped the top of the star when
+	 * the banner grew wider than its containing box. */
+	height: auto;
+	aspect-ratio: 1485 / 215;
+	background: url('/wp-content/uploads/rsms-static/images/header-banner.svg') no-repeat center bottom;
+	background-size: 100% 100%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.elementor-section.elementor-top-section:has(.rsms-el-hero-title) > .elementor-container,
+.elementor-section.elementor-top-section.rsms-el-hero > .elementor-container {
+	position: relative;
+	z-index: 1;
+	width: 100% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: 0.9375rem !important;
+	padding-right: 0.9375rem !important;
+	display: flex !important;
+}
+
+.elementor-widget-heading.rsms-el-hero-title .elementor-heading-title {
+	color: #fff !important;
+	font-size: 2.0625rem !important;
+	line-height: 1.333333 !important;
+	letter-spacing: 0.01em !important;
+	font-weight: 700 !important;
+	margin: 0 0 1rem !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+/* Match Next: only h2 has 1rem bottom margin — not widget + heading. */
+.elementor-section:has(.rsms-el-hero-title) .elementor-widget.rsms-el-hero-title {
+	margin: 0 !important;
+}
+
+.elementor-widget-text-editor.rsms-el-hero-subtitle {
+	color: #b7d8bc !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	font-weight: 400 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+/* Next header.scss `.header_main__content__subtitle` — keep p in sync with widget */
+.elementor-widget-text-editor.rsms-el-hero-subtitle p {
+	color: inherit !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	font-weight: 400 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+/* Empty hero subtitle must not add vertical space */
+.elementor-widget-text-editor.rsms-el-hero-subtitle:has(p:empty),
+.elementor-widget-text-editor.rsms-el-hero-subtitle:not(:has(p:not(:empty))) {
+	display: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+}
+
+/* About / page overrides must not restyle the green hero band */
+body.page-id-13 .elementor-13 .elementor-section:has(.rsms-el-hero-title),
+body.elementor-page-13 .elementor-13 .elementor-section:has(.rsms-el-hero-title) {
+	padding-top: 4.75rem !important;
+	padding-bottom: 4.75rem !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-hero-title .elementor-heading-title,
+body.elementor-page-13 .elementor-13 .rsms-el-hero-title .elementor-heading-title {
+	color: #fff !important;
+	font-size: 2.0625rem !important;
+	line-height: 1.333333 !important;
+	font-weight: 700 !important;
+	margin: 0 0 1rem !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-hero-subtitle,
+body.page-id-13 .elementor-13 .rsms-el-hero-subtitle p,
+body.elementor-page-13 .elementor-13 .rsms-el-hero-subtitle,
+body.elementor-page-13 .elementor-13 .rsms-el-hero-subtitle p {
+	color: #b7d8bc !important;
+	font-size: 1.125rem !important;
+	line-height: 1.75rem !important;
+	margin: 0 !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Content section paddings (page CSS targets classes Elementor must   */
+/* render via css_classes; :has() keeps fallbacks if class missing)    */
+/* ------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------ */
+/* Content section paddings (classes via css_classes + :has fallbacks) */
+/* ------------------------------------------------------------------ */
+
+/* Inline paddingTop:80px from Next page.tsx — force on Elementor sections (not HTML blocks) */
+.elementor-section.programs:not(.rsms-el-html-block):not(.home-section-2),
+body:not(.page-id-9) .elementor-section.programdetail:not(.rsms-el-html-block):not(.home-section-2),
+.elementor-section.elective:not(.rsms-el-html-block):not(.home-section-2),
+.elementor-section.lowerElementary:not(.rsms-el-html-block),
+.elementor-section.upperElementary:not(.rsms-el-html-block),
+.elementor-section.middleSchool:not(.rsms-el-html-block),
+.elementor-section.about:not(.rsms-el-html-block),
+.elementor-section:has(.rsms-el-card-list-item):not(.rsms-el-html-block):not(.grid3x):not(.home-section-2),
+.elementor-section:has(.rsms-el-detail-card):not(.rsms-el-html-block):not(.tkMain):not(.tkDetail) {
+	padding-top: 80px !important;
+}
+
+/* TK page: Next has no gap between hero and .tk-header */
+.elementor-section.tkMain:not(.rsms-el-html-block) {
+	padding-top: 0 !important;
+}
+
+.elementor-section.gallery:not(.rsms-el-html-block),
+.elementor-section:has(.gallery-image):not(.rsms-el-html-block) {
+	padding-top: 5rem !important;
+}
+
+.elementor-section.EPA:not(.rsms-el-html-block),
+.elementor-section.contact:not(.rsms-el-html-block),
+.elementor-section.agendas:not(.rsms-el-html-block),
+.elementor-section.parent-committee:not(.rsms-el-html-block),
+.elementor-section.homelessness-services:not(.rsms-el-html-block) {
+	padding-top: 5rem !important;
+}
+
+.elementor-section.schoolMetricPerformance {
+	padding-top: 5.375rem !important;
+	padding-bottom: 2.875rem !important;
+}
+
+.elementor-section.staff-details {
+	padding-bottom: 2rem !important;
+}
+
+/*
+ * Page CSS uses `.programs > div { display:flex; gap:… }` for the inner
+ * .container. Do not let that rewrite Elementor’s .elementor-container.
+ */
+.elementor-section.programs > .elementor-container,
+.elementor-section.programdetail > .elementor-container,
+.elementor-section.elective > .elementor-container {
+	gap: 0 !important;
+}
+
+.elementor-section.elementor-top-section.about > .elementor-container,
+.elementor-section.elementor-top-section.container:not(.home-section-2) > .elementor-container,
+.elementor-section.elementor-top-section.programs:not(.home-section-2) > .elementor-container,
+.elementor-section.elementor-top-section.gallery > .elementor-container,
+.elementor-section.elementor-top-section.meet-our-staff > .elementor-container,
+.elementor-section.elementor-top-section.EPA > .elementor-container,
+.elementor-section.elementor-top-section.staff-details > .elementor-container,
+.elementor-section.elementor-top-section.programdetail:not(.home-section-2) > .elementor-container {
+	width: 100% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: 0.9375rem !important;
+	padding-right: 0.9375rem !important;
+	display: flex !important;
+}
+
+.elementor-section.elementor-top-section.about:not(.rsms-el-hero):not(:has(.rsms-el-hero-title)),
+.elementor-section.elementor-top-section.container:not(.rsms-el-hero):not(:has(.rsms-el-hero-title)):not(.meet-our-staff):not(:has(.rsms-el-staff)),
+.elementor-section.elementor-top-section.programs:not(.rsms-el-hero):not(.home-section-2):not(:has(.rsms-el-hero-title)),
+.elementor-section.elementor-top-section.gallery:not(.rsms-el-hero):not(:has(.rsms-el-hero-title)),
+.elementor-section.elementor-top-section.EPA:not(.rsms-el-hero):not(:has(.rsms-el-hero-title)),
+.elementor-section.elementor-top-section.staff-details:not(.rsms-el-hero):not(:has(.rsms-el-hero-title)),
+.elementor-section.elementor-top-section.programdetail:not(.rsms-el-hero):not(.home-section-2):not(:has(.rsms-el-hero-title)) {
+	padding-bottom: 0 !important;
+}
+
+.elementor-section.elementor-top-section .elementor-column > .elementor-widget-wrap {
+	display: block !important;
+	padding: 0 !important;
+}
+
+.elementor-section.elementor-top-section .elementor-widget {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.elementor-section.elementor-top-section .elementor-widget-container {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Headings */
+.elementor-widget-heading .elementor-heading-title {
+	color: #333 !important;
+	font-weight: 600 !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+.elementor-widget-heading h1.elementor-heading-title {
+	font-size: 2.75rem !important;
+	line-height: 3.5rem !important;
+	margin: 0 0 1rem !important;
+}
+
+.elementor-widget-heading h2.elementor-heading-title {
+	font-size: 2.75rem !important;
+	line-height: 3.5rem !important;
+	margin: 0 0 1rem !important;
+}
+
+.elementor-widget-heading h3.elementor-heading-title {
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	margin: 0 0 0.5rem !important;
+}
+
+.elementor-widget-heading h4.elementor-heading-title,
+.elementor-widget-heading h5.elementor-heading-title,
+.elementor-widget-heading h6.elementor-heading-title {
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	margin: 0 0 0.5rem !important;
+}
+
+/* Paragraphs / text-editor */
+.elementor-widget-text-editor,
+.elementor-widget-text-editor p {
+	color: #687a6b !important;
+	font-size: 1.25rem !important;
+	line-height: 1.5rem !important;
+	font-weight: 400 !important;
+	margin: 0 0 2rem !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+.elementor-widget-text-editor p:last-child {
+	margin-bottom: 0 !important;
+}
+
+.elementor-widget-text-editor {
+	margin-bottom: 2rem !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Icon List as .list-item (title + yellow dot + arrow)                */
+/* ------------------------------------------------------------------ */
+
+.rsms-el-list-item {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-items {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+	display: block !important;
+	width: 100% !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-item {
+	margin: 0 !important;
+	padding: 0 !important;
+	display: block !important;
+	width: 100% !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-item a,
+.rsms-el-list-item .elementor-icon-list-item > .elementor-icon-list-text,
+.rsms-el-list-item .elementor-icon-list-item .elementor-icon-list-item-link {
+	display: flex !important;
+	align-items: flex-start !important;
+	justify-content: space-between !important;
+	gap: 1rem !important;
+	padding: 0.625rem !important;
+	padding-bottom: 2rem !important;
+	margin: 0 0 2rem !important;
+	border-bottom: 0.0625rem solid #d9d9d9 !important;
+	font-size: 1.25rem !important;
+	line-height: 1.4 !important;
+	color: #0a160c !important;
+	font-weight: 600 !important;
+	text-decoration: none !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-icon {
+	width: 1.25rem !important;
+	height: 1.25rem !important;
+	min-width: 1.25rem !important;
+	margin: 0.25rem 0.5rem 0 0 !important;
+	flex-shrink: 0 !important;
+	background: url("/wp-content/uploads/rsms-static/images/yellowdot.svg") center / contain no-repeat !important;
+	display: inline-block !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-icon svg,
+.rsms-el-list-item .elementor-icon-list-icon i {
+	opacity: 0 !important;
+	width: 1.25rem !important;
+	height: 1.25rem !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-text {
+	flex: 1 !important;
+	min-width: 0 !important;
+	color: #0a160c !important;
+	font-size: 1.25rem !important;
+	line-height: 1.4 !important;
+	font-weight: 600 !important;
+	padding: 0 !important;
+	align-self: flex-start !important;
+}
+
+.rsms-el-list-item .elementor-icon-list-item a::after,
+.rsms-el-list-item .elementor-icon-list-item .elementor-icon-list-item-link::after {
+	content: "" !important;
+	display: block !important;
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+	flex-shrink: 0 !important;
+	margin-top: 0.125rem !important;
+	background: url("/wp-content/uploads/rsms-static/images/arrow-up-right.svg") center / contain no-repeat !important;
+}
+
+.rsms-el-list-item.elementor-icon-list--layout-inline .elementor-icon-list-items {
+	display: block !important;
+}
+
+.rsms-el-list-item .elementor-inline-item {
+	display: block !important;
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.rsms-el-list-item.nobborder .elementor-icon-list-item a,
+.rsms-el-list-item.nobborder .elementor-icon-list-item .elementor-icon-list-item-link {
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0.625rem !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* detailCard1 → image-box                                             */
+/* ------------------------------------------------------------------ */
+
+.elementor-widget-image-box.detailCard1,
+.elementor-widget-image-box.rsms-el-detail-card,
+.elementor-widget-icon-box.detailCard1,
+.elementor-widget-icon-box.rsms-el-detail-card,
+.elementor-section.elementor-top-section .elementor-widget-image-box.detailCard1,
+.elementor-section.elementor-top-section .elementor-widget-image-box.rsms-el-detail-card {
+	margin-bottom: 2.5rem !important;
+}
+
+.elementor-widget-image-box.detailCard1 .elementor-image-box-wrapper,
+.elementor-widget-image-box.rsms-el-detail-card .elementor-image-box-wrapper,
+.elementor-widget-icon-box.detailCard1 .elementor-icon-box-wrapper,
+.elementor-widget-icon-box.rsms-el-detail-card .elementor-icon-box-wrapper {
+	display: flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	gap: 1.25rem !important;
+	text-align: left !important;
+}
+
+.elementor-widget-image-box.detailCard1 .elementor-image-box-img,
+.elementor-widget-image-box.rsms-el-detail-card .elementor-image-box-img,
+.elementor-widget-icon-box.detailCard1 .elementor-icon-box-icon,
+.elementor-widget-icon-box.rsms-el-detail-card .elementor-icon-box-icon {
+	flex-shrink: 0 !important;
+	margin: 0 !important;
+	width: auto !important;
+}
+
+.elementor-widget-image-box.detailCard1 .elementor-image-box-img img,
+.elementor-widget-image-box.rsms-el-detail-card .elementor-image-box-img img,
+.elementor-widget-icon-box.detailCard1 .elementor-icon-box-icon img,
+.elementor-widget-icon-box.detailCard1 .elementor-icon-box-icon svg,
+.elementor-widget-icon-box.rsms-el-detail-card .elementor-icon-box-icon img,
+.elementor-widget-icon-box.rsms-el-detail-card .elementor-icon-box-icon svg {
+	height: 3.75rem !important;
+	width: 3.75rem !important;
+	max-width: 3.75rem !important;
+}
+
+.elementor-widget-image-box.detailCard1 .elementor-image-box-title,
+.elementor-widget-image-box.rsms-el-detail-card .elementor-image-box-title,
+.elementor-widget-icon-box.detailCard1 .elementor-icon-box-title,
+.elementor-widget-icon-box.rsms-el-detail-card .elementor-icon-box-title {
+	font-weight: 500 !important;
+	font-size: 1.25rem !important;
+	line-height: 100% !important;
+	margin-bottom: 0.5rem !important;
+	color: #0a160c !important;
+}
+
+.elementor-widget-image-box.detailCard1 .elementor-image-box-description,
+.elementor-widget-image-box.rsms-el-detail-card .elementor-image-box-description,
+.elementor-widget-icon-box.detailCard1 .elementor-icon-box-description,
+.elementor-widget-icon-box.rsms-el-detail-card .elementor-icon-box-description {
+	font-weight: 400 !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	color: #687a6b !important;
+	margin: 0 !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Staff cards (meet-our-staff)                                        */
+/* ------------------------------------------------------------------ */
+
+/* Ensure page section paddings win over Elementor defaults when classes present */
+.elementor-section.meet-our-staff,
+.elementor-section:has(.rsms-el-staff) {
+	background: #e8ffeb !important;
+	background: linear-gradient(180deg, rgb(232, 255, 235) 17%, rgb(255, 255, 255) 100%) !important;
+	padding-top: 5.375rem !important;
+	padding-bottom: 2.875rem !important;
+}
+
+.elementor-section.meet-our-staff .elementor-column > .elementor-widget-wrap,
+.elementor-section.staff-list-container .elementor-column > .elementor-widget-wrap,
+.elementor-section.elementor-top-section:has(.rsms-el-staff) .elementor-column > .elementor-widget-wrap {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr) !important;
+	column-gap: 5rem !important;
+	row-gap: 3.125rem !important;
+}
+
+@media (max-width: 75rem) {
+	.elementor-section.meet-our-staff .elementor-column > .elementor-widget-wrap,
+	.elementor-section.staff-list-container .elementor-column > .elementor-widget-wrap,
+	.elementor-section.elementor-top-section:has(.rsms-el-staff) .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+}
+
+@media (max-width: 62rem) {
+	.elementor-section.meet-our-staff .elementor-column > .elementor-widget-wrap,
+	.elementor-section.staff-list-container .elementor-column > .elementor-widget-wrap,
+	.elementor-section.elementor-top-section:has(.rsms-el-staff) .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
+@media (max-width: 37.5rem) {
+	.elementor-section.meet-our-staff .elementor-column > .elementor-widget-wrap,
+	.elementor-section.staff-list-container .elementor-column > .elementor-widget-wrap,
+	.elementor-section.elementor-top-section:has(.rsms-el-staff) .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+.elementor-widget-image-box.rsms-el-staff,
+.elementor-widget-image-box.staff-container,
+.elementor-widget-icon-box.rsms-el-staff,
+.elementor-widget-icon-box.staff-container {
+	width: 100% !important;
+	max-width: 100% !important;
+	min-width: 0 !important;
+	flex: none !important;
+	text-align: center !important;
+}
+
+.elementor-widget-image-box.rsms-el-staff .elementor-image-box-wrapper,
+.elementor-widget-image-box.staff-container .elementor-image-box-wrapper,
+.elementor-widget-icon-box.rsms-el-staff .elementor-icon-box-wrapper,
+.elementor-widget-icon-box.staff-container .elementor-icon-box-wrapper {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: stretch !important;
+	text-align: center !important;
+}
+
+.elementor-widget-image-box.rsms-el-staff .elementor-image-box-img,
+.elementor-widget-image-box.staff-container .elementor-image-box-img {
+	width: 100% !important;
+	margin: 0 0 1.5rem !important;
+	aspect-ratio: 1 / 1;
+	overflow: hidden;
+	border-radius: 1rem;
+}
+
+.elementor-widget-image-box.rsms-el-staff .elementor-image-box-img img,
+.elementor-widget-image-box.staff-container .elementor-image-box-img img,
+.elementor-widget-icon-box.rsms-el-staff .elementor-icon-box-icon img,
+.elementor-widget-icon-box.rsms-el-staff .elementor-icon-box-icon svg,
+.elementor-widget-icon-box.staff-container .elementor-icon-box-icon img,
+.elementor-widget-icon-box.staff-container .elementor-icon-box-icon svg {
+	width: 100% !important;
+	height: 100% !important;
+	max-width: none !important;
+	object-fit: cover !important;
+	border-radius: 1rem !important;
+	display: block !important;
+}
+
+.elementor-widget-image-box.rsms-el-staff .elementor-image-box-title,
+.elementor-widget-image-box.staff-container .elementor-image-box-title,
+.elementor-widget-icon-box.rsms-el-staff .elementor-icon-box-title,
+.elementor-widget-icon-box.staff-container .elementor-icon-box-title {
+	font-size: 1.375rem !important;
+	font-weight: 700 !important;
+	color: #0a160c !important;
+	margin: 0 0 0.25rem !important;
+	text-align: center !important;
+}
+
+.elementor-widget-image-box.rsms-el-staff .elementor-image-box-description,
+.elementor-widget-image-box.staff-container .elementor-image-box-description,
+.elementor-widget-icon-box.rsms-el-staff .elementor-icon-box-description,
+.elementor-widget-icon-box.staff-container .elementor-icon-box-description {
+	font-size: 1rem !important;
+	line-height: 1.625rem !important;
+	color: #687a6b !important;
+	margin: 0 !important;
+	text-align: center !important;
+}
+
+/* Staff detail pages: photo + name */
+.elementor-section.staff-details .elementor-widget-image img,
+.elementor-section.staff-details .staff_photo img {
+	max-width: 16rem !important;
+	height: auto !important;
+	object-fit: cover !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Gallery                                                             */
+/* page-gallery.css puts display:grid on `.gallery`; on Elementor that */
+/* class is the SECTION, so the single column collapses into col 1.    */
+/* Put the grid on the widget wrap instead.                            */
+/* ------------------------------------------------------------------ */
+
+.elementor-section.elementor-top-section.gallery {
+	display: block !important;
+}
+
+.elementor-section.elementor-top-section.gallery .elementor-column > .elementor-widget-wrap {
+	display: grid !important;
+	grid-template-columns: repeat(4, 1fr) !important;
+	column-gap: 1.5rem !important;
+	row-gap: 1.5rem !important;
+	width: 100% !important;
+}
+
+.elementor-section.elementor-top-section.gallery .elementor-widget-image,
+.elementor-section.elementor-top-section.gallery .elementor-widget.gallery-image {
+	width: 100% !important;
+	max-width: 100% !important;
+	flex: none !important;
+}
+
+.elementor-section.elementor-top-section.gallery .elementor-widget-image img,
+.elementor-section.elementor-top-section.gallery .elementor-widget.gallery-image img {
+	width: 100% !important;
+	height: auto !important;
+	aspect-ratio: 3 / 2 !important;
+	display: block !important;
+	object-fit: cover !important;
+	border-radius: 1rem !important;
+}
+
+@media (max-width: 75rem) {
+	.elementor-section.elementor-top-section.gallery .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: repeat(3, 1fr) !important;
+	}
+}
+
+@media (max-width: 50rem) {
+	.elementor-section.elementor-top-section.gallery .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+
+@media (max-width: 37.5rem) {
+	.elementor-section.elementor-top-section.gallery .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: 1fr !important;
+	}
+}
+
+/* ------------------------------------------------------------------ */
+/* About page (#13) — keep exact pixel rules from proof                */
+/* ------------------------------------------------------------------ */
+
+body.page-id-13 .elementor-13 .elementor-section.elementor-top-section:not(.rsms-el-html-block) > .elementor-container,
+body.elementor-page-13 .elementor-13 .elementor-section.elementor-top-section:not(.rsms-el-html-block) > .elementor-container {
+	max-width: 71.25rem !important;
+	width: 100% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	padding-left: 0.9375rem !important;
+	padding-right: 0.9375rem !important;
+	display: flex !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-section.elementor-top-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero):not(.rsms-el-html-block),
+body.elementor-page-13 .elementor-13 .elementor-section.elementor-top-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero):not(.rsms-el-html-block) {
+	padding-top: 80px !important;
+	padding-bottom: 0 !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-column > .elementor-widget-wrap,
+body.elementor-page-13 .elementor-13 .elementor-column > .elementor-widget-wrap {
+	display: block !important;
+	padding: 0 !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-widget,
+body.elementor-page-13 .elementor-13 .elementor-widget {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-widget-container,
+body.elementor-page-13 .elementor-13 .elementor-widget-container {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-heading h2.elementor-heading-title,
+body.elementor-page-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-heading h2.elementor-heading-title {
+	color: #333 !important;
+	font-size: 2.75rem !important;
+	line-height: 3.5rem !important;
+	font-weight: 600 !important;
+	margin: 0 0 1rem !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-widget-heading h3.elementor-heading-title,
+body.elementor-page-13 .elementor-13 .elementor-widget-heading h3.elementor-heading-title {
+	color: #333 !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	font-weight: 600 !important;
+	margin: 0 0 0.5rem !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor,
+body.page-id-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor p,
+body.elementor-page-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor,
+body.elementor-page-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor p {
+	color: #687a6b !important;
+	font-size: 1.25rem !important;
+	line-height: 1.5rem !important;
+	font-weight: 400 !important;
+	margin: 0 0 2rem !important;
+	padding: 0 !important;
+	font-family: inherit !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor p:last-child,
+body.elementor-page-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor p:last-child {
+	margin-bottom: 0 !important;
+}
+
+body.page-id-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor,
+body.elementor-page-13 .elementor-13 .elementor-section:not(:has(.rsms-el-hero-title)):not(.rsms-el-hero) .elementor-widget-text-editor {
+	margin-bottom: 2rem !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-items,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-items {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+	display: block !important;
+	width: 100% !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-item,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-item {
+	margin: 0 !important;
+	padding: 0 !important;
+	display: block !important;
+	width: 100% !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-item a,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-item a {
+	display: flex !important;
+	align-items: flex-start !important;
+	justify-content: space-between !important;
+	gap: 1rem !important;
+	padding: 0.625rem !important;
+	padding-bottom: 2rem !important;
+	margin: 0 0 2rem !important;
+	border-bottom: 0.0625rem solid #d9d9d9 !important;
+	font-size: 1.25rem !important;
+	line-height: 1.4 !important;
+	color: #0a160c !important;
+	font-weight: 600 !important;
+	text-decoration: none !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-icon,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-icon {
+	width: 1.25rem !important;
+	height: 1.25rem !important;
+	min-width: 1.25rem !important;
+	margin: 0.25rem 0.5rem 0 0 !important;
+	flex-shrink: 0 !important;
+	background: url("/wp-content/uploads/rsms-static/images/yellowdot.svg") center / contain no-repeat !important;
+	display: inline-block !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-icon svg,
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-icon i,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-icon svg,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-icon i {
+	opacity: 0 !important;
+	width: 1.25rem !important;
+	height: 1.25rem !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-text,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-text {
+	flex: 1 !important;
+	min-width: 0 !important;
+	color: #0a160c !important;
+	font-size: 1.25rem !important;
+	line-height: 1.4 !important;
+	font-weight: 600 !important;
+	padding: 0 !important;
+	align-self: flex-start !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-item a::after,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-icon-list-item a::after {
+	content: "" !important;
+	display: block !important;
+	width: 1.5rem !important;
+	height: 1.5rem !important;
+	flex-shrink: 0 !important;
+	margin-top: 0.125rem !important;
+	background: url("/wp-content/uploads/rsms-static/images/arrow-up-right.svg") center / contain no-repeat !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item.elementor-icon-list--layout-inline .elementor-icon-list-items,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item.elementor-icon-list--layout-inline .elementor-icon-list-items {
+	display: block !important;
+}
+
+body.page-id-13 .elementor-13 .rsms-el-list-item .elementor-inline-item,
+body.elementor-page-13 .elementor-13 .rsms-el-list-item .elementor-inline-item {
+	display: block !important;
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+/* Source-group markers now own the large vertical rhythm. A blanket flex gap
+ * here separated the lead heading from its paragraph and then doubled every
+ * intended card gap; it also leaked into field-trips/community pages because
+ * they share `.programs`. Keep the wrapper neutral. */
+body.page-id-21 .elementor-section.programs:not(.programdetail) > .elementor-container > .elementor-column > .elementor-widget-wrap {
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 0 !important;
+}
+
+.rsms-el-card-list-item.elementor-widget-image-box,
+.rsms-el-card-list-item.elementor-widget-icon-box {
+	margin-bottom: 0 !important;
+	width: 100% !important;
+}
+.rsms-el-card-list-item .elementor-image-box-wrapper,
+.rsms-el-card-list-item .elementor-icon-box-wrapper {
+	display: flex !important;
+	gap: 1rem !important;
+	align-items: flex-start !important;
+	justify-content: space-between !important;
+	width: 100% !important;
+}
+.rsms-el-card-list-item.left .elementor-image-box-wrapper,
+.rsms-el-card-list-item.left .elementor-icon-box-wrapper {
+	flex-direction: row !important;
+}
+.rsms-el-card-list-item.right .elementor-image-box-wrapper,
+.rsms-el-card-list-item.right .elementor-icon-box-wrapper {
+	flex-direction: row-reverse !important;
+}
+.rsms-el-card-list-item .elementor-image-box-img,
+.rsms-el-card-list-item .elementor-icon-box-icon {
+	min-width: 0 !important;
+	max-width: 42% !important;
+	width: 42% !important;
+	flex: 0 0 42% !important;
+	align-self: flex-start !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: auto !important;
+}
+.rsms-el-card-list-item.main .elementor-image-box-img,
+.rsms-el-card-list-item.main .elementor-icon-box-icon {
+	min-width: 100% !important;
+	max-width: 100% !important;
+	width: 100% !important;
+	flex: 0 0 100% !important;
+}
+.rsms-el-card-list-item .elementor-image-box-img figure,
+.rsms-el-card-list-item .elementor-image-box-img a {
+	display: block !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	line-height: 0 !important;
+	width: 100% !important;
+	height: auto !important;
+}
+.rsms-el-card-list-item .elementor-image-box-img img,
+.rsms-el-card-list-item .elementor-icon-box-icon img,
+.rsms-el-card-list-item .elementor-icon-box-icon svg {
+	width: 100% !important;
+	max-width: 100% !important;
+	height: auto !important;
+	display: block !important;
+	object-fit: contain !important;
+}
+.rsms-el-card-list-item .elementor-image-box-content,
+.rsms-el-card-list-item .elementor-icon-box-content {
+	min-width: 48% !important;
+	max-width: 48% !important;
+	flex: 0 0 48% !important;
+}
+.rsms-el-card-list-item .elementor-image-box-title,
+.rsms-el-card-list-item .elementor-icon-box-title {
+	font-size: 2rem !important;
+	line-height: 1 !important;
+	font-weight: 500 !important;
+	letter-spacing: 0.01em !important;
+	color: #0a160c !important;
+	margin: 0 0 1rem !important;
+}
+.rsms-el-card-list-item .elementor-image-box-title:empty {
+	display: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 0 !important;
+}
+.rsms-el-card-list-item .elementor-image-box-description,
+.rsms-el-card-list-item .elementor-icon-box-description {
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	font-weight: 400 !important;
+	color: #687a6b !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	white-space: normal !important;
+}
+.rsms-el-card-list-item .elementor-image-box-content,
+.rsms-el-card-list-item .elementor-icon-box-content {
+	padding: 0 !important;
+}
+.rsms-el-card-list-item .elementor-image-box-description .rsms-el-card-data {
+	display: block !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	font-weight: 400 !important;
+	color: #687a6b !important;
+	margin: 0 0 2rem !important;
+}
+.rsms-el-card-list-item .elementor-image-box-description .rsms-el-card-tag,
+.rsms-el-card-list-item .rsms-el-card-tag,
+.rsms-el-card-list-item .rsms-el-card-tag.tags {
+	display: flex !important;
+	align-items: flex-start !important;
+	gap: 1rem !important;
+	margin-top: 0 !important;
+	font-weight: 500 !important;
+	font-size: 1rem !important;
+	line-height: 1.25 !important;
+	color: #0a160c !important;
+	width: 100% !important;
+	padding-left: 0 !important;
+	box-sizing: border-box !important;
+}
+/* Match Next `.list-item__tag.tags`. Live Elementor data may still insert
+ * `<br/><br/>` between spans — hide those so padding/margin alone set rhythm.
+ * Style only the tag rows, never the wrapping <p> (avoids double spacing). */
+.rsms-el-card-list-item .elementor-image-box-description br {
+	display: none !important;
+}
+.rsms-el-card-list-item .elementor-image-box-description > p:has(.rsms-el-card-tag) {
+	padding: 0 !important;
+	margin: 0 !important;
+	border: none !important;
+}
+.rsms-el-card-list-item .elementor-image-box-description .rsms-el-card-tag,
+.rsms-el-card-list-item .elementor-image-box-description .rsms-el-card-tag.tags {
+	display: flex !important;
+	padding-bottom: 1.5rem !important;
+	margin-bottom: 1.5rem !important;
+	border-bottom: 0.0625rem solid #d9d9d9 !important;
+	line-height: 1 !important;
+}
+.rsms-el-card-list-item .elementor-image-box-description .rsms-el-card-tag:last-of-type,
+.rsms-el-card-list-item .elementor-image-box-description > .rsms-el-card-tag:last-child,
+.rsms-el-card-list-item .elementor-image-box-description > p:last-child > .rsms-el-card-tag:last-of-type {
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+	border-bottom: none !important;
+}
+.rsms-el-card-list-item .rsms-el-card-tag::before {
+	content: "" !important;
+	display: block !important;
+	width: 1.25rem !important;
+	height: 1.25rem !important;
+	flex-shrink: 0 !important;
+	margin-top: 0.1rem !important;
+	background: url("/wp-content/uploads/rsms-static/images/yellowdot.svg") center / contain no-repeat !important;
+}
+
+/* Beat Elementor left/right image-box position defaults on program rows. */
+.elementor-widget-image-box.rsms-el-card-list-item.elementor-position-left .elementor-image-box-wrapper,
+.elementor-widget-image-box.rsms-el-card-list-item.elementor-position-right .elementor-image-box-wrapper,
+.elementor-widget-image-box.rsms-el-card-list-item.left .elementor-image-box-wrapper,
+.elementor-widget-image-box.rsms-el-card-list-item.right .elementor-image-box-wrapper {
+	display: flex !important;
+	align-items: flex-start !important;
+	justify-content: space-between !important;
+	text-align: left !important;
+}
+
+/* Alternating image/text rows only reverse their visual order.  The original
+ * Next component keeps every piece of copy left-aligned, including on narrow
+ * screens; retain that reading alignment in native Elementor widgets. */
+.rsms-el-card-list-item .elementor-image-box-content,
+.rsms-el-card-list-item .elementor-icon-box-content,
+.rsms-el-card-list-item .elementor-image-box-title,
+.rsms-el-card-list-item .elementor-icon-box-title,
+.rsms-el-card-list-item .elementor-image-box-description,
+.rsms-el-card-list-item .elementor-icon-box-description,
+.rsms-el-card-list-item .rsms-el-card-tag,
+.rsms-el-card-list-item .rsms-el-card-tag span {
+	text-align: left !important;
+}
+
+@media (max-width: 786px) {
+	.rsms-el-card-list-item .elementor-image-box-wrapper,
+	.rsms-el-card-list-item .elementor-icon-box-wrapper,
+	.rsms-el-card-list-item.left .elementor-image-box-wrapper,
+	.rsms-el-card-list-item.right .elementor-image-box-wrapper,
+	.rsms-el-card-list-item.left .elementor-icon-box-wrapper,
+	.rsms-el-card-list-item.right .elementor-icon-box-wrapper {
+		flex-direction: column !important;
+		align-items: center !important;
+	}
+	.rsms-el-card-list-item .elementor-image-box-img,
+	.rsms-el-card-list-item .elementor-icon-box-icon,
+	.rsms-el-card-list-item .elementor-image-box-content,
+	.rsms-el-card-list-item .elementor-icon-box-content {
+		min-width: 100% !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+	.rsms-el-card-list-item .elementor-image-box-content,
+	.rsms-el-card-list-item .elementor-icon-box-content {
+		text-align: left !important;
+	}
+}
+
+/* Home layout HTML blocks — let page CSS control width/background */
+.elementor-section.rsms-el-html-block {
+	/* Inner HTML already carries Next paddings (e.g. about style="padding-top:80px", .gallery 5rem). */
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: visible !important;
+	max-width: none !important;
+	width: 100% !important;
+}
+
+/* Belt-and-suspenders if .container was ever left on the section */
+.elementor-section.rsms-el-html-block.container {
+	max-width: none !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+/* Home page: stack above header so .home-section-1 negative margin covers hero bottom. */
+body.home .elementor-section.rsms-el-html-block,
+body.page-id-5 .elementor-section.rsms-el-html-block {
+	z-index: 4;
+	position: relative;
+}
+.elementor-section.rsms-el-html-block > .elementor-container {
+	max-width: none !important;
+	width: 100% !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	display: block !important;
+}
+.elementor-section.rsms-el-html-block .elementor-column,
+.elementor-section.rsms-el-html-block .elementor-column > .elementor-widget-wrap {
+	display: block !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+	max-width: none !important;
+}
+.elementor-section.rsms-el-html-block .elementor-widget,
+.elementor-section.rsms-el-html-block .elementor-widget-container {
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100% !important;
+	max-width: none !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* TK page — beat generic Elementor defaults (must stay last)           */
+/* ------------------------------------------------------------------ */
+.elementor-section.tkMain {
+	padding-top: 0 !important;
+}
+.elementor-section.tk-header .elementor-widget,
+.elementor-section.tkDetail .elementor-widget,
+.elementor-section.tk-header .elementor-widget-text-editor,
+.elementor-section.tkDetail .elementor-widget-text-editor,
+.elementor-section.tk-header .elementor-widget-container,
+.elementor-section.tkDetail .elementor-widget-container {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.elementor-section.tkDetail {
+	padding-top: 7.5rem !important;
+}
+.elementor-section.tkDetail .elementor-widget-heading h1.elementor-heading-title {
+	color: #0a160c !important;
+	font-weight: 500 !important;
+	font-size: 2.75rem !important;
+	line-height: 3.5rem !important;
+	margin: 0 0 2.5rem !important;
+	padding-top: 7.5rem !important;
+}
+.elementor-section.tkDetail .elementor-widget-text-editor,
+.elementor-section.tkDetail .elementor-widget-text-editor p {
+	color: #687a6b !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	margin: 0 !important;
+}
+.elementor-section.tk-header .elementor-widget-text-editor h3,
+.elementor-section.tk-header .elementor-widget-heading .elementor-heading-title {
+	color: #0a160c !important;
+	font-weight: 400 !important;
+	font-size: 2.25rem !important;
+	line-height: 2.9375rem !important;
+	margin: 0 !important;
+}
+.elementor-section.tk-header .elementor-widget-heading h5.elementor-heading-title {
+	color: #0a160c !important;
+	font-weight: 400 !important;
+	font-style: italic !important;
+	font-size: 1.5rem !important;
+	line-height: 100% !important;
+	padding-top: 2.5rem !important;
+	padding-bottom: 5rem !important;
+	margin: 0 !important;
+}
+.elementor-section.tkDetail .elementor-widget-image-box.rsms-el-detail-card {
+	margin: 0 0 2.5rem !important;
+}

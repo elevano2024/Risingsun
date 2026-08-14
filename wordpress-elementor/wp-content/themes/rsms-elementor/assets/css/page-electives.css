@@ -1,0 +1,128 @@
+.elective:not(.home-section-2) {
+  background: transparent !important;
+}
+.elective.programdetail:has(+ .home-section-2) {
+  background-color: #e8ffeb !important;
+  background-image: none !important;
+}
+.elective > div {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5rem !important;
+}
+.elective.programdetail h1 {
+  margin-bottom: 2.5rem !important;
+  font-weight: 500 !important;
+  font-size: 2.75rem;
+  line-height: 3.5rem;
+  letter-spacing: 1%;
+  color: #0a160c !important;
+}
+.elective.programdetail .home-section-2 h1 {
+  color: #f8f8f8 !important;
+  font-weight: 600 !important;
+}
+.elective.programdetail p {
+  font-weight: 400;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem;
+  letter-spacing: 0%;
+  color: #687a6b !important;
+}
+.elective.programdetail p b {
+  color: #0a160c;
+  line-height: 2.625rem;
+}
+.elective .grid3x:not(.elementor-section) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+.elective .elementor-section.grid3x > .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  column-gap: 1.5rem !important;
+  row-gap: 2.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.elective .elementor-section.grid3x > .elementor-container > .elementor-column {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+@media (max-width: 908px) {
+  .elective .grid3x:not(.elementor-section),
+  .elective .elementor-section.grid3x > .elementor-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 710px) {
+  .elective .grid3x:not(.elementor-section),
+  .elective .elementor-section.grid3x > .elementor-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+.elective .grid2x {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 2.5rem;
+}
+@media (max-width: 710px) {
+  .elective .grid2x {
+    grid-template-columns: 1fr;
+  }
+}
+.elective .home-section-2 {
+  /* Longhand only — `background:` shorthand resets background-color and breaks the wave crest. */
+  background-color: #e8ffeb !important;
+  background-image: url("/wp-content/uploads/rsms-static/images/homebg2.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto !important;
+  background-position: top center !important;
+  box-shadow: 0 -7.5rem 0 #e8ffeb !important;
+  z-index: 4;
+  margin-top: 7.5rem;
+  padding-top: 14.1875rem;
+  padding-bottom: 0 !important;
+}
+.elective .home-section-2 .bgtest {
+  background: #17421e;
+  padding-bottom: 6.25rem;
+}
+.elective .home-section-2 h1 {
+  color: #f8f8f8 !important;
+  font-size: 2.75rem;
+  line-height: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.elective .home-section-2 p,
+.elective .home-section-2 .elementor-widget-text-editor:not(.item) p,
+.elective .home-section-2 .elementor-widget-text-editor:not(.item) {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: #c7d9ca !important;
+  padding-bottom: 5rem;
+  width: 100%;
+  max-width: 49.0625rem;
+}
+.elective .home-section-2 p.item,
+.elective .home-section-2 .elementor-widget-text-editor.item p,
+.elective .home-section-2 .elementor-widget-text-editor.item {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #f8f8f8 !important;
+  margin-bottom: 3.25rem;
+  padding-bottom: 0 !important;
+}
+.elective .home-section-2 p.item b,
+.elective .home-section-2 .elementor-widget-text-editor.item p b,
+.elective .home-section-2 .elementor-widget-text-editor.item b {
+  font-weight: 500;
+  line-height: 2.875rem;
+  color: #f8f8f8 !important;
+}

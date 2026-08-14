@@ -1,0 +1,57 @@
+.contact {
+  padding-top: 5rem;
+}
+body.page-id-6,
+body.page-id-6 #content,
+body.page-id-6 .elementor {
+  background-color: #fff !important;
+}
+body.page-id-6 .elementor-section.contact.contact-page {
+  box-sizing: content-box !important;
+  padding-top: 5rem !important;
+  height: 43.75rem !important;
+  min-height: 43.75rem !important;
+  background-color: #fff !important;
+  background-image: url("/wp-content/uploads/rsms-static/images/contactBG.png"), linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%) !important;
+  background-repeat: no-repeat, no-repeat !important;
+  background-position: center center, center !important;
+  background-size: auto, 100% 100% !important;
+}
+@media (max-width: 62rem) {
+  body.page-id-6 .elementor-section.contact.contact-page {
+    height: 60rem !important;
+    min-height: 60rem !important;
+    background-size: cover, 100% 100% !important;
+  }
+}
+body.page-id-6 .elementor-widget-button.direction-button .elementor-button-content-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.125rem !important;
+}
+body.page-id-6 .elementor-widget-button.direction-button .elementor-button-content-wrapper::before {
+  content: "" !important;
+  display: block !important;
+  width: 1.8125rem !important;
+  height: 1.75rem !important;
+  background: url("/wp-content/uploads/rsms-static/images/map.svg") no-repeat center / contain !important;
+  flex-shrink: 0 !important;
+}
+body.page-id-6 .contact-page .elementor-widget-button.contact-number .elementor-button,
+body.page-id-6 .contact-page .elementor-widget-button.contact-number .elementor-button-content-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+body.page-id-6 .contact-page .elementor-widget-button.contact-number .elementor-button-icon {
+  display: block !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url("/wp-content/uploads/rsms-static/images/phone-call.svg") no-repeat center / contain !important;
+  flex-shrink: 0 !important;
+}
+body.page-id-6 .contact-page .elementor-widget-button.contact-number .elementor-button-icon svg {
+  display: none !important;
+}

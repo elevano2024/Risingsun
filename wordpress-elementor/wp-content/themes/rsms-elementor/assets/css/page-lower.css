@@ -1,0 +1,134 @@
+.lowerElementry {
+  background: linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%) !important;
+}
+.lowerElementry > div:not(.elementor-container):not(.elementor-widget-wrap) {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5rem !important;
+}
+.lowerElementry .grid3x:not(.elementor-section) {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  column-gap: 1.5rem !important;
+  row-gap: 2.5rem !important;
+}
+.lowerElementry .elementor-section.grid3x > .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  column-gap: 1.5rem !important;
+  row-gap: 2.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.lowerElementry .elementor-section.grid3x > .elementor-container > .elementor-column {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.lowerElementry .grid3x .list-item__title {
+  font-weight: 500 !important;
+  font-size: 2rem !important;
+  line-height: 100% !important;
+  letter-spacing: 1% !important;
+  color: #f8f8f8 !important;
+}
+.lowerElementry .grid3x .list-item__data {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0% !important;
+  color: #c7d9ca !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 908px) {
+  .lowerElementry .grid3x:not(.elementor-section),
+  .lowerElementry .elementor-section.grid3x > .elementor-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 710px) {
+  .lowerElementry .grid3x:not(.elementor-section),
+  .lowerElementry .elementor-section.grid3x > .elementor-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+.lowerElementry.programdetail h1,
+.lowerElementry.programdetail .elementor-heading-title {
+  margin-bottom: 2.5rem !important;
+  font-weight: 500 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  letter-spacing: 1%;
+  color: #0a160c !important;
+}
+.lowerElementry.programdetail .home-section-2 h1,
+.lowerElementry.programdetail .home-section-2 .elementor-heading-title {
+  color: #f8f8f8 !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+.lowerElementry.programdetail p {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0%;
+  color: #687a6b !important;
+}
+.lowerElementry .elementor-widget-image-box.detailCard1,
+.lowerElementry .elementor-widget-image-box.rsms-el-detail-card {
+  margin: 0 0 2.5rem !important;
+  padding: 0 !important;
+}
+.lowerElementry .elementor-widget-text-editor + .elementor-widget-image-box.detailCard1,
+.lowerElementry .elementor-widget-text-editor + .elementor-widget-image-box.rsms-el-detail-card {
+  margin-top: 1.625rem !important;
+}
+body.page-id-23 .elementor-section.home-section-2 + .elementor-section.lowerElementry .rsms-el-card-list-item + .elementor-widget-text-editor p {
+  font-style: italic;
+}
+.lowerElementry .home-section-2 {
+  background: url("/wp-content/uploads/rsms-static/images/homebg2.svg");
+  background-repeat: no-repeat;
+  z-index: 4;
+  margin-top: 7.5rem;
+  background-size: 100% auto;
+  background-position: top center;
+  padding-top: 14.1875rem;
+  padding-bottom: 0 !important;
+}
+.lowerElementry .home-section-2 .bgtest {
+  background: #17421e;
+  padding-bottom: 6.25rem;
+}
+.lowerElementry .home-section-2 .elementor-section.grid3x {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.lowerElementry .home-section-2 h1 {
+  color: #f8f8f8 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+.lowerElementry .home-section-2 p {
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  color: #c7d9ca !important;
+  padding-bottom: 5rem !important;
+  width: 100%;
+  max-width: 49.0625rem;
+}
+.lowerElementry .home-section-2 p.item {
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+  line-height: 100% !important;
+  letter-spacing: 1%;
+  color: #f8f8f8 !important;
+  margin-bottom: 3.25rem !important;
+  padding-bottom:  0 !important;
+}
+.lowerElementry .home-section-2 p.item b {
+  font-weight: 500 !important;
+  line-height: 2.875rem !important;
+}

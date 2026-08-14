@@ -1,0 +1,12 @@
+body.page-id-20 .elementor-section.EPA {
+  padding-top: 5rem !important;
+}
+body.page-id-20 .elementor-section.EPA .elementor-widget-image,
+body.page-id-20 .elementor-section.EPA .elementor-widget-image .elementor-widget-container,
+body.page-id-20 .elementor-section.EPA .elementor-widget-image img {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}

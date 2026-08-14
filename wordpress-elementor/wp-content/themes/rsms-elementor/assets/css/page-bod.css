@@ -1,0 +1,86 @@
+/* Board of Directors — Next.js src/app/leadership/board-of-directors/index.scss
+ * Converter flattens .dirContainer into widgets; .dirName still marks each card. */
+
+body.page-id-41 .elementor-section.EPA {
+	padding-top: 2.5rem !important;
+	padding-bottom: 2.5rem !important;
+	background: #fff !important;
+}
+
+body.page-id-41 .elementor-section.EPA > .elementor-container > .elementor-column > .elementor-widget-wrap {
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 0 !important;
+}
+
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor,
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Card top — name */
+body.page-id-41 .elementor-section.EPA .dirName {
+	margin-top: 2.5rem !important;
+	padding: 2rem 2rem 0 !important;
+	border: 0.0625rem solid #c6d2c7 !important;
+	border-bottom: none !important;
+	border-radius: 1rem 1rem 0 0 !important;
+	background: #fff !important;
+	box-sizing: border-box !important;
+}
+
+body.page-id-41 .elementor-section.EPA .dirName:first-child {
+	margin-top: 0 !important;
+}
+
+body.page-id-41 .elementor-section.EPA .dirName p {
+	color: #0a160c !important;
+	font-size: 2.5rem !important;
+	line-height: 1.2 !important;
+	font-weight: 500 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+/* Bios inside the card */
+body.page-id-41 .elementor-section.EPA .dirName + .elementor-widget-text-editor,
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor:not(.dirName) + .elementor-widget-text-editor:not(.dirName) {
+	border-left: 0.0625rem solid #c6d2c7 !important;
+	border-right: 0.0625rem solid #c6d2c7 !important;
+	padding-left: 2rem !important;
+	padding-right: 2rem !important;
+	background: #fff !important;
+	box-sizing: border-box !important;
+}
+
+/* Next .dirContainer { gap: 2.5rem } between name and bio */
+body.page-id-41 .elementor-section.EPA .dirName + .elementor-widget-text-editor {
+	padding-top: 2.5rem !important;
+}
+
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor:not(.dirName) p {
+	color: #687a6b !important;
+	font-size: 1.25rem !important;
+	line-height: 1.625rem !important;
+	font-weight: 400 !important;
+	margin: 0 0 1.5rem !important;
+}
+
+/* Card bottom */
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor:not(.dirName):has(+ .dirName),
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor:not(.dirName):last-child {
+	border-bottom: 0.0625rem solid #c6d2c7 !important;
+	border-radius: 0 0 1rem 1rem !important;
+	padding-bottom: 2rem !important;
+}
+
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor:not(.dirName):has(+ .dirName) p:last-child,
+body.page-id-41 .elementor-section.EPA .elementor-widget-text-editor:not(.dirName):last-child p:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Keep source-group markers from adding a 5rem gap between cards */
+body.page-id-41 .elementor-section.EPA .dirName.rsms-el-source-group-start {
+	margin-top: 2.5rem !important;
+}

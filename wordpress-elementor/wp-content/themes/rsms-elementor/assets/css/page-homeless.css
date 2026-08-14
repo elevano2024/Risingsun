@@ -1,0 +1,35 @@
+body.page-id-37 .elementor-section.homelessness-services {
+  padding-top: 5rem !important;
+}
+body.page-id-37 .elementor-section.homelessness-services > .elementor-container {
+  width: 100% !important;
+  max-width: 71.25rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0.9375rem !important;
+  padding-right: 0.9375rem !important;
+  box-sizing: border-box !important;
+}
+body.page-id-37 .elementor-section.homelessness-services .homelessness-video {
+  display: block;
+  width: 60% !important;
+  max-width: 60% !important;
+  aspect-ratio: 16 / 9;
+  border: none;
+  margin-top: 2.125rem !important;
+}
+body.page-id-37 .elementor-section.homelessness-services .elementor-widget-video.homelessness-video,
+body.page-id-37 .elementor-section.homelessness-services .elementor-widget.homelessness-video {
+  width: 60% !important;
+  max-width: 60% !important;
+  margin-top: 2.125rem !important;
+}
+body.page-id-37 .elementor-section.homelessness-services .elementor-widget-video.homelessness-video .elementor-wrapper {
+  aspect-ratio: 16 / 9;
+}
+body.page-id-37 .elementor-section.homelessness-services p {
+  margin-top: 0.75rem !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5rem !important;
+  color: #687a6b !important;
+}

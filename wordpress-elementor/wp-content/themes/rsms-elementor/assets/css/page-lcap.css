@@ -1,0 +1,12 @@
+/* Accountability Plan (LCAP) — scoped so it does not bleed onto other .EPA pages */
+body.page-id-17 .EPA {
+  padding-top: 5rem;
+}
+body.page-id-17 .EPA p {
+  font-size: 1.25rem;
+  color: #687a6b;
+  font-weight: 400;
+}
+body.page-id-17 .EPA .EPA-list {
+  padding-top: 3.75rem;
+}

@@ -1,0 +1,77 @@
+/* Field trips — page-id-27 */
+body.page-id-27 .programs.programdetail {
+  background: linear-gradient(180deg, #E8FFEB 17.24%, #FFFFFF 100%) !important;
+}
+body.page-id-27 .programs.programdetail > div:not(.elementor-container):not(.elementor-widget-wrap) {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5rem !important;
+}
+body.page-id-27 .elementor-section.programs.programdetail:not(.home-section-2) > .elementor-container {
+  display: block !important;
+  gap: 0 !important;
+}
+body.page-id-27 .programs.programdetail h1 {
+  margin-bottom: 2.5rem !important;
+  font-weight: 500 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  letter-spacing: 1%;
+  color: #0A160C !important;
+}
+body.page-id-27 .programs.programdetail p {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0%;
+  color: #687A6B !important;
+}
+/* Match lower-elementary (page-id-23): wave is 100% auto, not cover.
+ * Cover stretches the crest down onto the title. */
+body.page-id-27 .programs.programdetail .home-section-2 {
+  background-color: #e8ffeb;
+  background-image: url("/wp-content/uploads/rsms-static/images/homebg2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  box-shadow: 0 -7.5rem 0 #e8ffeb;
+  z-index: 4;
+  margin-top: 7.5rem !important;
+  padding-top: 14.1875rem !important;
+  padding-bottom: 0 !important;
+}
+body.page-id-27 .programs.programdetail .home-section-2 h1 {
+  color: #f8f8f8 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+body.page-id-27 .programs.programdetail .home-section-2 p,
+body.page-id-27 .programs.programdetail .home-section-2 .elementor-widget-text-editor:not(.item) p,
+body.page-id-27 .programs.programdetail .home-section-2 .elementor-widget-text-editor:not(.item) {
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  color: #c7d9ca !important;
+  padding-bottom: 5rem !important;
+  width: 100%;
+  max-width: 49.0625rem !important;
+}
+body.page-id-27 .programs.programdetail .home-section-2 p.item,
+body.page-id-27 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item,
+body.page-id-27 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item p {
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+  line-height: 100% !important;
+  letter-spacing: 1%;
+  color: #F8F8F8 !important;
+  margin-bottom: 3.25rem !important;
+  padding-bottom: 0 !important;
+  max-width: 49.0625rem !important;
+}
+body.page-id-27 .programs.programdetail .home-section-2 p.item b,
+body.page-id-27 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item b {
+  font-weight: 500 !important;
+  line-height: 2.875rem !important;
+  color: #F8F8F8 !important;
+}

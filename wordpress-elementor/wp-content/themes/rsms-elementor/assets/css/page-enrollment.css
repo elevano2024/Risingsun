@@ -1,0 +1,227 @@
+.rsms {
+  background: linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%) !important;
+}
+body.page-id-9 .elementor-section.rsms-header > .elementor-container,
+body.page-id-9 .elementor-section.grid3x > .elementor-container,
+body.page-id-9 .elementor-section.detailsContact > .elementor-container {
+  width: 100% !important;
+  max-width: 71.25rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0.9375rem !important;
+  padding-right: 0.9375rem !important;
+  box-sizing: border-box !important;
+}
+.rsms > div {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5rem !important;
+}
+.rsms .rsms-header {
+  padding: 5rem 0 !important;
+  background-color: #faffe3 !important;
+}
+.rsms .rsms-header h3 {
+  font-weight: 400 !important;
+  font-size: 2.25rem !important;
+  line-height: 2.9375rem !important;
+  letter-spacing: 0%;
+  color: #0a160c !important;
+  margin: 0 !important;
+}
+.rsms .rsms-header h3 b {
+  font-weight: 500 !important;
+  font-size: 2.25rem !important;
+  line-height: 2.9375rem !important;
+  letter-spacing: 0%;
+}
+.rsms .rsms-header h4 {
+  margin: 0 !important;
+}
+.rsms .rsms-header h5 {
+  font-weight: 400 !important;
+  font-style: italic !important;
+  font-size: 1.5rem !important;
+  line-height: 100% !important;
+  letter-spacing: 0%;
+  padding-top: 2.5rem !important;
+  color: #0a160c !important;
+  padding-bottom: 5rem !important;
+  margin: 0 !important;
+}
+.rsms .cardYellow {
+  background: #fdf2c8 !important;
+  padding: 2.5rem !important;
+  border-radius: 1rem !important;
+  height: 19.75rem !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+}
+.rsms .cardYellow h4 {
+  font-weight: 300 !important;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  letter-spacing: 1%;
+  color: #0a160c !important;
+  margin: 0 !important;
+}
+.rsms .cardYellow h4 b {
+  font-weight: 700 !important;
+  line-height: 3rem !important;
+}
+.rsms .cardYellow a {
+  display: flex !important;
+  gap: 0.5rem !important;
+  align-items: center !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  letter-spacing: 1%;
+  color: #f3b828 !important;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+.rsms .cardYellow a img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 1.25rem !important;
+}
+.rsms .detailsContact {
+  padding-top: 5rem !important;
+}
+.rsms .detailsContact p {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0%;
+  color: #687a6b !important;
+  padding-bottom: 1.5rem !important;
+}
+.rsms .detailsContact .contact-phone {
+  display: flex !important;
+  align-items: center !important;
+  gap: 2.5rem !important;
+}
+.rsms .detailsContact .contact-phone .contact-numbers {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+.rsms .detailsContact .contact-phone .contact-numbers img {
+  width: 2rem !important;
+  height: 2rem !important;
+  max-width: 2rem !important;
+  flex-shrink: 0 !important;
+}
+.rsms .detailsContact .contact-phone .contact-numbers .contact-number {
+  font-weight: 700 !important;
+  font-size: 1.75rem !important;
+  line-height: 1.875rem !important;
+  letter-spacing: 0%;
+  color: #71b15e !important;
+  text-decoration: none !important;
+}
+.rsms .detailsContact .contact-phone .contact-numbers .contact-number:focus {
+  outline: none;
+}
+.rsms .detailsContact .contact-phone hr {
+  width: 0.125rem !important;
+  border: 0 !important;
+  background: #687a6b !important;
+  height: 1.75rem !important;
+  margin: 0 !important;
+}
+@media (max-width: 65rem) {
+  .rsms .detailsContact .contact-phone {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .rsms .detailsContact .contact-phone .contact-numbers .contact-number {
+    margin-bottom: 1rem;
+    font-size: 1rem !important;
+  }
+  .rsms .detailsContact .contact-phone hr {
+    display: none !important;
+  }
+}
+.rsms.programdetail h1 {
+  margin-bottom: 2.5rem !important;
+  font-weight: 500 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  letter-spacing: 1%;
+  color: #0a160c !important;
+}
+.rsms.programdetail p {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0%;
+  color: #687a6b !important;
+}
+body.page-id-9.elementor-page-9 .elementor-section.rsms.programdetail > .elementor-container > .elementor-column > .elementor-widget-wrap > .elementor-widget-text-editor:has(~ .elementor-widget-heading) {
+  margin-bottom: 5rem !important;
+}
+.rsms.programdetail p b {
+  color: #0a160c !important;
+  line-height: 2.625rem !important;
+}
+.rsms .grid3x:not(.elementor-section) {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  column-gap: 1.5rem !important;
+  row-gap: 2.5rem !important;
+}
+.rsms .elementor-section.grid3x > .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  column-gap: 1.5rem !important;
+  row-gap: 2.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.rsms .elementor-section.grid3x > .elementor-container > .elementor-column.cardYellow {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.rsms .elementor-column.cardYellow > .elementor-widget-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+}
+.rsms .cardYellow .elementor-widget-button.rsms-el-card-yellow-cta,
+.rsms .cardYellow .elementor-widget-button.rsms-el-card-yellow-cta .elementor-button-wrapper {
+  width: auto !important;
+}
+.rsms .cardYellow .elementor-widget-button.rsms-el-card-yellow-cta .elementor-button {
+  display: inline-flex !important;
+  gap: 0.5rem !important;
+  align-items: center !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  color: #f3b828 !important;
+}
+@media (max-width: 908px) {
+  .rsms .grid3x:not(.elementor-section) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .rsms .elementor-section.grid3x > .elementor-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 710px) {
+  .rsms .grid3x:not(.elementor-section) {
+    grid-template-columns: 1fr !important;
+  }
+  .rsms .elementor-section.grid3x > .elementor-container {
+    grid-template-columns: 1fr !important;
+  }
+}

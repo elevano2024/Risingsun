@@ -1,0 +1,379 @@
+/* Home content wrapper — match Next .home stacking above header (overlap). */
+div.home {
+	z-index: 4;
+	position: relative;
+	background: linear-gradient(180deg, #E8FFEB 17.24%, #FFFFFF 100%);
+}
+div.home .home-section-1,
+.home-section-1 {
+	background: url("/wp-content/uploads/rsms-static/images/homebg1.svg");
+	/* homebg1.svg has transparent lower areas. Give the first content band the
+	 * same base as the incoming wave so wide layouts cannot reveal the parent
+	 * gradient as a white horizontal seam. */
+	background-color: #e8ffeb;
+	z-index: 4;
+	position: relative;
+	padding-top: 11.25rem;
+	margin-top: -11.25rem;
+}
+div.home .home-section-1 .home-section-1-content-1,
+.home .home-section-1 .home-section-1-content-1 {
+  padding-bottom: 7.875rem;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1.625rem !important;
+  align-items: flex-start !important;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1.625rem !important;
+  align-items: center !important;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection h2 {
+  color: #687a6b !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection p {
+  font-size: 1.25rem !important;
+  color: #0a160c !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection img {
+  height: 5.375rem !important;
+  width: auto !important;
+  max-width: none !important;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection-link {
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  color: #f4ad26 !important;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-left: auto;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection-link a {
+  color: #f4ad26 !important;
+  text-decoration: none !important;
+}
+.home .home-section-1 .home-section-1-content-1 .linksection-link a:focus {
+  outline: none;
+}
+@media (max-width: 62rem) {
+  .home .home-section-1 .home-section-1-content-1 {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home .home-section-1 .home-section-1-content-1 .linksection {
+    margin-bottom: 1.5rem;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home .home-section-1 .home-section-1-content-1 .linksection-link {
+    font-size: 1rem !important;
+    margin-left: 0;
+  }
+}
+.home .home-section-1 .home-section-1-content-2 {
+  padding-bottom: 18.75rem;
+}
+.home .home-section-1 .home-section-1-content-2 h1 {
+  color: #0a160c !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600 !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+  margin: 0 !important;
+}
+.home .home-section-1 .home-section-1-content-2 .home-section-1-content-2-listitems {
+  margin-top: 5rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 6.25rem !important;
+  align-items: flex-start !important;
+}
+.home .home-section-1 .home-section-1-content-2 .home-section-1-content-2-listitems > div {
+  width: calc(50% - 3.125rem) !important;
+  max-width: calc(50% - 3.125rem) !important;
+}
+.home .home-section-1 .home-section-1-content-2 .home-section-1-content-2-listitems p {
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  color: #687a6b !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+@media (max-width: 62rem) {
+  .home .home-section-1 .home-section-1-content-2 .home-section-1-content-2-listitems {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .home .home-section-1 .home-section-1-content-2 .home-section-1-content-2-listitems > div {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .home .home-section-1 .home-section-1-content-2 .home-section-1-content-2-listitems p {
+    text-align: center;
+  }
+}
+.home .home-section-2,
+.home-section-2 {
+  background-image: url("/wp-content/uploads/rsms-static/images/homebg2.svg");
+	/* The wave asset has a transparent upper edge. Keep that edge on the
+	 * preceding pale-green band so the cloud artwork overlaps without a white seam. */
+	background-color: #e8ffeb;
+  background-repeat: no-repeat;
+  /* Above .home-section-1 (relative/z-index) so negative-margin waves are not covered */
+  position: relative;
+  z-index: 5;
+  background-size: cover;
+}
+/* Home only: the wave overlaps the pale-green intro. Program pages keep a
+ * positive 7.5rem gap (see style.css / page CSS) and must not inherit this. */
+.home .home-section-2 {
+  margin-top: -11.25rem;
+  padding-top: 11.25rem;
+  padding-bottom: 10.625rem;
+}
+.home .home-section-2 h1,
+.home-section-2 h1 {
+  color: #f8f8f8 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+.home .home-section-2 > .bgtest > .container > p,
+.home-section-2 > .bgtest > .container > p,
+.home .home-section-2 .bgtest > .container > p,
+.home-section-2 .bgtest > .container > p,
+.home-section-2 .bgtest .elementor-widget-text-editor:not(.cloudItem1) p {
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  color: #c7d9ca !important;
+  padding-bottom: 5rem !important;
+  width: 100% !important;
+  max-width: 49.0625rem !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+.home-section-2 .bgtest .elementor-widget-text-editor:not(.cloudItem1) {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.home .home-section-2 .clouds,
+.home-section-2 .clouds {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
+}
+/* Elementor inner section .clouds uses a flex container — force grid on it */
+.home-section-2 .elementor-section.clouds > .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.home .home-section-2 .clouds .cloudItem,
+.home-section-2 .clouds .cloudItem,
+.home-section-2 .clouds .elementor-column.cloudItem {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  background: url("/wp-content/uploads/rsms-static/images/cloud_home.svg") no-repeat center !important;
+  background-size: contain !important;
+  height: 17.9375rem !important;
+  width: calc(100% - 1.5rem) !important;
+}
+.home-section-2 .clouds .elementor-column.cloudItem > .elementor-widget-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem !important;
+  width: 100% !important;
+}
+.home .home-section-2 .clouds .cloudItem .cloudItem1,
+.home-section-2 .clouds .cloudItem .cloudItem1,
+.home-section-2 .clouds .cloudItem1,
+.home-section-2 .clouds .cloudItem1 p {
+  font-weight: 500 !important;
+  font-size: 1.25rem !important;
+  line-height: 100% !important;
+  color: #36562C !important;
+  max-width: 16.5625rem !important;
+  text-align: center !important;
+  padding-bottom: 0 !important;
+}
+.home .home-section-2 .clouds .cloudItem .cloudItem2,
+.home-section-2 .clouds .cloudItem .cloudItem2,
+.home-section-2 .clouds .elementor-widget-heading.cloudItem2 .elementor-heading-title {
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+  text-align: center !important;
+  color: #36562C !important;
+}
+.home .home-section-2 .clouds .cloudItem .cloudItem3,
+.home-section-2 .clouds .cloudItem .cloudItem3 {
+  padding: 0 !important;
+}
+.home-section-2 .clouds .elementor-widget-button.cloudItem3 .elementor-button {
+  padding-top: 0.5rem !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  color: #F4AD26 !important;
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  gap: 0.25rem !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.home .home-section-2 .clouds .cloudItem .cloudItem3 img,
+.home-section-2 .clouds .cloudItem .cloudItem3 img {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  max-width: 1.25rem !important;
+  display: inline-block !important;
+}
+.home .home-section-2 .bgtest,
+.home-section-2 .bgtest,
+.home-section-2 .elementor-column.bgtest {
+  background: #17421e !important;
+  padding-bottom: 6.25rem !important;
+}
+@media (max-width: 62rem) {
+  .home .home-section-2 .clouds,
+  .home-section-2 .clouds,
+  .home-section-2 .elementor-section.clouds > .elementor-container {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .home .home-section-2 .clouds .cloudItem,
+  .home-section-2 .clouds .cloudItem {
+    margin: 0 auto;
+  }
+  .home .home-section-2 .bgtest {
+    padding-bottom: 0rem !important;
+  }
+}
+.home .home-section-5,
+.home-section-5 {
+  padding-top: 7.75rem;
+  padding-bottom: 1.5rem;
+}
+.home .home-section-5 h1,
+.home-section-5 h1 {
+  color: #0a160c !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2.5rem !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+.home .home-section-5 p,
+.home-section-5 p {
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  color: #687A6B !important;
+  width: 100% !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+.home .home-section-5 .yellowLink,
+.home-section-5 .yellowLink,
+.home-section-5 .elementor-widget-button.yellowLink .elementor-button {
+  padding-top: 0.5rem !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  color: #F4AD26 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  cursor: pointer;
+  text-decoration: none !important;
+  gap: 0.25rem !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.home .home-section-5 .yellowLink img,
+.home-section-5 .yellowLink img {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  max-width: 1.25rem !important;
+}
+
+.gallery-section {
+  padding-bottom: 4.125rem;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  column-gap: 1.5rem !important;
+}
+.elementor-section.gallery-section > .elementor-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  column-gap: 1.5rem !important;
+  width: 100% !important;
+  max-width: 71.25rem !important;
+}
+.gallery-section .image-container,
+.gallery-section .elementor-column.image-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+.gallery-section .image-item,
+.gallery-section .elementor-widget-image.image-item {
+  width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  overflow: hidden !important;
+  border-radius: 1.5rem !important;
+}
+.gallery-section .image-item img,
+.gallery-section .elementor-widget-image.image-item img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+.gallery-section .visitgallery,
+.gallery-section .elementor-widget-button.visitgallery,
+.gallery-section .elementor-widget-button.visitgallery .elementor-button {
+  width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  overflow: hidden !important;
+  border-radius: 1.5rem !important;
+  background-color: #F4AD26 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  color: #222222 !important;
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+@media (max-width: 62rem) {
+  .gallery-section,
+  .elementor-section.gallery-section > .elementor-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 1.5rem !important;
+  }
+}
+
+
+/* exclude program p.item from home pad */
+.home-section-2 > .bgtest > .container > p.item,
+.home-section-2 .bgtest > .container > p.item {
+  padding-bottom: 0 !important;
+}

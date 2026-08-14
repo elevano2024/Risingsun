@@ -1,0 +1,11 @@
+{
+  "uploads": "public/wp-content/uploads (mapped → /wp-content/uploads)",
+  "images": "public/images (mapped → /images)",
+  "fonts": "public/assets/fonts (mapped → /assets/fonts)",
+  "crawled": 64,
+  "failed": [
+    "/school-information",
+    "/parents",
+    "/leadership"
+  ]
+}

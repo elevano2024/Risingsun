@@ -1,0 +1,86 @@
+.list-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.625rem;
+  gap: 1rem;
+  border-bottom: 0.0625rem solid #d9d9d9;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #0a160c;
+  font-weight: 600;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: none;
+}
+.list-item:focus {
+  outline: none;
+}
+.list-item__left {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 0;
+}
+.list-item__title {
+  flex: 1;
+  min-width: 0;
+}
+.list-item__dot {
+  width: 1.25rem;
+  height: 1.25rem;
+  max-width: 1.25rem;
+  max-height: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+  object-fit: contain;
+}
+.list-item__arrow {
+  width: 1.5rem;
+  height: 1.5rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+  object-fit: contain;
+}
+.list-item.nobborder {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/*
+ * Native Icon List (.rsms-el-list-item) styles live in rsms-elementor-native.css.
+ * Do not re-declare padding/border/::after here — that stacked a second row + arrow.
+ */
+
+/* Enrollment contact-number / vertical rule stand-ins */
+.elementor-widget-button.rsms-el-contact-number .elementor-button {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  font-weight: 700 !important;
+  font-size: 1.75rem !important;
+  line-height: 1.875rem !important;
+  color: #71b15e !important;
+  text-decoration: none !important;
+}
+.elementor-widget-button.rsms-el-contact-number .elementor-button:hover,
+.elementor-widget-button.rsms-el-contact-number .elementor-button:focus {
+  background: transparent !important;
+  color: #71b15e !important;
+}
+.elementor-widget-divider.rsms-el-hr {
+  width: auto !important;
+}
+.elementor-widget-divider.rsms-el-hr .elementor-divider-separator {
+  width: 0.125rem !important;
+  border: 0 !important;
+  background: #687a6b !important;
+  height: 1.75rem !important;
+  margin: 0 !important;
+}
