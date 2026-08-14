@@ -1,0 +1,97 @@
+.programs {
+  background: linear-gradient(180deg, #E8FFEB 17.24%, #FFFFFF 100%) !important;
+}
+/* Main /program page only — field trips & community use .programs.programdetail */
+.programs:not(.programdetail) > div {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6.875rem !important;
+}
+/* Let the original Program gradient show through the page shell. A flat
+ * pale-green override here masked the source's transition to white near the
+ * footer. The shared responsive `.container` rule supplies the gutter. */
+body.page-id-21,
+body.page-id-21 #content,
+body.page-id-21 .elementor-21 {
+  background: transparent !important;
+}
+body.page-id-21 .programs:not(.programdetail) > .elementor-container > .elementor-column > .elementor-widget-wrap > .elementor-widget-heading {
+  margin-bottom: 2.5rem !important;
+}
+/* Source /program uses a medium lead heading. */
+body.page-id-21 .programs:not(.programdetail) .elementor-widget-heading:first-child .elementor-heading-title {
+  font-weight: 500 !important;
+}
+/* Keep the Program hero and site chrome on the same desktop gutter as the
+ * editable page content.  Elementor otherwise leaves this one hero at its
+ * generic 15px container edge once the page body has its 5rem gutter. */
+@media (min-width: 992px) {
+  body.page-id-21 .elementor-section.rsms-el-hero,
+  body.page-id-21 .elementor-section.rsms-el-hero > .elementor-container {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+  }
+  body.page-id-21 .elementor-section.rsms-el-hero > .elementor-container,
+  body.page-id-21 .header_main__headMenu {
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+  }
+  body.page-id-21 .header_main__headMenu {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+.programs .programdetail h1,
+.programs.programdetail h1 {
+  margin-bottom: 2.5rem !important;
+  font-weight: 500 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  letter-spacing: 0.01em !important;
+  color: #0A160C !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+.programs .programdetail p,
+.programs.programdetail p {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0 !important;
+  color: #687A6B !important;
+  font-family: "Gotham Rounded", sans-serif !important;
+}
+.programs .list-item.left,
+.programs .list-item.right {
+  width: 100% !important;
+}
+.programs .list-item__image img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+.programs .list-item__tag img {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  max-width: 1.25rem !important;
+  flex-shrink: 0 !important;
+}
+body.page-id-21 .rsms-el-card-list-item .elementor-image-box-title {
+  font-weight: 500 !important;
+  font-size: 2rem !important;
+  line-height: 1 !important;
+  margin: 0 0 1rem !important;
+  color: #0a160c !important;
+}
+body.page-id-21 .rsms-el-card-list-item .rsms-el-card-tag {
+  margin-top: 2rem !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
+  color: #0a160c !important;
+}

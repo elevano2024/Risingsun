@@ -1,0 +1,153 @@
+.schoolMetricPerformance {
+  background: #e8ffeb;
+  background: linear-gradient(180deg, rgb(232, 255, 235) 17%, rgb(255, 255, 255) 100%);
+  padding-top: 5.375rem !important;
+  padding-bottom: 2.875rem !important;
+}
+.schoolMetricPerformance .metricsListContainer:not(.elementor-section) {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  column-gap: 5rem !important;
+  row-gap: 3.125rem !important;
+}
+.schoolMetricPerformance.elementor-section.metricsListContainer > .elementor-container > .elementor-column > .elementor-widget-wrap,
+.schoolMetricPerformance .elementor-section.metricsListContainer > .elementor-container > .elementor-column > .elementor-widget-wrap {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  column-gap: 5rem !important;
+  row-gap: 3.125rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container,
+.schoolMetricPerformance .metricsListContainer .elementor-column.metric-container,
+.schoolMetricPerformance .elementor-widget-image-box.metric-container {
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container .elementor-image-box-wrapper {
+  width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  overflow: hidden !important;
+  border-radius: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  background: white !important;
+  border: 0.0625rem solid #d7e9da !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  transition: transform 0.3s ease;
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container:hover .elementor-image-box-wrapper {
+  transform: translateY(-0.3125rem);
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container .elementor-image-box-img {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container .elementor-image-box-content {
+  width: 100% !important;
+  flex: 0 0 auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container .elementor-image-box-img a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container .elementor-image-box-img img {
+  width: 100% !important;
+  max-width: calc(100% - 2.5rem) !important;
+  max-height: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+.schoolMetricPerformance .elementor-widget-image-box.metric-container .elementor-image-box-title {
+  color: #f4ad26 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  text-align: center !important;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric-link {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block !important;
+  transition: transform 0.3s ease;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric-link:hover {
+  transform: translateY(-0.3125rem);
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric-link:focus {
+  outline: none;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric_logo {
+  width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  overflow: hidden !important;
+  border-radius: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+  background: white !important;
+  border: 0.0625rem solid #d7e9da !important;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric_logo .metric_image {
+  width: 100% !important;
+  max-width: calc(100% - 2.5rem) !important;
+  max-height: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric_logo .metric_title {
+  color: #f4ad26 !important;
+  font-weight: 700 !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  cursor: pointer;
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric_logo .metric_title::after,
+.schoolMetricPerformance .metric-container .elementor-image-box-title a::after,
+.schoolMetricPerformance .rsms-el-metric .elementor-image-box-title a::after {
+  content: " >";
+}
+.schoolMetricPerformance .metricsListContainer .metric-container .metric_title {
+  margin-bottom: 0.25rem !important;
+  font-size: 1.125rem !important;
+  font-weight: 700 !important;
+  color: #0a160c !important;
+  text-align: center !important;
+  line-height: 1.4 !important;
+}
+@media (max-width: 48rem) {
+  .schoolMetricPerformance .metricsListContainer:not(.elementor-section),
+  .schoolMetricPerformance.elementor-section.metricsListContainer > .elementor-container > .elementor-column > .elementor-widget-wrap,
+  .schoolMetricPerformance .elementor-section.metricsListContainer > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    grid-template-columns: 1fr !important;
+    column-gap: 0 !important;
+    row-gap: 1.875rem !important;
+  }
+}
+@media (max-width: 64rem) and (min-width: 48.0625rem) {
+  .schoolMetricPerformance .metricsListContainer:not(.elementor-section),
+  .schoolMetricPerformance.elementor-section.metricsListContainer > .elementor-container > .elementor-column > .elementor-widget-wrap,
+  .schoolMetricPerformance .elementor-section.metricsListContainer > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    grid-template-columns: repeat(2, 1fr) !important;
+    column-gap: 2.5rem !important;
+  }
+}

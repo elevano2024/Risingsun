@@ -1,0 +1,154 @@
+{
+  "/about/accountability-plan": {
+    "header": "Local Control & Accountability Plan (LCAP)",
+    "subHeader": ""
+  },
+  "/about/charter-selap-local-plan": {
+    "header": "Charter SELPA Local Plan",
+    "subHeader": ""
+  },
+  "/about/education-protection-account": {
+    "header": "Education Protection Account (EPA)",
+    "subHeader": ""
+  },
+  "/about/facts-about-charter-schools": {
+    "header": "Facts About Charter Schools",
+    "subHeader": ""
+  },
+  "/about": {
+    "header": "About Us",
+    "subHeader": ""
+  },
+  "/about/rsms-charter-petition": {
+    "header": "RSMS Charter Petition",
+    "subHeader": "The charter petition, complete with appendices, can be viewed as a hard copy in the RSMS Administrative office at 4958 Robert J Mathews Parkway, El Dorado Hills, CA 95762."
+  },
+  "/about/school-metric-performance": {
+    "header": "School Metrics & Performance",
+    "subHeader": "Rising Sun Montessori is proud to be fully accredited by the Western Association of Schools and Colleges (WASC). Our school is committed to academic excellence, student growth, and continuous improvement."
+  },
+  "/arts-education": {
+    "header": "Arts Education Program",
+    "subHeader": ""
+  },
+  "/contact": {
+    "header": "Contact Us",
+    "subHeader": ""
+  },
+  "/enrollment-school-tours": {
+    "header": "Enrollment & School Tours",
+    "subHeader": "Now Accepting Applications for the 2026-27 school year!"
+  },
+  "/gallery": {
+    "header": "Gallery",
+    "subHeader": ""
+  },
+  "/leadership/board-agendas": {
+    "header": "Board Agendas",
+    "subHeader": ""
+  },
+  "/leadership/board-meeting-schedule": {
+    "header": "Board Of Directors Meeting Schedule",
+    "subHeader": ""
+  },
+  "/leadership/board-of-directors": {
+    "header": "Board of Directors",
+    "subHeader": ""
+  },
+  "/leadership/board-policies": {
+    "header": "Board Policies",
+    "subHeader": ""
+  },
+  "/our-campus": {
+    "header": "Our Campus",
+    "subHeader": ""
+  },
+  "/our-classroom": {
+    "header": "Our Classrooms - The Learning Environment",
+    "subHeader": ""
+  },
+  "/our-students": {
+    "header": "Our Students",
+    "subHeader": ""
+  },
+  "/parents/extended-learning-opportunities-program": {
+    "header": "Extended Learning Opportunities Program (ELOP)",
+    "subHeader": ""
+  },
+  "/parents/homelessness-services": {
+    "header": "Homelessness Services (McKinney-Vento Act)",
+    "subHeader": "The McKinney-Vento Homeless Assistance Act is a federal law that protects the educational rights of children and youth experiencing homelessness."
+  },
+  "/parents/notices": {
+    "header": "Notices",
+    "subHeader": ""
+  },
+  "/parents/parent-committee": {
+    "header": "Parent Committee",
+    "subHeader": ""
+  },
+  "/parents/suicide-awareness-prevention": {
+    "header": "Suicide Awareness & Prevention",
+    "subHeader": ""
+  },
+  "/program/the-montessori-method": {
+    "header": "Why Montessori?",
+    "subHeader": "In the 21st century, education must go beyond memorization and standardized testing. It should empower students to think critically, adapt to change, and contribute meaningfully to a rapidly evolving world."
+  },
+  "/program/community-activities": {
+    "header": "Building Connections: Community Activities at Rising Sun Montessori",
+    "subHeader": "At Rising Sun Montessori, we believe that a strong sense of community is the cornerstone of a thriving school environment. Our community activities bring together students, families, and staff to celebrate, collaborate, and connect. These events not only strengthen relationships but also provide meaningful opportunities for learning, service, and fun."
+  },
+  "/program/electives-clubs": {
+    "header": "Electives & Clubs",
+    "subHeader": "Middle school is a time for discovery, creativity, and growth. At Rising Sun Montessori, we offer a variety of electives and the development of clubs designed to enrich your child’s education and allow them to explore their interests beyond the core curriculum."
+  },
+  "/program/learning-beyond-the-classroom-field-trips": {
+    "header": "Learning Beyond the Classroom: Field Trips at Rising Sun Montessori",
+    "subHeader": "At Rising Sun Montessori, we believe that learning doesn’t stop at the classroom door. Our field trips provide students of all ages with hands-on experiences that deepen their understanding of the world, ignite their curiosity, and create lasting memories."
+  },
+  "/program/lower-elementary": {
+    "header": "Lower Elementary",
+    "subHeader": "Our Lower Elementary program, designed for children aged 6–9 (grades 1–3), builds upon the strong foundation established in earlier Montessori years, fostering a deeper sense of curiosity, independence, and responsibility."
+  },
+  "/program/middle-school": {
+    "header": "Middle School",
+    "subHeader": "The transition to adolescence is a critical time in your child’s life.  At Rising Sun Montessori, our Middle School program (ages 12–14, grades 7–8) is thoughtfully designed to meet the developmental needs of young adolescents. "
+  },
+  "/program": {
+    "header": "Programs",
+    "subHeader": ""
+  },
+  "/program/tk-kindergarten": {
+    "header": "Transitional Kindergarten / Kindergarten",
+    "subHeader": ""
+  },
+  "/program/upper-elementary": {
+    "header": "Upper Elementary",
+    "subHeader": "Our Upper Elementary program is designed for children aged 9–12 (grades 4–6), a time when students are ready to deepen their intellectual pursuits, take on greater responsibility, and engage in meaningful exploration."
+  },
+  "/school-information/academic-calendar": {
+    "header": "Academic Calendar",
+    "subHeader": ""
+  },
+  "/school-information/daily-schedule": {
+    "header": "Daily Schedule",
+    "subHeader": ""
+  },
+  "/school-information/family-handbook": {
+    "header": "RSMS Family Handbook",
+    "subHeader": ""
+  },
+  "/school-information/supply-list": {
+    "header": "School Supplies Lists",
+    "subHeader": ""
+  },
+  "/about/meet-our-staff/:slug": {
+    "headerTemplate": "{name} ({position})",
+    "subHeader": ""
+  },
+  "/about/meet-our-staff": {
+    "header": "Meet Our Staff",
+    "subHeader": "Welcome to Rising Sun Montessori School! Get to know the passionate educators and dedicated team members who make our school a vibrant place to learn and grow. Each one brings their unique talents and heart to our community, we’re excited for you to meet them!"
+  }
+}

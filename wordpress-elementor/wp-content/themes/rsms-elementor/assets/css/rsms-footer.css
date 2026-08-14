@@ -1,0 +1,83 @@
+.footer_container {
+  height: 50vw;
+  background: url(/wp-content/uploads/rsms-static/images/Footer_banner.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer_container__content {
+  position: relative;
+  height: 100%;
+}
+.footer_container__content__data {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 50%;
+  bottom: 16vw;
+}
+.footer_container .header_main__headMenu__logo {
+  max-height: none;
+  height: auto;
+  width: auto;
+  max-width: 100%;
+}
+.footer_container__content__data__text {
+  color: #0a160c;
+  font-size: 1.625rem;
+  letter-spacing: 1%;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.footer_container__content__data__subText {
+  color: #687a6b;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.footer_container__content__social {
+  position: absolute;
+  bottom: 26vw;
+  right: 1.3rem;
+  width: 6.5rem;
+  height: 6.5rem;
+}
+.footer_container__content__social img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .footer_container {
+    height: 80vw;
+  }
+  .footer_container__content__data {
+    bottom: 20vw;
+    left: 1.3rem;
+  }
+  .footer_container__content__data__text {
+    font-size: 1.375rem;
+  }
+  .footer_container__content__data__subText {
+    font-size: 0.875rem;
+  }
+}
+
+/* Phones: the address block is absolutely positioned inside a fixed-height
+ * band, so its wrapped text grows upward into the page above. Let the band
+ * grow with its own content instead. */
+@media (max-width: 47.9375rem) {
+  .footer_container {
+    height: auto;
+    min-height: 80vw;
+    padding-top: 3rem;
+  }
+  .footer_container__content__data {
+    position: static;
+    max-width: calc(100% - 7.5rem);
+    padding-bottom: 26vw;
+  }
+  .footer_container__content__data .header_main__headMenu__logo {
+    max-width: 11rem;
+  }
+}

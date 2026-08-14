@@ -1,0 +1,58 @@
+.staff-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.staff-details .staff-details-head {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.staff-details .staff-details-head .staff-name {
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #0a160c;
+  margin-bottom: 0.5rem;
+}
+.staff-details .staff-details-head .staff-position {
+  font-weight: 400;
+  font-style: Book;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0%;
+  color: #687a6b;
+  margin-bottom: 0;
+}
+.staff-details .staff-image-container {
+  width: 8.375rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.staff-details img {
+  width: 100%;
+  object-fit: cover;
+}
+.staff-details p {
+  font-size: 1.25rem;
+  color: #687a6b;
+  font-weight: book;
+  margin-bottom: 2rem;
+}
+@media (max-width: 37.5rem) {
+  .staff-details .staff-details-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .staff-details .staff-details-head .staff-name {
+    font-size: 1.75rem;
+  }
+  .staff-details .staff-details-head .staff-position {
+    font-size: 1rem;
+  }
+}

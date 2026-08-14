@@ -1,0 +1,24 @@
+body.page-id-16 .elementor-section.EPA {
+  padding-top: 5rem !important;
+}
+body.page-id-16 .elementor-section.EPA .elementor-widget-text-editor,
+body.page-id-16 .elementor-section.EPA .elementor-widget-text-editor p {
+  color: #687a6b !important;
+  font-size: 1.25rem !important;
+  line-height: 1.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* Next: <p></p><br /><p></p> — converter drops the <br> */
+body.page-id-16.elementor-page-16 .elementor-section.EPA > .elementor-container > .elementor-column > .elementor-widget-wrap > .elementor-widget-text-editor + .elementor-widget-text-editor {
+  margin-top: 1.5rem !important;
+}
+body.page-id-16 .elementor-section.EPA .rsms-el-list-item.EPA-list {
+  padding-top: 2rem !important;
+  margin-top: 0 !important;
+}
+body.page-id-16 .elementor-section.EPA .EPA-list .elementor-icon-list-item a {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+}

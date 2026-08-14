@@ -1,0 +1,566 @@
+.header_main {
+  background: linear-gradient(180deg, #17431e 0%, #22712f 60%, #2b943c 100%);
+  position: relative;
+  z-index: 1;
+}
+
+/* Home hero → first light-green section transition. The Next page lets the
+ * cloud edge from homebg1 overlap the bottom of the green carousel band.
+ * Render that edge explicitly so Elementor wrapper geometry cannot collapse
+ * it into a straight horizontal boundary. */
+body.home .header_main:not(.header_main--interior) {
+  z-index: 5;
+  overflow: visible;
+}
+
+body.home .header_main:not(.header_main--interior)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.0625rem;
+  width: 100%;
+  height: clamp(4.5rem, 12vw, 14rem);
+  background: url("/wp-content/uploads/rsms-static/images/homebg1.svg") no-repeat center top;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: 1;
+}
+
+body.home .header_main__content {
+  position: relative;
+  z-index: 2;
+}
+/*
+ * Interior heroes live in Elementor below this header. Keep one continuous
+ * gradient (nav + hero) and hide the theme banner here — the hero section
+ * paints header-banner.svg at bottom:1rem to match Next.js.
+ */
+.header_main--interior {
+  background-image: linear-gradient(180deg, #17431e 0%, #22712f 60%, #2b943c 100%);
+  background-size: 100% 22.25rem;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #2b943c;
+  padding-bottom: 0;
+  overflow: visible;
+  /* Above Elementor hero (z-index: 1) so Programs/Leadership dropdowns are not covered */
+  z-index: 50;
+}
+.header_main--interior .header_main__subWrapper {
+  display: none;
+}
+.header_main__subWrapper {
+  position: absolute;
+  bottom: 1rem;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 10%;
+  z-index: -1;
+}
+.header_main__subWrapper img {
+  width: 100%;
+  height: auto;
+}
+.header_main__headMenu {
+  border-bottom: 0.0625rem solid #466d4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: 5.5rem;
+  z-index: 4;
+}
+.header_main__headMenu__logoLink {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.header_main__headMenu__logo {
+  display: block;
+  height: auto;
+  max-height: 3rem;
+  width: auto;
+}
+.header_main__headMenu__primary {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  min-width: 0;
+  z-index: 4;
+}
+.header_main__headMenu__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  z-index: 4;
+}
+/* Featured primary tabs + legacy link color */
+.header_main__headMenu__primary a,
+.header_main__headMenu__links a {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.header_main__headMenu__primary > .header_main__headMenu__links__dropdown > a {
+  display: flex;
+  align-items: center;
+  height: 5.375rem;
+	padding: 0 0.625rem;
+  z-index: 4;
+}
+.header_main__headMenu__primary > .header_main__headMenu__links__dropdown > a img {
+  margin-left: 0.25rem;
+}
+.header_main__headMenu__primary > .header_main__headMenu__links__dropdown > a:hover {
+  background: #1e5628;
+  color: #fffbf3 !important;
+}
+.header_main__headMenu__primary > .header_main__headMenu__links__dropdown > a:focus {
+  outline: none;
+}
+.header_main__headMenu__links a.header_main__headMenu__links__link__contact,
+.header_main__headMenu__links__link__contact {
+	/* Match the source header's fluid type scale and roomy control. */
+	font-size: 1rem;
+	line-height: 1.625rem;
+	font-weight: 700;
+	color: #222 !important;
+	padding: 0.5rem 1.5rem;
+	border-radius: 1rem;
+	border: 0.0625rem solid #f3b828;
+	background: #fffbf3;
+	height: 2.75rem !important;
+	margin-left: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  min-width: 0;
+  width: auto;
+}
+.header_main__headMenu__links__dropdown {
+  position: relative;
+}
+.header_main__headMenu__links__dropdown__subMenu {
+  position: absolute;
+  display: none;
+  background-color: #1E5628;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 12.5rem;
+  padding: 0 !important;
+  left: 100%;
+  top: 0;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 0.5rem !important;
+  z-index: 210;
+}
+.header_main__headMenu__links__dropdown__subMenu .sub-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header_main__headMenu__links__dropdown__subMenu .sub-menu a {
+  display: block;
+  width: 100%;
+  padding: 0.625rem 1.25rem !important;
+  color: #fff !important;
+  font-size: 0.875rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.header_main__headMenu__links__dropdown__subMenu .sub-menu a:hover {
+  background: #17431e !important;
+}
+.header_main__headMenu__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+.header_main__headMenu__hamburger span {
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: #fff;
+  margin: 0.1875rem 0;
+  transition: 0.3s;
+  display: block;
+}
+.header_main__headMenu__hamburger span:nth-child(1).active {
+  transform: rotate(-45deg) translate(-0.4rem, 0.4rem);
+}
+.header_main__headMenu__hamburger span:nth-child(2).active {
+  opacity: 0;
+}
+.header_main__headMenu__hamburger span:nth-child(3).active {
+  transform: rotate(45deg) translate(-0.25rem, -0.25rem);
+}
+
+/* Full-site menu drawer (VCS-style hamburger → sidebar) */
+body.rsms-nav-lock {
+  overflow: hidden;
+}
+.header_main__navOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 22, 12, 0.55);
+  z-index: 1100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.header_main__navOverlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.header_main__navDrawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: min(22.5rem, 92vw);
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-height: 100vh;
+  max-height: 100dvh;
+  background: #17431e;
+  z-index: 1101;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.28s ease;
+  box-shadow: -0.5rem 0 1.5rem rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.header_main__navDrawer.is-open {
+  transform: translateX(0);
+}
+.header_main__navDrawer[hidden] {
+  display: none !important;
+}
+.header_main__navDrawer.is-open[hidden] {
+  display: flex !important;
+}
+.header_main__navOverlay[hidden] {
+  display: none !important;
+}
+.header_main__navOverlay.is-open[hidden] {
+  display: block !important;
+}
+.header_main__navDrawer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem 1rem;
+  border-bottom: 0.0625rem solid #466d4d;
+}
+.header_main__navDrawer__title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.header_main__navDrawer__close {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+.header_main__navDrawer__close:hover {
+  color: #f3b828;
+}
+.header_main__navDrawer__nav {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 0.5rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.header_main__navDrawer__contact {
+  margin-top: auto;
+  padding: 0.75rem 1.5rem !important;
+  background: #f3b828;
+  color: #222 !important;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.header_main__navDrawer__item {
+  border-bottom: 0.0625rem solid #466d4d;
+}
+.header_main__navDrawer__item > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.header_main__navDrawer__item > a img {
+  margin-left: 0.5rem;
+  transition: transform 0.25s ease;
+}
+.header_main__navDrawer__item > a.active img {
+  transform: rotate(180deg);
+}
+.header_main__navDrawer__item > a:hover {
+  color: #f3b828;
+}
+.header_main__navDrawer__item > a.is-current,
+.header_main__navDrawer__item.is-current > a {
+  color: #f3b828;
+  font-weight: 700;
+}
+.header_main__navDrawer__submenu {
+  background-color: #0f2f15;
+  padding: 0.5rem 0;
+  margin: 0 0 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.header_main__navDrawer__submenu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+}
+.header_main__navDrawer__submenu a:hover {
+  background-color: #17431e;
+  color: #f3b828;
+}
+.header_main__navDrawer__submenu a.is-current {
+  background-color: #0a160c;
+  color: #f3b828;
+  font-weight: 700;
+}
+.header_main__navDrawer__contact.is-current {
+  outline: 0.125rem solid #fffbf3;
+  outline-offset: 0.125rem;
+}
+.header_main__navDrawer__contact:hover {
+  background: #f0b41e !important;
+  color: #222 !important;
+}
+.header_main__content {
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
+}
+.header_main__content__title {
+  font-size: 2.0625rem;
+  line-height: 2.6875rem;
+  letter-spacing: 1%;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+/* Next applies Tailwind text-2xl line-height (~1.333) on the h2 itself */
+.header_main__content__title h2 {
+  line-height: 1.333333;
+  font-weight: 700;
+}
+.header_main__content__subtitle {
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  letter-spacing: 0%;
+  color: #b7d8bc;
+}
+/* Next applies Tailwind text-lg on the inner <p> */
+.header_main__content__subtitle p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+  color: inherit;
+}
+.header_main__content__carousel {
+  display: flex;
+  gap: 3.125rem;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 7.5rem;
+  z-index: -1;
+}
+.header_main__content__carousel__content {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 40.0625rem;
+}
+.header_main__content__carousel__carousel {
+  flex: 0 0 32.875rem;
+  width: 32.875rem;
+  max-width: 100%;
+}
+.header_main__content__carousel__content .title {
+  display: flex;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+  border-bottom: 0.125rem solid #bbcdbe;
+  display: inline-flex;
+  margin-bottom: 2rem;
+}
+.header_main__content__carousel__content .subtitle {
+  font-size: 1.75rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.header_main__content__carousel__content button {
+  background: #f3b828;
+  color: #222;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 999;
+}
+.header_main__content__carousel__content button:hover {
+  background: #f0b41e;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #1E5628;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.625rem 0 !important;
+  width: auto;
+  min-width: 12.5rem;
+  top: 5.5rem;
+  display: none;
+  border-radius: 0 0 1rem 1rem;
+  flex-direction: column;
+  z-index: 60;
+  gap: 0;
+}
+.header_main__headMenu__links__dropdown.is-open > .dropdown-menu {
+  display: flex;
+}
+.header_main__headMenu__links__dropdown.is-open > a {
+  color: #fffbf3 !important;
+}
+.header_main__headMenu__links__dropdown.is-open > a img {
+  transform: rotate(180deg);
+}
+.dropdown-menu__item {
+  position: relative;
+}
+.dropdown-menu__item:hover > .header_main__headMenu__links__dropdown__subMenu,
+.dropdown-menu__item:focus-within > .header_main__headMenu__links__dropdown__subMenu {
+  display: flex;
+}
+.header_main__headMenu__primary .dropdown-menu > a,
+.header_main__headMenu__primary .dropdown-menu__item > a {
+  font-size: 0.875rem !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  line-height: 1.4 !important;
+  padding: 0.625rem 1.25rem !important;
+  margin: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-shrink: 0 !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: auto !important;
+  white-space: nowrap !important;
+  background-color: #1e5628 !important;
+  color: #fff !important;
+  text-decoration: none !important;
+  transform: none !important;
+  float: none !important;
+}
+.header_main__headMenu__primary .dropdown-menu > a img,
+.header_main__headMenu__primary .dropdown-menu__item > a img {
+  transform: rotate(-90deg);
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+.header_main__headMenu__primary .dropdown-menu > a:hover,
+.header_main__headMenu__primary .dropdown-menu__item > a:hover,
+.header_main__headMenu__primary .dropdown-menu__item:hover > a {
+  background: #17431e !important;
+  color: #fffbf3 !important;
+}
+
+@media (max-width: 62rem) {
+  .header_main {
+    padding-bottom: 3.125rem;
+  }
+  .header_main__headMenu__primary {
+    display: none;
+  }
+  .header_main__content__carousel {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  /* Phones: full-bleed drawer; tablet/desktop keep min(22.5rem, 92vw) */
+  .header_main__navDrawer {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Phones: the hero stacks into a column, so the desktop flex-basis became a
+ * fixed track height and left a tall green band under the carousel image. */
+@media (max-width: 47.9375rem) {
+  .header_main {
+    padding-bottom: 1rem;
+  }
+  .header_main__content {
+    padding-bottom: 2rem;
+  }
+  .header_main__content__carousel {
+    padding-bottom: 3.5rem;
+  }
+  .header_main__content__carousel__content,
+  .header_main__content__carousel__carousel {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 30rem) {
+  .header_main__headMenu__links__link__contact {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,249 @@
+.contact-page {
+  background: url("/wp-content/uploads/rsms-static/images/contactBG.png") no-repeat center center;
+  height: 43.75rem;
+  min-height: 43.75rem;
+}
+.contact-page .contact-container h1 {
+  width: 100%;
+  max-width: 46.875rem;
+  font-weight: 500;
+  font-size: 2.75rem;
+  line-height: 3.5rem;
+  letter-spacing: 1%;
+  color: #0A160C;
+  margin-bottom: 2.5rem;
+}
+.contact-page .contact-container .contact-contact {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-page .contact-container .contact-contact .giveCall {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  letter-spacing: 0%;
+  color: #687A6B;
+}
+.contact-page .contact-container .elementor-widget-heading.giveCall .elementor-heading-title {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.875rem !important;
+  color: #687A6B !important;
+  margin-bottom: 1.5rem !important;
+}
+.contact-page .contact-container .contact-contact .contact-phone {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.contact-page .contact-container .elementor-section.contact-phone > .elementor-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 2.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 2.5rem !important;
+}
+.contact-page .contact-container .elementor-section.contact-phone > .elementor-container > .elementor-column {
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+}
+@media (max-width: 42rem) {
+  .contact-page .contact-container .contact-contact .contact-phone {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact-page .contact-container .contact-contact .contact-phone .contact-numbers {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.contact-page .contact-container .contact-contact .contact-phone .contact-numbers img {
+  width: 2rem;
+  height: 2rem;
+}
+.contact-page .contact-container .contact-contact .contact-phone .contact-numbers .contact-number {
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.875rem;
+  letter-spacing: 0%;
+  color: #71B15E;
+}
+.contact-page .contact-container .contact-phone .elementor-widget-button.contact-number .elementor-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  font-weight: 700 !important;
+  font-size: 1.75rem !important;
+  line-height: 1.875rem !important;
+  color: #71B15E !important;
+}
+.contact-page .elementor-widget-button.contact-number .elementor-button-content-wrapper {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+.contact-page .elementor-widget-button.contact-number .elementor-button-icon {
+  display: block !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: url("/wp-content/uploads/rsms-static/images/phone-call.svg") no-repeat center / contain !important;
+  flex-shrink: 0 !important;
+}
+.contact-page .elementor-widget-button.contact-number .elementor-button-icon svg {
+  display: none !important;
+}
+.contact-page .contact-container .contact-contact .contact-phone .contact-numbers .contact-number:focus {
+  outline: none;
+}
+.contact-page .contact-container .contact-contact .contact-phone hr {
+  width: 0.125rem;
+  border: 0;
+  background: #687A6B;
+  height: 1.75rem;
+}
+.contact-page .contact-container .contact-data {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  letter-spacing: 0%;
+  color: #687A6B;
+  margin-bottom: 1.5rem;
+}
+.contact-page .contact-container .elementor-widget-text-editor.contact-data,
+.contact-page .contact-container .elementor-widget-text-editor.contact-data p {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.875rem !important;
+  color: #687A6B !important;
+  margin-bottom: 1.5rem !important;
+}
+.contact-page .contact-container .contact-address {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  letter-spacing: 0%;
+  color: #0A160C;
+  margin-bottom: 1.5rem;
+}
+.contact-page .contact-container .elementor-widget-text-editor.contact-address,
+.contact-page .contact-container .elementor-widget-text-editor.contact-address p {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.875rem !important;
+  color: #0A160C !important;
+  margin-bottom: 1.5rem !important;
+}
+.contact-page .contact-container .contact-buttons {
+  margin-bottom: 11.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.contact-page .contact-container .elementor-section.contact-buttons > .elementor-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 11.25rem !important;
+}
+.contact-page .contact-container .elementor-section.contact-buttons > .elementor-container > .elementor-column {
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+}
+.contact-page .contact-container .contact-buttons .direction-button,
+.contact-page .contact-container .contact-buttons .elementor-widget-button.direction-button .elementor-button {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+  border: 0.0625rem solid #F3B828;
+  padding: 0 0.9375rem;
+  height: 3.375rem;
+  border-radius: 1rem;
+  background: #FFFBF3;
+  color: #222222;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 1%;
+  box-shadow: none;
+}
+.contact-page .elementor-widget-button.direction-button .elementor-button-content-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+.contact-page .elementor-widget-button.direction-button .elementor-button-content-wrapper::before {
+  content: "";
+  display: block;
+  width: 1.8125rem;
+  height: 1.75rem;
+  background: url("/wp-content/uploads/rsms-static/images/map.svg") no-repeat center / contain;
+  flex-shrink: 0;
+}
+.contact-page .contact-container .contact-buttons .direction-button:focus,
+.contact-page .contact-container .contact-buttons .elementor-widget-button.direction-button .elementor-button:focus {
+  outline: none;
+}
+.contact-page .contact-container .contact-buttons .fill-form-button,
+.contact-page .contact-container .contact-buttons .elementor-widget-button.fill-form-button .elementor-button {
+  display: flex;
+  align-items: center;
+  border: 0.0625rem solid #F3B828;
+  padding: 0 3.125rem;
+  height: 3.375rem;
+  border-radius: 1rem;
+  background: #F3B828;
+  color: #222222;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  letter-spacing: 1%;
+  box-shadow: none;
+}
+.contact-page .contact-container .contact-buttons .fill-form-button:focus {
+  outline: none;
+}
+@media (max-width: 62rem) {
+  .contact-page .contact-container .contact-contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-page .contact-container .contact-contact .contact-phone {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
+  .contact-page .contact-container .elementor-section.contact-phone > .elementor-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .contact-page .contact-container .contact-contact .contact-phone .contact-numbers .contact-number {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+  }
+  .contact-page .contact-container .contact-contact .contact-phone hr {
+    display: none;
+  }
+}
+@media (max-width: 62rem) {
+  .contact-page {
+    height: 60rem;
+    background-size: cover;
+  }
+}

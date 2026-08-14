@@ -1,0 +1,108 @@
+/* Community activities — page-id-28 */
+body.page-id-28 .programs.programdetail {
+  background: linear-gradient(180deg, #e8ffeb 17.24%, #ffffff 100%) !important;
+}
+body.page-id-28 .programs.programdetail > div:not(.elementor-container):not(.elementor-widget-wrap) {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 5rem !important;
+}
+body.page-id-28 .elementor-section.programs.programdetail:not(.home-section-2) > .elementor-container {
+  display: block !important;
+  gap: 0 !important;
+}
+body.page-id-28 .programs.programdetail h1 {
+  margin-bottom: 2.5rem !important;
+  font-weight: 500 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  letter-spacing: 1%;
+  color: #0a160c !important;
+}
+body.page-id-28 .programs.programdetail p {
+  font-weight: 400 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  letter-spacing: 0%;
+  color: #687a6b !important;
+}
+body.page-id-28 .programs.programdetail .home-section-2 {
+  background-color: #e8ffeb;
+  background-image: url("/wp-content/uploads/rsms-static/images/homebg2.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  z-index: 1;
+  margin-top: 0 !important;
+  padding-top: 14.1875rem !important;
+  padding-bottom: 0 !important;
+}
+body.page-id-28 .elementor-section.elementor-top-section.home-section-2 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 0.9375rem !important;
+  padding-right: 0.9375rem !important;
+  box-sizing: border-box !important;
+}
+@media (min-width: 576px) {
+  body.page-id-28 .elementor-section.elementor-top-section.home-section-2 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    max-width: 33.75rem !important;
+  }
+}
+@media (min-width: 768px) {
+  body.page-id-28 .elementor-section.elementor-top-section.home-section-2 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    max-width: 45rem !important;
+  }
+}
+@media (min-width: 992px) {
+  body.page-id-28 .elementor-section.elementor-top-section.home-section-2 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    max-width: 60rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  body.page-id-28 .elementor-section.elementor-top-section.home-section-2 > .elementor-container > .elementor-column > .elementor-widget-wrap {
+    max-width: 71.25rem !important;
+  }
+}
+body.page-id-28 .programs.programdetail .home-section-2 h1,
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-heading-title {
+  color: #f8f8f8 !important;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2rem !important;
+}
+body.page-id-28 .programs.programdetail .home-section-2 p,
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-widget-text-editor:not(.item),
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-widget-text-editor:not(.item) p {
+  font-size: 1.25rem !important;
+  line-height: 1.625rem !important;
+  color: #c7d9ca !important;
+  padding-bottom: 5rem !important;
+  width: 100% !important;
+  max-width: 49.0625rem !important;
+}
+body.page-id-28 .programs.programdetail .home-section-2 p.item,
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item,
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item p,
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item p:last-child {
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.5 !important;
+  letter-spacing: 1%;
+  color: #f8f8f8 !important;
+  margin-bottom: 3.25rem !important;
+  padding-bottom: 0 !important;
+  width: 100% !important;
+  max-width: 49.0625rem !important;
+}
+body.page-id-28 .programs.programdetail .home-section-2 p.item b,
+body.page-id-28 .programs.programdetail .home-section-2 .elementor-widget-text-editor.item b {
+  font-weight: 500 !important;
+  line-height: 2.875rem !important;
+  color: #f8f8f8 !important;
+}
+body.page-id-28 .elementor-section.home-section-2 + .elementor-section.programs.programdetail > .elementor-container > .elementor-column > .elementor-widget-wrap > .elementor-widget-text-editor:not(:last-child) {
+  margin-bottom: 1.625rem !important;
+}

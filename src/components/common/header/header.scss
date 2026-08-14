@@ -356,3 +356,17 @@
     }
   }
 }
+
+@media (max-width: 47.9375rem) {
+  .header_main {
+    padding-bottom: 1rem;
+
+    &__content {
+      padding-bottom: 2rem;
+
+      &__carousel {
+        padding-bottom: 3.5rem;
+      }
+    }
+  }
+}

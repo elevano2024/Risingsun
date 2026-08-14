@@ -105,8 +105,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="cloudItem3"
                 >
-                  Apply Now
-                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                  Apply Now &gt;
                 </a>
               </div>
               <div className="cloudItem">
@@ -118,8 +117,7 @@ const Home = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Form
-                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                  View Form &gt;
                 </a>
               </div>
               <div className="cloudItem">
@@ -133,8 +131,7 @@ const Home = () => {
                   rel="noopener noreferrer"
                   className="cloudItem3"
                 >
-                  Book Appointment
-                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                  Book Appointment &gt;
                 </a>
               </div>
             </div>
@@ -175,8 +172,7 @@ const Home = () => {
         </p>
         <br />
         <a href="/our-classroom" className="yellowLink">
-          Read More on our classrooms
-          <img src="/images/yellowchevrom.svg" alt="Chevron" />
+          Read More on our classrooms &gt;
         </a>
       </div>
       <div className="gallery-section container">
@@ -237,8 +233,7 @@ const Home = () => {
         </p>
         <br />
         <a href="/our-classroom" className="yellowLink">
-          Read More on our classrooms
-          <img src="/images/yellowchevrom.svg" alt="Chevron" />
+          Read More on our classrooms &gt;
         </a>
       </div>
     </div>
