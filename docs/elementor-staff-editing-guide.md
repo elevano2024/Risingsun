@@ -68,7 +68,7 @@ You will see three areas ([official layout](https://elementor.com/help/explore-t
 
 Official help: [Heading widget](https://elementor.com/help/heading-widget/) · [Text Editor widget](https://elementor.com/help/text-editor-widget/)
 
-1. Click the text on the canvas.
+1. Click the text on the canvas (the section visible on the right-hand side).
 2. Left panel → **Content** → edit the words.
 3. Click **Publish** or **Update** (top bar).
 4. Open the public page in a new tab and confirm.
@@ -89,7 +89,7 @@ Many lists use the **Icon List** widget. Official help: [Icon List widget](https
 1. Click the list on the page.
 2. Left panel → **Content** → expand an item.
 3. Edit **Text** and optional **Link**.
-4. Use **Add Item** for a new row; use the trash/duplicate icons on an item to remove/copy.
+4. For a new row, use **Add Item**; use the trash/duplicate icons on an item to remove/copy (you can also right-click the section for these options).
 5. **Publish**.
 
 ---
@@ -99,12 +99,13 @@ Many lists use the **Icon List** widget. Official help: [Icon List widget](https
 Official help: [Button widget](https://elementor.com/help/button-widget/)
 
 1. Click the button or linked text.
-2. Find **Link** in the Content panel.
-3. Paste a full web address, for example:
+2. Left panel → **Content** → expand an item if needed.
+3. Find **Link** in the Content panel.
+4. Paste a full web address, for example:
    - A page on our site: `https://risingsunmontessori.org/about/`
    - An outside site: `https://rsmsmeals.com/`
-4. For outside sites, open link settings (gear) and choose **Open in new window** when available.
-5. **Publish**, then click the link on the live page to test.
+5. For outside sites, open link settings (gear) and choose **Open in new window** when available.
+6. **Publish**, then click the link on the live page to test.
 
 ---
 
@@ -143,7 +144,7 @@ Official help: [Image widget](https://elementor.com/help/image-widget/)
 
 1. **Media** → **Add New** → upload the PDF.
 2. Click the file → copy **File URL**.
-3. On the page in Elementor, select the download/view link or button.
+3. On the page in Elementor, select the section where you want to attach the PDF (for example a download/view link or button).
 4. Paste the URL into **Link** → **Publish** → test the download.
 
 ---
