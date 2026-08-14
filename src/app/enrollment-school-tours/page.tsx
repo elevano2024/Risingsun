@@ -34,8 +34,7 @@ const Component = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Apply Now{" "}
-                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                  Apply Now &gt;
                 </a>
               </div>
               <div className="cardYellow">
@@ -49,8 +48,7 @@ const Component = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Form
-                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                  View Form &gt;
                 </a>
               </div>
               <div className="cardYellow">
@@ -64,8 +62,7 @@ const Component = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Book Appointment
-                  <img src="/images/yellowchevrom.svg" alt="Chevron" />
+                  Book Appointment &gt;
                 </a>
               </div>
             </div>

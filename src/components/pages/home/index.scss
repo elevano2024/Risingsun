@@ -10,6 +10,11 @@
     padding-top: 11.25rem;
     margin-top: -11.25rem;
 
+    @media (max-width: 47.9375rem) {
+      padding-top: 4.5rem;
+      margin-top: -4.5rem;
+    }
+
     .home-section-1-content-1 {
       padding-bottom: 7.875rem;
       display: flex;

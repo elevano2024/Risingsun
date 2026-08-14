@@ -537,6 +537,26 @@ body.rsms-nav-lock {
   }
 }
 
+/* Phones: the hero stacks into a column, so the desktop flex-basis became a
+ * fixed track height and left a tall green band under the carousel image. */
+@media (max-width: 47.9375rem) {
+  .header_main {
+    padding-bottom: 1rem;
+  }
+  .header_main__content {
+    padding-bottom: 2rem;
+  }
+  .header_main__content__carousel {
+    padding-bottom: 3.5rem;
+  }
+  .header_main__content__carousel__content,
+  .header_main__content__carousel__carousel {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 30rem) {
   .header_main__headMenu__links__link__contact {
     display: none;

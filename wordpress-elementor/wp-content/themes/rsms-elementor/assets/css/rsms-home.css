@@ -307,9 +307,15 @@ div.home .home-section-1 .home-section-1-content-1,
 }
 .home .home-section-5 .yellowLink img,
 .home-section-5 .yellowLink img {
-  width: 1.25rem !important;
-  height: 1.25rem !important;
-  max-width: 1.25rem !important;
+  display: none !important;
+}
+
+/* Trailing > on yellow text redirects (match Metrics CTA) */
+.elementor-widget-button.yellowLink .elementor-button-text::after,
+a.yellowLink::after,
+.elementor-widget-button.cloudItem3 .elementor-button-text::after,
+a.cloudItem3::after {
+  content: " >";
 }
 
 .gallery-section {

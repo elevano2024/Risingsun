@@ -409,6 +409,83 @@ body.home .home-section-1 .linksection-link .elementor-button-text {
 	}
 }
 
+/* Phones: the accreditation logo/copy grid is too narrow side by side, so stack
+ * it like the source layout — centered logo, full-width copy, centered CTA. */
+@media (max-width: 47.9375rem) {
+	.rsms-el-native-home .elementor-column.linksection > .elementor-widget-wrap {
+		grid-template-columns: minmax(0, 1fr) !important;
+		grid-template-rows: auto auto auto !important;
+		column-gap: 0 !important;
+		row-gap: 0 !important;
+	}
+
+	.rsms-el-native-home .rsms-home-accreditation-logo,
+	.rsms-el-native-home .rsms-home-accreditation-title,
+	.rsms-el-native-home .rsms-home-accreditation-copy {
+		grid-column: 1 !important;
+		grid-row: auto !important;
+	}
+
+	.rsms-el-native-home .rsms-home-accreditation-logo {
+		justify-self: center !important;
+	}
+
+	.rsms-el-native-home .elementor-column.linksection .elementor-widget.rsms-home-accreditation-title {
+		margin-top: 1.625rem !important;
+	}
+
+	.rsms-el-native-home .home-section-1-content-1 > .elementor-container > .elementor-column.linksection {
+		margin-bottom: 3.125rem !important;
+	}
+
+	.rsms-el-native-home .elementor-widget-button.linksection-link,
+	.rsms-el-native-home .elementor-widget-button.linksection-link .elementor-widget-container {
+		text-align: center !important;
+	}
+
+	/* Board agendas: icon-list content used its max-content width and pushed
+	 * links beyond the phone viewport. */
+	body.page-id-42 .elementor-section.agendas .rsms-el-list-item .elementor-icon-list-items {
+		grid-template-columns: minmax(0, 1fr) !important;
+	}
+
+	body.page-id-42 .elementor-section.agendas .rsms-el-list-item .elementor-icon-list-item,
+	body.page-id-42 .elementor-section.agendas .rsms-el-list-item .elementor-icon-list-item > a,
+	body.page-id-42 .elementor-section.agendas .rsms-el-list-item .elementor-icon-list-text {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		overflow-wrap: anywhere;
+	}
+
+	/* Field-trips has a long slash-separated heading that otherwise sets the
+	 * document's intrinsic width wider than the phone. */
+	body.page-id-27 .programs.programdetail h1 {
+		max-width: 100% !important;
+		overflow-wrap: anywhere;
+	}
+
+	/* Enrollment contact rows must allow the address column to shrink. */
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact > .elementor-container > .elementor-column > .elementor-widget-wrap,
+	body.page-id-9 .elementor-section.detailsContact > .elementor-container > .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: auto minmax(0, 1fr) !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+	}
+
+	body.page-id-9 .elementor-section.detailsContact .elementor-widget,
+	body.page-id-9 .elementor-section.detailsContact .elementor-widget-container,
+	body.page-id-9 .elementor-section.detailsContact .elementor-button,
+	body.page-id-9 .elementor-section.detailsContact .elementor-button-content-wrapper,
+	body.page-id-9 .elementor-section.detailsContact .elementor-button-text {
+		max-width: 100% !important;
+		min-width: 0 !important;
+		overflow-wrap: anywhere;
+		white-space: normal !important;
+	}
+}
+
 /* More breathing room on the desktop/web view without changing the header or
  * the mobile gutter. */
 @media (min-width: 62.01rem) {
@@ -2961,16 +3038,18 @@ body.page-id-9 .rsms-el-card-yellow-cta .elementor-button {
 body.page-id-9 .rsms-el-card-yellow-cta .elementor-button-content-wrapper {
 	display: inline-flex !important;
 	align-items: center !important;
-	gap: 0.5rem !important;
+	gap: 0 !important;
 }
 
 body.page-id-9 .rsms-el-card-yellow-cta .elementor-button-content-wrapper::after {
-	content: "" !important;
-	display: block !important;
-	width: 1.25rem !important;
-	height: 1.25rem !important;
-	background: url("/wp-content/uploads/rsms-static/images/yellowchevrom.svg") center / contain no-repeat !important;
+	content: " >" !important;
+	display: inline !important;
+	width: auto !important;
+	height: auto !important;
+	background: none !important;
 	flex-shrink: 0 !important;
+	font-weight: 700 !important;
+	color: inherit !important;
 }
 
 body.page-id-9.elementor-page-9 .elementor-section.detailsContact > .elementor-container > .elementor-column > .elementor-widget-wrap,
@@ -3386,4 +3465,79 @@ body.page-id-145 .elementor-section.home-section-2 + .elementor-section.programs
 }
 body.page-id-145 .elementor-section.programs.programdetail:not(.home-section-2) > .elementor-container > .elementor-column > .elementor-widget-wrap > .elementor-widget-text-editor:has(+ .elementor-widget-text-editor) {
   margin-bottom: 1.625rem !important;
+}
+
+/* Phone-only overrides must follow the full desktop parity bundle so later
+ * source-matching rules cannot restore multi-column tracks on small screens. */
+@media (max-width: 47.9375rem) {
+	body.home .elementor-section.clouds > .elementor-container {
+		grid-template-columns: minmax(0, 1fr) !important;
+	}
+
+	body.home .elementor-section.clouds > .elementor-container > .elementor-column.cloudItem {
+		width: calc(100% - 1.5rem) !important;
+		max-width: calc(100% - 1.5rem) !important;
+		justify-self: center !important;
+	}
+
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact > .elementor-container > .elementor-column > .elementor-widget-wrap,
+	body.page-id-9 .elementor-section.detailsContact > .elementor-container > .elementor-column > .elementor-widget-wrap {
+		grid-template-columns: auto minmax(0, 1fr) !important;
+		justify-content: stretch !important;
+		column-gap: 0.5rem !important;
+		row-gap: 1rem !important;
+	}
+
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-widget-container,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button-wrapper,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button-content-wrapper,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button-text {
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0 !important;
+		overflow-wrap: anywhere;
+		white-space: normal !important;
+	}
+
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button-content-wrapper,
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-contact-number .elementor-button-text {
+		font-size: 1rem !important;
+		line-height: 1.5rem !important;
+	}
+
+	body.page-id-9.elementor-page-9 .elementor-section.detailsContact .rsms-el-hr {
+		display: none !important;
+	}
+
+	/* Board agendas PDF — bundle min-height 50rem is desktop iframe chrome; phones use content height */
+	body.page-id-42 .elementor-section.agendas .rsms-pdf-preview iframe {
+		min-height: 0 !important;
+		height: auto !important;
+		aspect-ratio: 8.5 / 11;
+	}
+
+	/* Field trips — stack each image/list pair at full phone width. */
+	body.page-id-27 .rsms-el-card-list-item .elementor-image-box-wrapper {
+		width: 100% !important;
+		flex-direction: column !important;
+		align-items: center !important;
+		gap: 1rem !important;
+	}
+
+	body.page-id-27 .rsms-el-card-list-item .elementor-image-box-img,
+	body.page-id-27 .rsms-el-card-list-item .elementor-image-box-content {
+		width: 100% !important;
+		min-width: 100% !important;
+		max-width: 100% !important;
+		flex: 0 0 100% !important;
+	}
+
+	/* Homelessness video — full width on phones (bundle/style keep 60% for tablet+) */
+	body.page-id-37.elementor-page-37 .elementor-section.homelessness-services .elementor-widget.homelessness-video {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
 }

@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'RSMS_ELEMENTOR_VERSION', '1.0.139' );
+define( 'RSMS_ELEMENTOR_VERSION', '1.0.155' );
 
 /**
  * Register RSMS-native Elementor widgets.

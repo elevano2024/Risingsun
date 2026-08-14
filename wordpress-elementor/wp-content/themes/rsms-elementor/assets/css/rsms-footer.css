@@ -62,3 +62,22 @@
     font-size: 0.875rem;
   }
 }
+
+/* Phones: the address block is absolutely positioned inside a fixed-height
+ * band, so its wrapped text grows upward into the page above. Let the band
+ * grow with its own content instead. */
+@media (max-width: 47.9375rem) {
+  .footer_container {
+    height: auto;
+    min-height: 80vw;
+    padding-top: 3rem;
+  }
+  .footer_container__content__data {
+    position: static;
+    max-width: calc(100% - 7.5rem);
+    padding-bottom: 26vw;
+  }
+  .footer_container__content__data .header_main__headMenu__logo {
+    max-width: 11rem;
+  }
+}

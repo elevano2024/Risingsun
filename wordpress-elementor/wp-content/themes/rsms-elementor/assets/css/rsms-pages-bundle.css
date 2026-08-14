@@ -1419,6 +1419,11 @@ body.page-id-23 .elementor-section.home-section-2 + .elementor-section.lowerElem
   line-height: 1.5rem !important;
   cursor: pointer;
 }
+.schoolMetricPerformance .metricsListContainer .metric-container .metric_logo .metric_title::after,
+.schoolMetricPerformance .metric-container .elementor-image-box-title a::after,
+.schoolMetricPerformance .rsms-el-metric .elementor-image-box-title a::after {
+  content: " >";
+}
 .schoolMetricPerformance .metricsListContainer .metric-container .metric_title {
   margin-bottom: 0.25rem !important;
   font-size: 1.125rem !important;

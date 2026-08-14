@@ -59,7 +59,7 @@ const SchoolMetricPerformance = () => {
                       width={200}
                       height={80}
                     />
-                    <span className="metric_title">View Details</span>
+                    <span className="metric_title">View Details &gt;</span>
                   </div>
                 </a>
               </div>
